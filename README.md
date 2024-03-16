@@ -13,7 +13,7 @@ Our proposed framework is gisted below:
 
 
 
-# MESc Description
+# Short description of the work:
 * We explore the problem of judgment prediction from large unstructured legal documents and propose a hierarchical multi-stage neural classification framework named “Multi-stage Encoder-based Supervised with-clustering” (MESc). This works by extracting embeddings from the last four layers of a fine-tuned encoder of a large language model (LLM) and using an un-supervised clustering mechanism to approximate the structure. Alongside the embeddings, these approximated structure labels are processed through another set of transformer encoder layers for final classification.
 * We show the effect of combining features from the last layers of transformer-based LLMs ([BERT](https://doi.org/10.18653/v1/n19-1423), [GPT-Neo](https://api.semanticscholar.org/CorpusID:245758737), [GPT-J](https://huggingface.co/docs/transformers/en/model_doc/gptj)), along with the impact on classification upon using the approximated structure.
 * We study the adaptability of domain-specific pre-trained multi-billion parameter LLMs to such documents and study their intra-domain(legal) transfer learning capability (both with fine-tuning and in MESc).
