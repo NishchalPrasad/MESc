@@ -1,4 +1,0 @@
-Loading tensorflow-gpu/py3/2.11.0
-  Loading requirement: cuda/11.2 nccl/2.9.6-1-cuda cudnn/8.1.1.33-cuda gcc/8.5.0
-    openmpi/4.1.1-cuda sox/14.4.2
-+ python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py --dataset_subset scotus --layers_from_end 4 --ft_model_used_for_extraction LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final --pretrained_model EleutherAI/gpt-j-6B --finetuned_on_input_len 2048 --to_test True --to_train True --train_run_number 1 --verbose 2 --epochs 5 --num_layers 1 --dff 4096 --pad_len 150 --data_path LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_2048input_ft_model/512_input_len_100_overlap/J6b/

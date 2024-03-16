@@ -1,4 +1,0 @@
-Loading tensorflow-gpu/py3/2.11.0
-  Loading requirement: cuda/11.2 nccl/2.9.6-1-cuda cudnn/8.1.1.33-cuda gcc/8.5.0
-    openmpi/4.1.1-cuda sox/14.4.2
-+ python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py --dataset_subset ildc --layers_from_end 4 --ft_model_used_for_extraction _epoch4_strat0_oversampled_False --pretrained_model InLegalBERT --finetuned_on_input_len 512 --to_test True --to_train True --train_run_number 1 --verbose 2 --epochs 5 --num_layers 2 --dff 4096 --with_clustering True --pad_len 50 --parent_dir LEGAL-PE/Level-3_of_Framework/savedModels/512_input_len/ --train_dimR True --save_dimR True --train_clusterer True --save_clusterer True --data_path LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/Extracted_data/from_512input_ft_model/InLegalBERT/
