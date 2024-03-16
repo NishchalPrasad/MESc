@@ -1,0 +1,159 @@
+[uei84ht@jean-zay-iam03 uei84ht]$ module load tensorflow-gpu/py3/2.11.0
+Loading tensorflow-gpu/py3/2.11.0
+  Loading requirement: cuda/11.2 nccl/2.9.6-1-cuda cudnn/8.1.1.33-cuda gcc/8.5.0 openmpi/4.1.1-cuda sox/14.4.2
+(tensorflow-gpu-2.11.0+py3.10.8) [uei84ht@jean-zay-iam03 uei84ht]$ accelerate launch --config_file LEGAL-PE/SIGIR_experiments/distributedTraining/Config_files_for_distributed/default_accelerate_config_without_deep_speed-Copy1.yaml LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py         --maxlen 512         --length 510         --overlap 100         --loading_model_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-neo-2.7B/Strategy_0/sub_strategy_0/512inputlength/torch-model_epoch-1.pth"         --cuda_number 0         --strat 0         --dataset_subset "ecthr_b"         --hggfc_model_name 'EleutherAI/gpt-neo-2.7B'         --get_train_data True         --get_validation_data True         --get_test_data True         --trained_without_accelerate True         --path_train_dat "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/Extracted_data/Neo2.7b/"
+^CTraceback (most recent call last):
+  File "/gpfswork/rech/btm/uei84ht/.local/bin/accelerate", line 5, in <module>
+    from accelerate.commands.accelerate_cli import main
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/__init__.py", line 3, in <module>
+    from .accelerator import Accelerator
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/accelerator.py", line 33, in <module>
+    from .checkpointing import load_accelerator_state, load_custom_state, save_accelerator_state, save_custom_state
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/checkpointing.py", line 24, in <module>
+    from .utils import (
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/utils/__init__.py", line 2, in <module>
+    from .dataclasses import (
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/utils/dataclasses.py", line 29, in <module>
+    from distutils.util import strtobool
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/_distutils_hack/__init__.py", line 90, in find_spec
+    return method()
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/_distutils_hack/__init__.py", line 101, in spec_for_distutils
+    mod = importlib.import_module('setuptools._distutils')
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/setuptools/__init__.py", line 16, in <module>
+    import setuptools.version
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3260, in <module>
+    def _initialize_master_working_set():
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3234, in _call_aside
+    f(*args, **kwargs)
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3272, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 572, in _build_master
+    ws = cls()
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 565, in __init__
+    self.add_entry(entry)
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 621, in add_entry
+    for dist in find_distributions(entry, True):
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2092, in find_on_path
+    path_item_entries = _by_version_descending(filtered)
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2062, in _by_version_descending
+    return sorted(names, key=_by_version, reverse=True)
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2088, in <genexpr>
+    if dist_factory(path_item, entry, only)
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2106, in dist_factory
+    os.path.isdir(os.path.join(path_item, entry))
+  File "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/python3.10/genericpath.py", line 42, in isdir
+    st = os.stat(s)
+KeyboardInterrupt
+
+(tensorflow-gpu-2.11.0+py3.10.8) [uei84ht@jean-zay-iam03 uei84ht]$         python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py             --dataset_subset "ildc"             --layers_from_end 4             --save_model_trained_here True            --self_ft_extracted True            --ft_model_used_for_extraction "LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__"            --pretrained_model 'EleutherAI/gpt-j-6B'            --to_test False             --to_train True             --verbose 1             --epochs 5             --batch_size 1             --num_layers 3             --bilstm_before_encoder False            --dropout_before_first_fnn True            --dropout_before_inner_fnn True            --ffn_dropout_value 0.15             --dropout_after_first_encoder True             --dropout_after_second_encoder True             --encoder_dropout_value 0.25             --dff 4096             --include_rnn False             --from_encoder False             --with_clustering True             --dim_reduction_metric 'cosine'             --pad_len 150             --strategy 1             --only_clustered False             --train_dimR True             --save_dimR True             --train_clusterer True             --save_clusterer True             --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/Extracted_data/J6b/"
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1063: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1071: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1086: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/umap_.py:660: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+2023-05-06 22:30:53.157106: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-06 22:31:04.805916: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py", line 7, in <module>
+    import umap
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/__init__.py", line 7, in <module>
+    from .parametric_umap import ParametricUMAP
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/parametric_umap.py", line 14, in <module>
+    import tensorflow as tf
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/__init__.py", line 51, in <module>
+    from ._api.v2 import compat
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/_api/v2/compat/__init__.py", line 37, in <module>
+    from . import v1
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/_api/v2/compat/v1/__init__.py", line 31, in <module>
+    from . import compat
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/_api/v2/compat/v1/compat/__init__.py", line 37, in <module>
+    from . import v1
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/_api/v2/compat/v1/compat/v1/__init__.py", line 48, in <module>
+    from tensorflow._api.v2.compat.v1 import lite
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/_api/v2/compat/v1/lite/__init__.py", line 9, in <module>
+    from . import experimental
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/_api/v2/compat/v1/lite/experimental/__init__.py", line 8, in <module>
+    from . import authoring
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/_api/v2/compat/v1/lite/experimental/authoring/__init__.py", line 8, in <module>
+    from tensorflow.lite.python.authoring.authoring import compatible
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/lite/python/authoring/authoring.py", line 43, in <module>
+    from tensorflow.lite.python import convert
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/lite/python/convert.py", line 27, in <module>
+    from tensorflow.lite.python import util
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/tensorflow/lite/python/util.py", line 52, in <module>
+    from jax import xla_computation as _xla_computation
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/jax/__init__.py", line 35, in <module>
+    from jax import config as _config_module
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/jax/config.py", line 17, in <module>
+    from jax._src.config import config  # noqa: F401
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/jax/_src/config.py", line 24, in <module>
+    from jax._src import lib
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/jax/_src/lib/__init__.py", line 73, in <module>
+    version = check_jaxlib_version(
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/jax/_src/lib/__init__.py", line 62, in check_jaxlib_version
+    raise RuntimeError(msg)
+RuntimeError: jaxlib is version 0.4.1, but this version of jax requires version >= 0.4.7.
+(tensorflow-gpu-2.11.0+py3.10.8) [uei84ht@jean-zay-iam03 uei84ht]$         python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py             --dataset_subset "ildc"             --layers_from_end 4             --save_model_trained_here True            --self_ft_extracted True            --ft_model_used_for_extraction "LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__"            --pretrained_model 'EleutherAI/gpt-j-6B'            --to_test False             --to_train True             --verbose 1             --epochs 5             --batch_size 1             --num_layers 3             --bilstm_before_encoder False            --dropout_before_first_fnn True            --dropout_before_inner_fnn True            --ffn_dropout_value 0.15             --dropout_after_first_encoder True             --dropout_after_second_encoder True             --encoder_dropout_value 0.25             --dff 4096             --include_rnn False             --from_encoder False             --with_clustering True             --dim_reduction_metric 'cosine'             --pad_len 150             --strategy 1             --only_clustered False             --train_dimR True             --save_dimR True             --train_clusterer True             --save_clusterer True             --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/Extracted_data/J6b/"
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1063: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1071: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1086: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/umap_.py:660: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+2023-05-06 22:32:26.909594: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-06 22:32:31.390206: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py", line 8, in <module>
+    from models.stacked_encoder.predictive_models import StackedEncoder, Classification_with_Clustering, Classification_without_clustering_model_, LearningRateScheduler, Classification_with_clustering_model_
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/Level-3_of_Framework/Level_three/models/stacked_encoder/predictive_models.py", line 12, in <module>
+    import hdbscan
+ModuleNotFoundError: No module named 'hdbscan'
+(tensorflow-gpu-2.11.0+py3.10.8) [uei84ht@jean-zay-iam03 uei84ht]$         python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py             --dataset_subset "ildc"             --layers_from_end 4             --save_model_trained_here True            --self_ft_extracted True            --ft_model_used_for_extraction "LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__"            --pretrained_model 'EleutherAI/gpt-j-6B'            --to_test False             --to_train True             --verbose 1             --epochs 5             --batch_size 1             --num_layers 3             --bilstm_before_encoder False            --dropout_before_first_fnn True            --dropout_before_inner_fnn True            --ffn_dropout_value 0.15             --dropout_after_first_encoder True             --dropout_after_second_encoder True             --encoder_dropout_value 0.25             --dff 4096             --include_rnn False             --from_encoder False             --with_clustering True             --dim_reduction_metric 'cosine'             --pad_len 150             --strategy 1             --only_clustered False             --train_dimR True             --save_dimR True             --train_clusterer True             --save_clusterer True             --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/Extracted_data/J6b/"
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1063: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1071: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1086: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/umap_.py:660: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  @numba.jit()
+2023-05-06 22:35:54.095573: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-06 22:35:58.642706: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Num GPUs Available:  2
+Namespace(dataset_subset='ildc', combine_layers=True, add_layers=False, layers_from_end=4, save_model_trained_here=True, self_ft_extracted=True, ft_model_used_for_extraction='LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__', pretrained_model='EleutherAI/gpt-j-6B', to_test=True, to_train=True, verbose=1, epochs=5, batch_size=1, load_to_retrain=False, model_load_path='', to_freeze=False, layers_to_freeze=[1], max_positional_encoding=40, num_layers=3, bilstm_before_encoder=True, dropout_before_first_fnn=True, dropout_before_inner_fnn=True, ffn_dropout_value=0.15, dropout_after_first_encoder=True, dropout_after_second_encoder=True, encoder_dropout_value=0.25, dff=4096, d_model=768, num_heads=8, include_rnn=True, from_encoder=True, with_clustering=True, clustering_strategy='hard', dimReduction='pumap', dim_reduction_metric='cosine', pad_len=150, strategy=1, only_clustered=True, train_dimR=True, save_dimR=True, train_clusterer=True, save_clusterer=True, parent_dir='LEGAL-PE/Level-3_of_Framework/savedModels/', data_path='LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/Extracted_data/J6b/')
+2023-05-06 22:36:36.016433: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1635] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78916 MB memory:  -> device: 0, name: NVIDIA A100-SXM4-80GB, pci bus id: 0000:c8:00.0, compute capability: 8.0
+2023-05-06 22:36:36.017901: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1635] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 78916 MB memory:  -> device: 1, name: NVIDIA A100-SXM4-80GB, pci bus id: 0000:cb:00.0, compute capability: 8.0
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/parametric_umap.py:148: UserWarning: tensorflow_probability not installed or incompatible to current                 tensorflow installation. Setting global_correlation_loss_weight to zero.
+  warn(
+
+ logging document chunks 
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 37387/37387 [00:00<00:00, 3431194.34it/s]
+
+ logging document chunks 
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 994/994 [00:00<00:00, 2933946.64it/s]
+ParametricUMAP(optimizer=<keras.optimizers.adam.Adam object at 0x14c026b68040>)
+Sat May  6 22:36:46 2023 Construct fuzzy simplicial set
+Sat May  6 22:36:52 2023 Finding Nearest Neighbors
+Sat May  6 22:36:53 2023 Building RP forest with 37 trees
+Sat May  6 22:40:31 2023 NN descent for 19 iterations
+         1  /  19
+        Stopping threshold met -- exiting after 1 iterations
+Sat May  6 22:41:14 2023 Finished Nearest Neighbor Search
+Sat May  6 22:41:21 2023 Construct embedding

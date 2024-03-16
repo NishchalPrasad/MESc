@@ -1,0 +1,16 @@
+Extracting CLS/global embeddings:
+
+accelerate launch --config_file .\MESc\Stage_1_2_LLM_finetuning\config_files_for_distributed_training\default_accelerate_config_without_deep_speed.yaml .\MESc\Stage_1_2_LLM_finetuning\datasets\extract_embeds_after_finetuning_.py \
+        --maxlen 512 \
+        --length 510 \
+        --overlap 100 \
+        --loading_model_path "LEGAL-P_E/experiments/models/finetuned_models/scotus/EleutherAI_gpt-neo-2.7B/Strategy_0/sub_strategy_0/Training_data_EleutherAI_gpt-neo-2.7B/chunks_with_100_overlap_and_512_input-length/tuned_model/ZeRO3_epoch_2__final/pytorch_model.bin" \
+        --cuda_number 0 \
+        --strat 0 \
+        --dataset_subset "scotus" \
+        --hggfc_model_name 'EleutherAI/gpt-neo-2.7B' \
+        --get_train_data True \
+        --get_validation_data True \
+        --get_test_data True \
+        --trained_with_deepspeed_accelerate True \
+        --path_train_dat "LEGAL-P_E/experiments/models/finetuned_models/scotus/Extracted_data/Neo2.7b/"

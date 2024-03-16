@@ -1,0 +1,637 @@
++ module load python
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\''' 'LD_LIBRARY_PATH='\'''\''' /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++++ LD_LIBRARY_PATH=
++++ /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash load python
++ eval '_LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1;' export '_LMFILES__modshare;
+LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1;' export 'LOADEDMODULES_modshare;
+PYTHONUNBUFFERED=1;' export 'PYTHONUNBUFFERED;
+MODULES_LMCONFLICT_modshare=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu:1;' export 'MODULES_LMCONFLICT_modshare;
+_LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4;' export '_LMFILES_;
+LOADEDMODULES=cpuarch/amd:python/3.10.4;' export 'LOADEDMODULES;
+MODULES_LMCONFLICT=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu;' export 'MODULES_LMCONFLICT;
+.' '/gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh;
+conda' activate 'python-3.10.4;
+test' '0;'
+++ _LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1
+++ export _LMFILES__modshare
+++ LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1
+++ export LOADEDMODULES_modshare
+++ PYTHONUNBUFFERED=1
+++ export PYTHONUNBUFFERED
+++ MODULES_LMCONFLICT_modshare='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu:1'
+++ export MODULES_LMCONFLICT_modshare
+++ _LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4
+++ export _LMFILES_
+++ LOADEDMODULES=cpuarch/amd:python/3.10.4
+++ export LOADEDMODULES
+++ MODULES_LMCONFLICT='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu'
+++ export MODULES_LMCONFLICT
+++ . /gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
+++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate python-3.10.4
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate python-3.10.4
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate python-3.10.4
++++ /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda shell.posix activate python-3.10.4
+++ ask_conda='PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
+++ eval 'PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
++++ PS1='(python-3.10.4) '
++++ export PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=python-3.10.4
++++ CONDA_DEFAULT_ENV=python-3.10.4
++++ export 'CONDA_PROMPT_MODIFIER=(python-3.10.4) '
++++ CONDA_PROMPT_MODIFIER='(python-3.10.4) '
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh
+++++ [[ -n '' ]]
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal ']'
+++++ export GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ export GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ [[ ! -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins ]]
+++++ unset GDAL_DRIVER_PATH
+++++ export CPL_ZIP_ENCODING=UTF-8
+++++ CPL_ZIP_ENCODING=UTF-8
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/epsg_csv ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/Library/share/epsg_csv ']'
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh
+++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ export GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
+++++ GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh
+++++ '[' -n '' ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj ']'
+++++ export PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ '[' -f /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj/copyright_and_licenses.csv ']'
+++++ export PROJ_NETWORK=ON
+++++ PROJ_NETWORK=ON
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ export PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ accelerate launch --config_file LEGAL-PE/SIGIR_experiments/distributedTraining/Config_files_for_distributed/default_accelerate_config_without_deep_speed.yaml LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py --maxlen 512 --length 510 --overlap 100 --loading_model_path LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__/pytorch_model.bin --cuda_number 0 --strat 0 --dataset_subset ildc --hggfc_model_name EleutherAI/gpt-j-6B --get_train_data True --trained_with_deepspeed_accelerate True --path_train_dat LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/Extracted_data/J6b/ --which_split 2
+2023-05-07 20:16:07.103725: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-07 20:16:07.368287: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-07 20:16:09.132076: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:09.132228: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:09.132243: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-07 20:16:27.427358: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-07 20:16:27.428665: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-07 20:16:27.428713: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-07 20:16:27.428911: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-07 20:16:27.429091: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-07 20:16:27.429097: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-07 20:16:29.471514: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471582: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471626: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471627: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471625: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471668: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471716: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471765: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-07 20:16:29.471822: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471843: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-07 20:16:29.471884: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471904: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-07 20:16:29.471913: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471933: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-07 20:16:29.471949: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.471972: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-07 20:16:29.472025: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-07 20:16:29.472067: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.
+since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.
+
+
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+
+
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+
+
+
+Extraction started!
+
+
+Extraction started!
+Extraction started!
+Extraction started!
+
+Extraction started!
+Extraction started!
+
+
+
+
+Extraction for ildc started!
+
+
+Extraction for ildc started!
+Extraction for ildc started!
+Extraction for ildc started!
+
+Extraction for ildc started!
+Extraction for ildc started!
+
+
+
+
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:568: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  train_data = train_data.append(train_data_s, ignore_index=True)
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:568: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  train_data = train_data.append(train_data_s, ignore_index=True)
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:568: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  train_data = train_data.append(train_data_s, ignore_index=True)
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:568: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  train_data = train_data.append(train_data_s, ignore_index=True)
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:568: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  train_data = train_data.append(train_data_s, ignore_index=True)
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:568: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  train_data = train_data.append(train_data_s, ignore_index=True)
+                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+Loading EleutherAI/gpt-j-6B model and tokenizer                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}Using pad_token, but it is not set yet.
+
+Using pad_token, but it is not set yet.
+
+Tokenizer Loaded{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+
+
+Tokenizer Loaded
+Tokenizer Loaded
+
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=2, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=2, bias=False)
+  )
+)
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__/pytorch_model.bin
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=2, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=2, bias=False)
+  )
+)DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=2, bias=False)
+  )
+)DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=2, bias=False)
+  )
+)
+
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__/pytorch_model.bin
+
+
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__/pytorch_model.bin
+
+
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__/pytorch_model.bin
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__/pytorch_model.bin
+
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__/pytorch_model.bin
+
+
+  0%|          | 0/100 [00:00<?, ?it/s]  0%|          | 0/100 [00:00<?, ?it/s]  0%|          | 0/100 [00:00<?, ?it/s]  0%|          | 0/100 [00:00<?, ?it/s]  0%|          | 0/100 [00:00<?, ?it/s]  0%|          | 0/100 [00:00<?, ?it/s]Token indices sequence length is longer than the specified maximum sequence length for this model (2826 > 2048). Running this sequence through the model will result in indexing errors
+Token indices sequence length is longer than the specified maximum sequence length for this model (2826 > 2048). Running this sequence through the model will result in indexing errors
+Token indices sequence length is longer than the specified maximum sequence length for this model (2826 > 2048). Running this sequence through the model will result in indexing errors
+Token indices sequence length is longer than the specified maximum sequence length for this model (2826 > 2048). Running this sequence through the model will result in indexing errors
+Token indices sequence length is longer than the specified maximum sequence length for this model (2826 > 2048). Running this sequence through the model will result in indexing errors
+Token indices sequence length is longer than the specified maximum sequence length for this model (2826 > 2048). Running this sequence through the model will result in indexing errors
+  1%|          | 1/100 [00:01<02:38,  1.60s/it]  1%|          | 1/100 [00:01<02:38,  1.60s/it]  1%|          | 1/100 [00:01<02:38,  1.61s/it]  1%|          | 1/100 [00:01<02:38,  1.61s/it]  1%|          | 1/100 [00:01<02:38,  1.61s/it]  1%|          | 1/100 [00:01<02:39,  1.61s/it]  2%|▏         | 2/100 [00:01<01:24,  1.15it/s]  2%|▏         | 2/100 [00:01<01:24,  1.15it/s]  2%|▏         | 2/100 [00:01<01:25,  1.15it/s]  2%|▏         | 2/100 [00:01<01:25,  1.15it/s]  2%|▏         | 2/100 [00:01<01:25,  1.15it/s]  2%|▏         | 2/100 [00:01<01:25,  1.15it/s]  3%|▎         | 3/100 [00:02<01:01,  1.58it/s]  3%|▎         | 3/100 [00:02<01:01,  1.58it/s]  3%|▎         | 3/100 [00:02<01:01,  1.58it/s]  3%|▎         | 3/100 [00:02<01:01,  1.58it/s]  3%|▎         | 3/100 [00:02<01:01,  1.57it/s]  3%|▎         | 3/100 [00:02<01:01,  1.57it/s]  4%|▍         | 4/100 [00:03<01:10,  1.37it/s]  4%|▍         | 4/100 [00:03<01:10,  1.37it/s]  4%|▍         | 4/100 [00:03<01:10,  1.37it/s]  4%|▍         | 4/100 [00:03<01:10,  1.37it/s]  4%|▍         | 4/100 [00:03<01:10,  1.36it/s]  4%|▍         | 4/100 [00:03<01:10,  1.36it/s]  5%|▌         | 5/100 [00:04<01:17,  1.22it/s]  5%|▌         | 5/100 [00:04<01:17,  1.22it/s]  5%|▌         | 5/100 [00:04<01:17,  1.22it/s]  5%|▌         | 5/100 [00:04<01:17,  1.22it/s]  5%|▌         | 5/100 [00:04<01:18,  1.22it/s]  5%|▌         | 5/100 [00:04<01:18,  1.22it/s]  6%|▌         | 6/100 [00:04<01:10,  1.34it/s]  6%|▌         | 6/100 [00:04<01:10,  1.33it/s]  6%|▌         | 6/100 [00:04<01:10,  1.33it/s]  6%|▌         | 6/100 [00:04<01:10,  1.33it/s]  6%|▌         | 6/100 [00:04<01:10,  1.33it/s]  6%|▌         | 6/100 [00:04<01:10,  1.33it/s]  7%|▋         | 7/100 [00:06<01:40,  1.08s/it]  7%|▋         | 7/100 [00:06<01:40,  1.08s/it]  7%|▋         | 7/100 [00:06<01:40,  1.08s/it]  7%|▋         | 7/100 [00:06<01:40,  1.08s/it]  7%|▋         | 7/100 [00:06<01:41,  1.09s/it]  7%|▋         | 7/100 [00:06<01:41,  1.09s/it]  8%|▊         | 8/100 [00:07<01:36,  1.04s/it]  8%|▊         | 8/100 [00:07<01:36,  1.05s/it]  8%|▊         | 8/100 [00:07<01:36,  1.05s/it]  8%|▊         | 8/100 [00:07<01:36,  1.05s/it]  8%|▊         | 8/100 [00:07<01:36,  1.05s/it]  8%|▊         | 8/100 [00:07<01:36,  1.05s/it]  9%|▉         | 9/100 [00:07<01:15,  1.21it/s]  9%|▉         | 9/100 [00:07<01:15,  1.21it/s]  9%|▉         | 9/100 [00:07<01:15,  1.21it/s]  9%|▉         | 9/100 [00:07<01:15,  1.20it/s]  9%|▉         | 9/100 [00:07<01:15,  1.20it/s]  9%|▉         | 9/100 [00:07<01:15,  1.20it/s] 10%|█         | 10/100 [00:08<01:06,  1.36it/s] 10%|█         | 10/100 [00:08<01:06,  1.36it/s] 10%|█         | 10/100 [00:08<01:06,  1.36it/s] 10%|█         | 10/100 [00:08<01:06,  1.36it/s] 10%|█         | 10/100 [00:08<01:06,  1.35it/s] 10%|█         | 10/100 [00:08<01:06,  1.35it/s] 11%|█         | 11/100 [00:09<01:04,  1.38it/s] 11%|█         | 11/100 [00:09<01:04,  1.38it/s] 11%|█         | 11/100 [00:09<01:04,  1.37it/s] 11%|█         | 11/100 [00:09<01:04,  1.37it/s] 11%|█         | 11/100 [00:09<01:05,  1.37it/s] 11%|█         | 11/100 [00:09<01:05,  1.37it/s] 12%|█▏        | 12/100 [00:09<01:00,  1.44it/s] 12%|█▏        | 12/100 [00:09<01:00,  1.44it/s] 12%|█▏        | 12/100 [00:09<01:01,  1.44it/s] 12%|█▏        | 12/100 [00:09<01:01,  1.44it/s] 12%|█▏        | 12/100 [00:09<01:01,  1.44it/s] 12%|█▏        | 12/100 [00:09<01:01,  1.43it/s] 13%|█▎        | 13/100 [00:13<02:21,  1.63s/it] 13%|█▎        | 13/100 [00:13<02:21,  1.63s/it] 13%|█▎        | 13/100 [00:13<02:22,  1.63s/it] 13%|█▎        | 13/100 [00:13<02:22,  1.64s/it] 13%|█▎        | 13/100 [00:13<02:22,  1.64s/it] 13%|█▎        | 13/100 [00:13<02:22,  1.64s/it] 14%|█▍        | 14/100 [00:14<01:53,  1.32s/it] 14%|█▍        | 14/100 [00:14<01:53,  1.32s/it] 14%|█▍        | 14/100 [00:14<01:54,  1.33s/it] 14%|█▍        | 14/100 [00:14<01:54,  1.33s/it] 14%|█▍        | 14/100 [00:14<01:54,  1.33s/it] 14%|█▍        | 14/100 [00:14<01:54,  1.33s/it] 15%|█▌        | 15/100 [00:14<01:29,  1.06s/it] 15%|█▌        | 15/100 [00:14<01:29,  1.06s/it] 15%|█▌        | 15/100 [00:14<01:30,  1.06s/it] 15%|█▌        | 15/100 [00:14<01:30,  1.06s/it] 15%|█▌        | 15/100 [00:14<01:30,  1.06s/it] 15%|█▌        | 15/100 [00:14<01:30,  1.07s/it] 16%|█▌        | 16/100 [00:15<01:19,  1.05it/s] 16%|█▌        | 16/100 [00:15<01:19,  1.05it/s] 16%|█▌        | 16/100 [00:15<01:20,  1.05it/s] 16%|█▌        | 16/100 [00:15<01:20,  1.05it/s] 16%|█▌        | 16/100 [00:15<01:20,  1.05it/s] 16%|█▌        | 16/100 [00:15<01:20,  1.04it/s] 17%|█▋        | 17/100 [00:15<01:01,  1.34it/s] 17%|█▋        | 17/100 [00:15<01:01,  1.34it/s] 17%|█▋        | 17/100 [00:15<01:01,  1.34it/s] 17%|█▋        | 17/100 [00:15<01:02,  1.34it/s] 17%|█▋        | 17/100 [00:15<01:02,  1.34it/s] 17%|█▋        | 17/100 [00:15<01:02,  1.33it/s] 18%|█▊        | 18/100 [00:17<01:30,  1.10s/it] 18%|█▊        | 18/100 [00:17<01:30,  1.10s/it] 18%|█▊        | 18/100 [00:17<01:30,  1.11s/it] 18%|█▊        | 18/100 [00:17<01:30,  1.11s/it] 18%|█▊        | 18/100 [00:17<01:30,  1.11s/it] 18%|█▊        | 18/100 [00:17<01:31,  1.11s/it] 19%|█▉        | 19/100 [00:17<01:09,  1.17it/s] 19%|█▉        | 19/100 [00:17<01:08,  1.17it/s] 19%|█▉        | 19/100 [00:17<01:09,  1.17it/s] 19%|█▉        | 19/100 [00:17<01:09,  1.17it/s] 19%|█▉        | 19/100 [00:17<01:09,  1.17it/s] 19%|█▉        | 19/100 [00:17<01:09,  1.17it/s] 20%|██        | 20/100 [00:19<01:30,  1.13s/it] 20%|██        | 20/100 [00:19<01:30,  1.13s/it] 20%|██        | 20/100 [00:19<01:30,  1.13s/it] 20%|██        | 20/100 [00:19<01:30,  1.13s/it] 20%|██        | 20/100 [00:19<01:30,  1.13s/it] 20%|██        | 20/100 [00:19<01:30,  1.13s/it] 21%|██        | 21/100 [00:19<01:08,  1.15it/s] 21%|██        | 21/100 [00:19<01:08,  1.15it/s] 21%|██        | 21/100 [00:19<01:08,  1.15it/s] 21%|██        | 21/100 [00:19<01:08,  1.15it/s] 21%|██        | 21/100 [00:19<01:08,  1.15it/s] 21%|██        | 21/100 [00:19<01:08,  1.15it/s] 22%|██▏       | 22/100 [00:20<00:53,  1.46it/s] 22%|██▏       | 22/100 [00:20<00:53,  1.46it/s] 22%|██▏       | 22/100 [00:20<00:53,  1.45it/s] 22%|██▏       | 22/100 [00:20<00:53,  1.45it/s] 22%|██▏       | 22/100 [00:20<00:53,  1.45it/s] 22%|██▏       | 22/100 [00:20<00:53,  1.45it/s] 23%|██▎       | 23/100 [00:20<00:57,  1.34it/s] 23%|██▎       | 23/100 [00:20<00:57,  1.34it/s] 23%|██▎       | 23/100 [00:20<00:57,  1.34it/s] 23%|██▎       | 23/100 [00:20<00:57,  1.34it/s] 23%|██▎       | 23/100 [00:21<00:57,  1.34it/s] 23%|██▎       | 23/100 [00:21<00:57,  1.34it/s] 24%|██▍       | 24/100 [00:21<00:51,  1.47it/s] 24%|██▍       | 24/100 [00:21<00:51,  1.47it/s] 24%|██▍       | 24/100 [00:21<00:51,  1.47it/s] 24%|██▍       | 24/100 [00:21<00:51,  1.47it/s] 24%|██▍       | 24/100 [00:21<00:51,  1.46it/s] 24%|██▍       | 24/100 [00:21<00:51,  1.46it/s] 25%|██▌       | 25/100 [00:21<00:45,  1.64it/s] 25%|██▌       | 25/100 [00:21<00:45,  1.65it/s] 25%|██▌       | 25/100 [00:21<00:45,  1.64it/s] 25%|██▌       | 25/100 [00:21<00:45,  1.64it/s] 25%|██▌       | 25/100 [00:21<00:45,  1.64it/s] 25%|██▌       | 25/100 [00:22<00:45,  1.64it/s] 26%|██▌       | 26/100 [00:22<00:37,  1.98it/s] 26%|██▌       | 26/100 [00:22<00:37,  1.98it/s] 26%|██▌       | 26/100 [00:22<00:37,  1.98it/s] 26%|██▌       | 26/100 [00:22<00:37,  1.98it/s] 26%|██▌       | 26/100 [00:22<00:37,  1.97it/s] 26%|██▌       | 26/100 [00:22<00:37,  1.97it/s] 27%|██▋       | 27/100 [00:22<00:41,  1.77it/s] 27%|██▋       | 27/100 [00:22<00:41,  1.77it/s] 27%|██▋       | 27/100 [00:22<00:41,  1.77it/s] 27%|██▋       | 27/100 [00:22<00:41,  1.77it/s] 27%|██▋       | 27/100 [00:22<00:41,  1.76it/s] 27%|██▋       | 27/100 [00:22<00:41,  1.76it/s] 29%|██▉       | 29/100 [00:23<00:33,  2.14it/s] 29%|██▉       | 29/100 [00:23<00:33,  2.14it/s] 29%|██▉       | 29/100 [00:23<00:33,  2.14it/s] 29%|██▉       | 29/100 [00:23<00:33,  2.14it/s] 29%|██▉       | 29/100 [00:23<00:33,  2.13it/s] 29%|██▉       | 29/100 [00:23<00:33,  2.13it/s] 30%|███       | 30/100 [00:24<00:33,  2.07it/s] 30%|███       | 30/100 [00:24<00:33,  2.08it/s] 30%|███       | 30/100 [00:24<00:33,  2.07it/s] 30%|███       | 30/100 [00:24<00:33,  2.07it/s] 30%|███       | 30/100 [00:24<00:33,  2.06it/s] 30%|███       | 30/100 [00:24<00:33,  2.06it/s] 32%|███▏      | 32/100 [00:24<00:26,  2.55it/s] 32%|███▏      | 32/100 [00:24<00:26,  2.55it/s] 32%|███▏      | 32/100 [00:24<00:26,  2.55it/s] 32%|███▏      | 32/100 [00:24<00:26,  2.54it/s] 32%|███▏      | 32/100 [00:24<00:26,  2.54it/s] 32%|███▏      | 32/100 [00:24<00:26,  2.54it/s] 33%|███▎      | 33/100 [00:24<00:22,  2.92it/s] 33%|███▎      | 33/100 [00:24<00:22,  2.92it/s] 33%|███▎      | 33/100 [00:24<00:22,  2.92it/s] 33%|███▎      | 33/100 [00:24<00:23,  2.91it/s] 33%|███▎      | 33/100 [00:24<00:23,  2.91it/s] 33%|███▎      | 33/100 [00:24<00:23,  2.90it/s] 34%|███▍      | 34/100 [00:25<00:24,  2.72it/s] 34%|███▍      | 34/100 [00:25<00:24,  2.73it/s] 34%|███▍      | 34/100 [00:25<00:24,  2.72it/s] 34%|███▍      | 34/100 [00:25<00:24,  2.72it/s] 34%|███▍      | 34/100 [00:25<00:24,  2.71it/s] 34%|███▍      | 34/100 [00:25<00:24,  2.71it/s] 36%|███▌      | 36/100 [00:26<00:33,  1.90it/s] 36%|███▌      | 36/100 [00:26<00:33,  1.91it/s] 36%|███▌      | 36/100 [00:26<00:33,  1.90it/s] 36%|███▌      | 36/100 [00:26<00:33,  1.90it/s] 36%|███▌      | 36/100 [00:26<00:33,  1.90it/s] 36%|███▌      | 36/100 [00:26<00:33,  1.89it/s] 37%|███▋      | 37/100 [00:27<00:40,  1.55it/s] 37%|███▋      | 37/100 [00:27<00:40,  1.55it/s] 37%|███▋      | 37/100 [00:27<00:40,  1.55it/s] 37%|███▋      | 37/100 [00:27<00:40,  1.54it/s] 37%|███▋      | 37/100 [00:27<00:40,  1.54it/s] 37%|███▋      | 37/100 [00:27<00:40,  1.54it/s] 38%|███▊      | 38/100 [00:28<00:36,  1.68it/s] 38%|███▊      | 38/100 [00:28<00:36,  1.68it/s] 38%|███▊      | 38/100 [00:28<00:36,  1.68it/s] 38%|███▊      | 38/100 [00:28<00:37,  1.67it/s] 38%|███▊      | 38/100 [00:28<00:37,  1.67it/s] 38%|███▊      | 38/100 [00:28<00:37,  1.67it/s] 39%|███▉      | 39/100 [00:29<00:43,  1.40it/s] 39%|███▉      | 39/100 [00:29<00:43,  1.40it/s] 39%|███▉      | 39/100 [00:29<00:43,  1.40it/s] 39%|███▉      | 39/100 [00:29<00:43,  1.39it/s] 39%|███▉      | 39/100 [00:29<00:43,  1.39it/s] 39%|███▉      | 39/100 [00:29<00:43,  1.39it/s] 40%|████      | 40/100 [00:30<00:47,  1.28it/s] 40%|████      | 40/100 [00:30<00:47,  1.27it/s] 40%|████      | 40/100 [00:30<00:47,  1.27it/s] 40%|████      | 40/100 [00:30<00:47,  1.27it/s] 40%|████      | 40/100 [00:30<00:47,  1.27it/s] 40%|████      | 40/100 [00:30<00:47,  1.27it/s] 41%|████      | 41/100 [00:31<00:50,  1.16it/s] 41%|████      | 41/100 [00:31<00:50,  1.16it/s] 41%|████      | 41/100 [00:31<00:50,  1.16it/s] 41%|████      | 41/100 [00:31<00:50,  1.16it/s] 41%|████      | 41/100 [00:31<00:51,  1.16it/s] 41%|████      | 41/100 [00:31<00:51,  1.16it/s] 42%|████▏     | 42/100 [00:44<04:17,  4.43s/it] 42%|████▏     | 42/100 [00:44<04:17,  4.44s/it] 42%|████▏     | 42/100 [00:44<04:17,  4.44s/it] 42%|████▏     | 42/100 [00:44<04:17,  4.45s/it] 42%|████▏     | 42/100 [00:44<04:18,  4.46s/it] 42%|████▏     | 42/100 [00:44<04:18,  4.46s/it] 43%|████▎     | 43/100 [00:46<03:24,  3.58s/it] 43%|████▎     | 43/100 [00:46<03:24,  3.59s/it] 43%|████▎     | 43/100 [00:46<03:24,  3.59s/it] 43%|████▎     | 43/100 [00:46<03:24,  3.60s/it] 43%|████▎     | 43/100 [00:46<03:25,  3.60s/it] 43%|████▎     | 43/100 [00:46<03:25,  3.61s/it] 44%|████▍     | 44/100 [00:46<02:32,  2.72s/it] 44%|████▍     | 44/100 [00:46<02:32,  2.72s/it] 44%|████▍     | 44/100 [00:46<02:32,  2.72s/it] 44%|████▍     | 44/100 [00:46<02:32,  2.73s/it] 44%|████▍     | 44/100 [00:47<02:32,  2.73s/it] 44%|████▍     | 44/100 [00:47<02:33,  2.74s/it] 45%|████▌     | 45/100 [00:47<01:59,  2.18s/it] 45%|████▌     | 45/100 [00:47<01:59,  2.18s/it] 45%|████▌     | 45/100 [00:47<01:59,  2.18s/it] 45%|████▌     | 45/100 [00:47<02:00,  2.18s/it] 45%|████▌     | 45/100 [00:47<02:00,  2.19s/it] 45%|████▌     | 45/100 [00:48<02:00,  2.19s/it] 46%|████▌     | 46/100 [00:48<01:29,  1.66s/it] 46%|████▌     | 46/100 [00:48<01:29,  1.66s/it] 46%|████▌     | 46/100 [00:48<01:29,  1.66s/it] 46%|████▌     | 46/100 [00:48<01:30,  1.67s/it] 46%|████▌     | 46/100 [00:48<01:30,  1.67s/it] 46%|████▌     | 46/100 [00:48<01:30,  1.67s/it] 47%|████▋     | 47/100 [00:48<01:10,  1.33s/it] 47%|████▋     | 47/100 [00:48<01:10,  1.33s/it] 47%|████▋     | 47/100 [00:48<01:10,  1.33s/it] 47%|████▋     | 47/100 [00:48<01:10,  1.33s/it] 47%|████▋     | 47/100 [00:48<01:10,  1.33s/it] 47%|████▋     | 47/100 [00:48<01:10,  1.33s/it] 48%|████▊     | 48/100 [00:51<01:26,  1.67s/it] 48%|████▊     | 48/100 [00:51<01:26,  1.67s/it] 48%|████▊     | 48/100 [00:51<01:26,  1.67s/it] 48%|████▊     | 48/100 [00:51<01:26,  1.67s/it] 48%|████▊     | 48/100 [00:51<01:27,  1.67s/it] 48%|████▊     | 48/100 [00:51<01:27,  1.68s/it] 49%|████▉     | 49/100 [00:52<01:26,  1.70s/it] 49%|████▉     | 49/100 [00:52<01:26,  1.70s/it] 49%|████▉     | 49/100 [00:52<01:26,  1.70s/it] 49%|████▉     | 49/100 [00:53<01:26,  1.70s/it] 49%|████▉     | 49/100 [00:53<01:26,  1.70s/it] 49%|████▉     | 49/100 [00:53<01:26,  1.71s/it] 50%|█████     | 50/100 [00:55<01:33,  1.87s/it] 50%|█████     | 50/100 [00:55<01:33,  1.88s/it] 50%|█████     | 50/100 [00:55<01:33,  1.88s/it] 50%|█████     | 50/100 [00:55<01:34,  1.88s/it] 50%|█████     | 50/100 [00:55<01:34,  1.88s/it] 50%|█████     | 50/100 [00:55<01:34,  1.88s/it] 51%|█████     | 51/100 [00:56<01:19,  1.63s/it] 51%|█████     | 51/100 [00:56<01:19,  1.63s/it] 51%|█████     | 51/100 [00:56<01:19,  1.63s/it] 51%|█████     | 51/100 [00:56<01:20,  1.64s/it] 51%|█████     | 51/100 [00:56<01:20,  1.64s/it] 51%|█████     | 51/100 [00:56<01:20,  1.64s/it] 52%|█████▏    | 52/100 [00:58<01:26,  1.80s/it] 52%|█████▏    | 52/100 [00:58<01:26,  1.80s/it] 52%|█████▏    | 52/100 [00:58<01:26,  1.80s/it] 52%|█████▏    | 52/100 [00:58<01:26,  1.81s/it] 52%|█████▏    | 52/100 [00:58<01:26,  1.81s/it] 52%|█████▏    | 52/100 [00:58<01:27,  1.81s/it] 53%|█████▎    | 53/100 [01:00<01:27,  1.87s/it] 53%|█████▎    | 53/100 [01:00<01:27,  1.87s/it] 53%|█████▎    | 53/100 [01:00<01:28,  1.87s/it] 53%|█████▎    | 53/100 [01:00<01:28,  1.88s/it] 53%|█████▎    | 53/100 [01:00<01:28,  1.88s/it] 53%|█████▎    | 53/100 [01:00<01:28,  1.88s/it] 54%|█████▍    | 54/100 [01:01<01:08,  1.49s/it] 54%|█████▍    | 54/100 [01:01<01:08,  1.50s/it] 54%|█████▍    | 54/100 [01:01<01:08,  1.50s/it] 54%|█████▍    | 54/100 [01:01<01:09,  1.50s/it] 54%|█████▍    | 54/100 [01:01<01:09,  1.50s/it] 54%|█████▍    | 54/100 [01:01<01:09,  1.50s/it] 55%|█████▌    | 55/100 [01:01<00:55,  1.23s/it] 55%|█████▌    | 55/100 [01:01<00:55,  1.23s/it] 55%|█████▌    | 55/100 [01:01<00:55,  1.23s/it] 55%|█████▌    | 55/100 [01:01<00:55,  1.24s/it] 55%|█████▌    | 55/100 [01:02<00:55,  1.24s/it] 56%|█████▌    | 56/100 [01:02<00:42,  1.03it/s] 55%|█████▌    | 55/100 [01:02<00:55,  1.24s/it] 56%|█████▌    | 56/100 [01:02<00:42,  1.03it/s] 56%|█████▌    | 56/100 [01:02<00:42,  1.03it/s] 56%|█████▌    | 56/100 [01:02<00:42,  1.03it/s] 56%|█████▌    | 56/100 [01:02<00:42,  1.03it/s] 56%|█████▌    | 56/100 [01:02<00:42,  1.03it/s] 57%|█████▋    | 57/100 [01:02<00:35,  1.20it/s] 57%|█████▋    | 57/100 [01:02<00:36,  1.19it/s] 57%|█████▋    | 57/100 [01:02<00:36,  1.19it/s] 57%|█████▋    | 57/100 [01:02<00:36,  1.19it/s] 57%|█████▋    | 57/100 [01:02<00:36,  1.19it/s] 57%|█████▋    | 57/100 [01:02<00:36,  1.19it/s] 58%|█████▊    | 58/100 [01:03<00:31,  1.34it/s] 58%|█████▊    | 58/100 [01:03<00:31,  1.34it/s] 58%|█████▊    | 58/100 [01:03<00:31,  1.34it/s] 58%|█████▊    | 58/100 [01:03<00:31,  1.34it/s] 58%|█████▊    | 58/100 [01:03<00:31,  1.34it/s] 58%|█████▊    | 58/100 [01:03<00:31,  1.34it/s] 59%|█████▉    | 59/100 [01:04<00:43,  1.05s/it] 59%|█████▉    | 59/100 [01:04<00:43,  1.05s/it] 59%|█████▉    | 59/100 [01:04<00:43,  1.05s/it] 59%|█████▉    | 59/100 [01:05<00:43,  1.05s/it] 59%|█████▉    | 59/100 [01:05<00:43,  1.06s/it] 59%|█████▉    | 59/100 [01:05<00:43,  1.05s/it] 60%|██████    | 60/100 [01:06<00:47,  1.18s/it] 60%|██████    | 60/100 [01:06<00:47,  1.19s/it] 60%|██████    | 60/100 [01:06<00:47,  1.19s/it] 60%|██████    | 60/100 [01:06<00:47,  1.19s/it] 60%|██████    | 60/100 [01:06<00:47,  1.19s/it] 61%|██████    | 61/100 [01:06<00:36,  1.07it/s] 61%|██████    | 61/100 [01:06<00:36,  1.07it/s] 60%|██████    | 60/100 [01:06<00:47,  1.19s/it] 61%|██████    | 61/100 [01:06<00:36,  1.07it/s] 61%|██████    | 61/100 [01:06<00:36,  1.06it/s] 61%|██████    | 61/100 [01:07<00:36,  1.06it/s] 61%|██████    | 61/100 [01:07<00:36,  1.06it/s] 62%|██████▏   | 62/100 [01:07<00:31,  1.19it/s] 62%|██████▏   | 62/100 [01:07<00:31,  1.19it/s] 62%|██████▏   | 62/100 [01:07<00:31,  1.19it/s] 62%|██████▏   | 62/100 [01:07<00:32,  1.19it/s] 62%|██████▏   | 62/100 [01:07<00:32,  1.18it/s] 62%|██████▏   | 62/100 [01:07<00:32,  1.18it/s] 63%|██████▎   | 63/100 [01:08<00:30,  1.21it/s] 63%|██████▎   | 63/100 [01:08<00:30,  1.21it/s] 63%|██████▎   | 63/100 [01:08<00:30,  1.21it/s] 63%|██████▎   | 63/100 [01:08<00:30,  1.21it/s] 63%|██████▎   | 63/100 [01:08<00:30,  1.20it/s] 63%|██████▎   | 63/100 [01:08<00:30,  1.20it/s] 64%|██████▍   | 64/100 [01:08<00:26,  1.36it/s] 64%|██████▍   | 64/100 [01:08<00:26,  1.36it/s] 64%|██████▍   | 64/100 [01:08<00:26,  1.36it/s] 64%|██████▍   | 64/100 [01:08<00:26,  1.35it/s] 65%|██████▌   | 65/100 [01:08<00:20,  1.68it/s] 65%|██████▌   | 65/100 [01:09<00:20,  1.68it/s] 64%|██████▍   | 64/100 [01:09<00:26,  1.35it/s] 65%|██████▌   | 65/100 [01:09<00:20,  1.68it/s] 64%|██████▍   | 64/100 [01:09<00:26,  1.35it/s] 65%|██████▌   | 65/100 [01:09<00:20,  1.67it/s] 65%|██████▌   | 65/100 [01:09<00:20,  1.67it/s] 65%|██████▌   | 65/100 [01:09<00:20,  1.67it/s] 66%|██████▌   | 66/100 [01:14<01:07,  1.98s/it] 66%|██████▌   | 66/100 [01:14<01:07,  1.98s/it] 66%|██████▌   | 66/100 [01:14<01:07,  1.98s/it] 66%|██████▌   | 66/100 [01:14<01:07,  1.98s/it] 66%|██████▌   | 66/100 [01:14<01:07,  1.99s/it] 66%|██████▌   | 66/100 [01:14<01:07,  1.99s/it] 67%|██████▋   | 67/100 [01:14<00:52,  1.60s/it] 67%|██████▋   | 67/100 [01:14<00:52,  1.60s/it] 67%|██████▋   | 67/100 [01:14<00:52,  1.60s/it] 67%|██████▋   | 67/100 [01:15<00:52,  1.60s/it] 67%|██████▋   | 67/100 [01:15<00:52,  1.60s/it] 67%|██████▋   | 67/100 [01:15<00:52,  1.61s/it] 68%|██████▊   | 68/100 [01:15<00:43,  1.35s/it] 68%|██████▊   | 68/100 [01:15<00:43,  1.36s/it] 68%|██████▊   | 68/100 [01:15<00:43,  1.36s/it] 68%|██████▊   | 68/100 [01:15<00:43,  1.36s/it] 68%|██████▊   | 68/100 [01:16<00:43,  1.36s/it] 68%|██████▊   | 68/100 [01:16<00:43,  1.36s/it] 69%|██████▉   | 69/100 [01:16<00:37,  1.21s/it] 69%|██████▉   | 69/100 [01:16<00:37,  1.21s/it] 69%|██████▉   | 69/100 [01:16<00:37,  1.21s/it] 69%|██████▉   | 69/100 [01:16<00:37,  1.22s/it] 69%|██████▉   | 69/100 [01:16<00:37,  1.22s/it] 69%|██████▉   | 69/100 [01:17<00:37,  1.22s/it] 70%|███████   | 70/100 [01:17<00:32,  1.09s/it] 70%|███████   | 70/100 [01:17<00:32,  1.09s/it] 70%|███████   | 70/100 [01:17<00:32,  1.09s/it] 70%|███████   | 70/100 [01:17<00:32,  1.09s/it] 70%|███████   | 70/100 [01:17<00:32,  1.09s/it] 70%|███████   | 70/100 [01:17<00:32,  1.09s/it] 71%|███████   | 71/100 [01:18<00:32,  1.13s/it] 71%|███████   | 71/100 [01:18<00:32,  1.13s/it] 71%|███████   | 71/100 [01:18<00:32,  1.13s/it] 71%|███████   | 71/100 [01:18<00:32,  1.14s/it] 72%|███████▏  | 72/100 [01:18<00:25,  1.11it/s] 72%|███████▏  | 72/100 [01:18<00:25,  1.11it/s] 71%|███████   | 71/100 [01:18<00:32,  1.14s/it] 72%|███████▏  | 72/100 [01:19<00:25,  1.11it/s] 71%|███████   | 71/100 [01:19<00:33,  1.14s/it] 72%|███████▏  | 72/100 [01:19<00:25,  1.11it/s] 72%|███████▏  | 72/100 [01:19<00:25,  1.11it/s] 72%|███████▏  | 72/100 [01:19<00:25,  1.11it/s] 73%|███████▎  | 73/100 [01:19<00:22,  1.19it/s] 73%|███████▎  | 73/100 [01:19<00:22,  1.19it/s] 73%|███████▎  | 73/100 [01:19<00:22,  1.19it/s] 73%|███████▎  | 73/100 [01:19<00:22,  1.19it/s] 73%|███████▎  | 73/100 [01:20<00:22,  1.18it/s] 73%|███████▎  | 73/100 [01:20<00:22,  1.18it/s] 75%|███████▌  | 75/100 [01:20<00:15,  1.63it/s] 75%|███████▌  | 75/100 [01:20<00:15,  1.62it/s] 75%|███████▌  | 75/100 [01:20<00:15,  1.62it/s] 75%|███████▌  | 75/100 [01:20<00:15,  1.62it/s] 75%|███████▌  | 75/100 [01:20<00:15,  1.62it/s] 75%|███████▌  | 75/100 [01:20<00:15,  1.62it/s] 76%|███████▌  | 76/100 [01:21<00:19,  1.23it/s] 76%|███████▌  | 76/100 [01:21<00:19,  1.23it/s] 76%|███████▌  | 76/100 [01:21<00:19,  1.23it/s] 76%|███████▌  | 76/100 [01:22<00:19,  1.23it/s] 76%|███████▌  | 76/100 [01:22<00:19,  1.22it/s] 76%|███████▌  | 76/100 [01:22<00:19,  1.22it/s] 77%|███████▋  | 77/100 [01:22<00:18,  1.28it/s] 77%|███████▋  | 77/100 [01:22<00:18,  1.27it/s] 77%|███████▋  | 77/100 [01:22<00:18,  1.27it/s] 77%|███████▋  | 77/100 [01:22<00:18,  1.27it/s] 77%|███████▋  | 77/100 [01:22<00:18,  1.27it/s] 77%|███████▋  | 77/100 [01:22<00:18,  1.27it/s] 78%|███████▊  | 78/100 [01:23<00:17,  1.27it/s] 78%|███████▊  | 78/100 [01:23<00:17,  1.27it/s] 78%|███████▊  | 78/100 [01:23<00:17,  1.27it/s] 78%|███████▊  | 78/100 [01:23<00:17,  1.27it/s] 78%|███████▊  | 78/100 [01:23<00:17,  1.26it/s] 78%|███████▊  | 78/100 [01:23<00:17,  1.26it/s] 79%|███████▉  | 79/100 [01:23<00:15,  1.35it/s] 79%|███████▉  | 79/100 [01:23<00:15,  1.35it/s] 79%|███████▉  | 79/100 [01:23<00:15,  1.35it/s] 79%|███████▉  | 79/100 [01:24<00:15,  1.35it/s] 79%|███████▉  | 79/100 [01:24<00:15,  1.35it/s] 79%|███████▉  | 79/100 [01:24<00:15,  1.34it/s] 80%|████████  | 80/100 [01:24<00:14,  1.42it/s] 80%|████████  | 80/100 [01:24<00:14,  1.42it/s] 80%|████████  | 80/100 [01:24<00:14,  1.42it/s] 81%|████████  | 81/100 [01:24<00:10,  1.73it/s] 80%|████████  | 80/100 [01:24<00:14,  1.41it/s] 81%|████████  | 81/100 [01:24<00:10,  1.73it/s] 81%|████████  | 81/100 [01:24<00:10,  1.73it/s] 80%|████████  | 80/100 [01:24<00:14,  1.41it/s] 80%|████████  | 80/100 [01:24<00:14,  1.41it/s] 81%|████████  | 81/100 [01:25<00:10,  1.73it/s] 83%|████████▎ | 83/100 [01:25<00:06,  2.53it/s] 83%|████████▎ | 83/100 [01:25<00:06,  2.53it/s] 81%|████████  | 81/100 [01:25<00:11,  1.72it/s] 83%|████████▎ | 83/100 [01:25<00:06,  2.53it/s] 81%|████████  | 81/100 [01:25<00:11,  1.72it/s] 83%|████████▎ | 83/100 [01:25<00:06,  2.52it/s] 83%|████████▎ | 83/100 [01:25<00:06,  2.52it/s] 83%|████████▎ | 83/100 [01:25<00:06,  2.52it/s] 84%|████████▍ | 84/100 [01:25<00:07,  2.23it/s] 84%|████████▍ | 84/100 [01:25<00:07,  2.22it/s] 84%|████████▍ | 84/100 [01:25<00:07,  2.22it/s] 84%|████████▍ | 84/100 [01:25<00:07,  2.22it/s] 84%|████████▍ | 84/100 [01:26<00:07,  2.21it/s] 84%|████████▍ | 84/100 [01:26<00:07,  2.21it/s] 86%|████████▌ | 86/100 [01:27<00:09,  1.51it/s] 86%|████████▌ | 86/100 [01:27<00:09,  1.51it/s] 86%|████████▌ | 86/100 [01:27<00:09,  1.50it/s] 88%|████████▊ | 88/100 [01:27<00:05,  2.22it/s] 88%|████████▊ | 88/100 [01:27<00:05,  2.22it/s] 86%|████████▌ | 86/100 [01:27<00:09,  1.50it/s] 88%|████████▊ | 88/100 [01:27<00:05,  2.22it/s] 88%|████████▊ | 88/100 [01:28<00:05,  2.21it/s] 86%|████████▌ | 86/100 [01:28<00:09,  1.50it/s] 86%|████████▌ | 86/100 [01:28<00:09,  1.50it/s] 88%|████████▊ | 88/100 [01:28<00:05,  2.21it/s] 88%|████████▊ | 88/100 [01:28<00:05,  2.21it/s] 89%|████████▉ | 89/100 [01:28<00:05,  2.06it/s] 89%|████████▉ | 89/100 [01:28<00:05,  2.06it/s] 89%|████████▉ | 89/100 [01:28<00:05,  2.06it/s] 89%|████████▉ | 89/100 [01:28<00:05,  2.05it/s] 90%|█████████ | 90/100 [01:28<00:04,  2.20it/s] 90%|█████████ | 90/100 [01:28<00:04,  2.20it/s] 89%|████████▉ | 89/100 [01:28<00:05,  2.05it/s] 90%|█████████ | 90/100 [01:28<00:04,  2.19it/s] 89%|████████▉ | 89/100 [01:28<00:05,  2.05it/s] 90%|█████████ | 90/100 [01:29<00:04,  2.19it/s] 90%|█████████ | 90/100 [01:29<00:04,  2.19it/s] 90%|█████████ | 90/100 [01:29<00:04,  2.19it/s] 91%|█████████ | 91/100 [01:29<00:04,  2.02it/s] 91%|█████████ | 91/100 [01:29<00:04,  2.02it/s] 91%|█████████ | 91/100 [01:29<00:04,  2.02it/s] 92%|█████████▏| 92/100 [01:29<00:03,  2.43it/s] 92%|█████████▏| 92/100 [01:29<00:03,  2.43it/s] 91%|█████████ | 91/100 [01:29<00:04,  2.01it/s] 92%|█████████▏| 92/100 [01:29<00:03,  2.42it/s] 94%|█████████▍| 94/100 [01:29<00:01,  3.66it/s] 94%|█████████▍| 94/100 [01:29<00:01,  3.65it/s] 92%|█████████▏| 92/100 [01:29<00:03,  2.42it/s] 91%|█████████ | 91/100 [01:29<00:04,  2.01it/s] 94%|█████████▍| 94/100 [01:29<00:01,  3.65it/s] 91%|█████████ | 91/100 [01:29<00:04,  2.01it/s] 94%|█████████▍| 94/100 [01:30<00:01,  3.64it/s] 92%|█████████▏| 92/100 [01:30<00:03,  2.41it/s] 92%|█████████▏| 92/100 [01:30<00:03,  2.41it/s] 94%|█████████▍| 94/100 [01:30<00:01,  3.64it/s] 94%|█████████▍| 94/100 [01:30<00:01,  3.64it/s] 95%|█████████▌| 95/100 [01:31<00:03,  1.42it/s] 95%|█████████▌| 95/100 [01:31<00:03,  1.42it/s] 95%|█████████▌| 95/100 [01:32<00:03,  1.42it/s] 95%|█████████▌| 95/100 [01:32<00:03,  1.41it/s] 95%|█████████▌| 95/100 [01:32<00:03,  1.41it/s] 95%|█████████▌| 95/100 [01:32<00:03,  1.41it/s] 96%|█████████▌| 96/100 [01:33<00:03,  1.16it/s] 96%|█████████▌| 96/100 [01:33<00:03,  1.16it/s] 96%|█████████▌| 96/100 [01:33<00:03,  1.16it/s] 96%|█████████▌| 96/100 [01:33<00:03,  1.16it/s] 96%|█████████▌| 96/100 [01:33<00:03,  1.16it/s] 96%|█████████▌| 96/100 [01:33<00:03,  1.16it/s] 97%|█████████▋| 97/100 [01:34<00:02,  1.10it/s] 97%|█████████▋| 97/100 [01:34<00:02,  1.10it/s] 97%|█████████▋| 97/100 [01:34<00:02,  1.09it/s] 97%|█████████▋| 97/100 [01:34<00:02,  1.09it/s] 97%|█████████▋| 97/100 [01:34<00:02,  1.09it/s] 97%|█████████▋| 97/100 [01:34<00:02,  1.09it/s] 98%|█████████▊| 98/100 [01:35<00:01,  1.11it/s] 98%|█████████▊| 98/100 [01:35<00:01,  1.11it/s] 98%|█████████▊| 98/100 [01:35<00:01,  1.10it/s] 98%|█████████▊| 98/100 [01:35<00:01,  1.10it/s] 98%|█████████▊| 98/100 [01:35<00:01,  1.10it/s] 98%|█████████▊| 98/100 [01:35<00:01,  1.10it/s] 99%|█████████▉| 99/100 [01:37<00:01,  1.34s/it] 99%|█████████▉| 99/100 [01:37<00:01,  1.34s/it] 99%|█████████▉| 99/100 [01:37<00:01,  1.35s/it] 99%|█████████▉| 99/100 [01:37<00:01,  1.35s/it] 99%|█████████▉| 99/100 [01:38<00:01,  1.35s/it] 99%|█████████▉| 99/100 [01:38<00:01,  1.35s/it]100%|██████████| 100/100 [01:38<00:00,  1.31s/it]100%|██████████| 100/100 [01:38<00:00,  1.01it/s]
+100%|██████████| 100/100 [01:38<00:00,  1.31s/it]100%|██████████| 100/100 [01:38<00:00,  1.01it/s]
+100%|██████████| 100/100 [01:38<00:00,  1.31s/it]100%|██████████| 100/100 [01:38<00:00,  1.01it/s]
+  0%|          | 0/56 [00:00<?, ?it/s]  0%|          | 0/56 [00:00<?, ?it/s]  0%|          | 0/56 [00:00<?, ?it/s]100%|██████████| 100/100 [01:39<00:00,  1.32s/it]100%|██████████| 100/100 [01:39<00:00,  1.01it/s]
+  0%|          | 0/56 [00:00<?, ?it/s]100%|██████████| 100/100 [01:39<00:00,  1.32s/it]100%|██████████| 100/100 [01:39<00:00,  1.01it/s]
+100%|██████████| 100/100 [01:39<00:00,  1.32s/it]100%|██████████| 100/100 [01:39<00:00,  1.01it/s]
+  0%|          | 0/56 [00:00<?, ?it/s]  0%|          | 0/56 [00:00<?, ?it/s]  2%|▏         | 1/56 [00:01<01:27,  1.59s/it]  2%|▏         | 1/56 [00:01<01:27,  1.59s/it]  2%|▏         | 1/56 [00:01<01:27,  1.59s/it]  2%|▏         | 1/56 [00:01<01:27,  1.60s/it]  2%|▏         | 1/56 [00:01<01:27,  1.60s/it]  2%|▏         | 1/56 [00:01<01:27,  1.60s/it]  4%|▎         | 2/56 [00:03<01:42,  1.90s/it]  4%|▎         | 2/56 [00:03<01:42,  1.90s/it]  4%|▎         | 2/56 [00:03<01:43,  1.91s/it]  4%|▎         | 2/56 [00:03<01:42,  1.91s/it]  4%|▎         | 2/56 [00:03<01:43,  1.91s/it]  4%|▎         | 2/56 [00:03<01:43,  1.91s/it]  5%|▌         | 3/56 [00:04<01:14,  1.40s/it]  5%|▌         | 3/56 [00:04<01:14,  1.40s/it]  5%|▌         | 3/56 [00:04<01:14,  1.40s/it]  5%|▌         | 3/56 [00:04<01:14,  1.40s/it]  7%|▋         | 4/56 [00:04<00:51,  1.01it/s]  7%|▋         | 4/56 [00:04<00:51,  1.01it/s]  5%|▌         | 3/56 [00:04<01:14,  1.40s/it]  7%|▋         | 4/56 [00:04<00:51,  1.01it/s]  5%|▌         | 3/56 [00:04<01:14,  1.40s/it]  7%|▋         | 4/56 [00:04<00:51,  1.01it/s]  7%|▋         | 4/56 [00:04<00:51,  1.01it/s]  7%|▋         | 4/56 [00:04<00:51,  1.01it/s]  9%|▉         | 5/56 [00:05<00:50,  1.02it/s]  9%|▉         | 5/56 [00:05<00:50,  1.02it/s]  9%|▉         | 5/56 [00:05<00:50,  1.02it/s]  9%|▉         | 5/56 [00:05<00:50,  1.02it/s] 11%|█         | 6/56 [00:06<00:38,  1.30it/s] 11%|█         | 6/56 [00:06<00:38,  1.30it/s]  9%|▉         | 5/56 [00:05<00:50,  1.02it/s] 11%|█         | 6/56 [00:06<00:38,  1.30it/s]  9%|▉         | 5/56 [00:05<00:50,  1.02it/s] 11%|█         | 6/56 [00:06<00:38,  1.30it/s] 11%|█         | 6/56 [00:06<00:38,  1.30it/s] 11%|█         | 6/56 [00:06<00:38,  1.30it/s] 12%|█▎        | 7/56 [00:07<00:45,  1.09it/s] 12%|█▎        | 7/56 [00:07<00:45,  1.09it/s] 12%|█▎        | 7/56 [00:07<00:45,  1.09it/s] 12%|█▎        | 7/56 [00:07<00:45,  1.08it/s] 12%|█▎        | 7/56 [00:07<00:45,  1.08it/s] 14%|█▍        | 8/56 [00:07<00:38,  1.26it/s] 12%|█▎        | 7/56 [00:07<00:45,  1.08it/s] 14%|█▍        | 8/56 [00:07<00:38,  1.26it/s] 14%|█▍        | 8/56 [00:07<00:38,  1.25it/s] 14%|█▍        | 8/56 [00:07<00:38,  1.25it/s] 14%|█▍        | 8/56 [00:07<00:38,  1.25it/s] 14%|█▍        | 8/56 [00:07<00:38,  1.25it/s] 16%|█▌        | 9/56 [00:08<00:36,  1.30it/s] 16%|█▌        | 9/56 [00:08<00:36,  1.30it/s] 16%|█▌        | 9/56 [00:08<00:36,  1.30it/s] 16%|█▌        | 9/56 [00:08<00:36,  1.30it/s] 16%|█▌        | 9/56 [00:08<00:36,  1.30it/s] 16%|█▌        | 9/56 [00:08<00:36,  1.30it/s] 18%|█▊        | 10/56 [00:09<00:34,  1.34it/s] 18%|█▊        | 10/56 [00:09<00:34,  1.34it/s] 18%|█▊        | 10/56 [00:09<00:34,  1.33it/s] 18%|█▊        | 10/56 [00:09<00:34,  1.33it/s] 18%|█▊        | 10/56 [00:09<00:34,  1.33it/s] 20%|█▉        | 11/56 [00:09<00:30,  1.47it/s] 18%|█▊        | 10/56 [00:09<00:34,  1.33it/s] 20%|█▉        | 11/56 [00:09<00:30,  1.47it/s] 20%|█▉        | 11/56 [00:09<00:30,  1.47it/s] 20%|█▉        | 11/56 [00:09<00:30,  1.46it/s] 20%|█▉        | 11/56 [00:09<00:30,  1.46it/s] 20%|█▉        | 11/56 [00:09<00:30,  1.46it/s] 21%|██▏       | 12/56 [00:15<01:37,  2.22s/it] 21%|██▏       | 12/56 [00:15<01:37,  2.22s/it] 21%|██▏       | 12/56 [00:15<01:37,  2.22s/it] 21%|██▏       | 12/56 [00:15<01:37,  2.23s/it] 21%|██▏       | 12/56 [00:15<01:38,  2.23s/it] 21%|██▏       | 12/56 [00:15<01:38,  2.23s/it] 23%|██▎       | 13/56 [00:16<01:14,  1.73s/it] 23%|██▎       | 13/56 [00:16<01:14,  1.74s/it] 23%|██▎       | 13/56 [00:16<01:14,  1.74s/it] 23%|██▎       | 13/56 [00:16<01:14,  1.74s/it] 23%|██▎       | 13/56 [00:16<01:14,  1.74s/it] 23%|██▎       | 13/56 [00:16<01:14,  1.74s/it] 25%|██▌       | 14/56 [00:17<01:00,  1.45s/it] 25%|██▌       | 14/56 [00:17<01:00,  1.45s/it] 25%|██▌       | 14/56 [00:17<01:01,  1.45s/it] 25%|██▌       | 14/56 [00:17<01:01,  1.45s/it] 27%|██▋       | 15/56 [00:17<00:45,  1.12s/it] 27%|██▋       | 15/56 [00:17<00:45,  1.12s/it] 27%|██▋       | 15/56 [00:17<00:45,  1.12s/it] 25%|██▌       | 14/56 [00:17<01:01,  1.46s/it] 25%|██▌       | 14/56 [00:17<01:01,  1.46s/it] 29%|██▊       | 16/56 [00:17<00:34,  1.16it/s] 27%|██▋       | 15/56 [00:17<00:46,  1.12s/it] 29%|██▊       | 16/56 [00:17<00:34,  1.16it/s] 29%|██▊       | 16/56 [00:17<00:34,  1.16it/s] 27%|██▋       | 15/56 [00:17<00:46,  1.13s/it] 29%|██▊       | 16/56 [00:17<00:34,  1.16it/s] 27%|██▋       | 15/56 [00:17<00:46,  1.13s/it] 29%|██▊       | 16/56 [00:17<00:34,  1.15it/s] 29%|██▊       | 16/56 [00:17<00:34,  1.15it/s] 30%|███       | 17/56 [00:18<00:39,  1.00s/it] 30%|███       | 17/56 [00:18<00:39,  1.00s/it] 30%|███       | 17/56 [00:19<00:39,  1.00s/it] 30%|███       | 17/56 [00:19<00:39,  1.00s/it] 30%|███       | 17/56 [00:19<00:39,  1.01s/it] 32%|███▏      | 18/56 [00:19<00:33,  1.13it/s] 30%|███       | 17/56 [00:19<00:39,  1.01s/it] 32%|███▏      | 18/56 [00:19<00:33,  1.13it/s] 32%|███▏      | 18/56 [00:19<00:33,  1.13it/s] 32%|███▏      | 18/56 [00:19<00:33,  1.13it/s] 32%|███▏      | 18/56 [00:19<00:33,  1.12it/s] 32%|███▏      | 18/56 [00:19<00:33,  1.12it/s] 34%|███▍      | 19/56 [00:20<00:33,  1.10it/s] 34%|███▍      | 19/56 [00:20<00:33,  1.10it/s] 34%|███▍      | 19/56 [00:20<00:33,  1.10it/s] 34%|███▍      | 19/56 [00:20<00:33,  1.09it/s] 34%|███▍      | 19/56 [00:20<00:33,  1.09it/s] 34%|███▍      | 19/56 [00:20<00:33,  1.09it/s] 36%|███▌      | 20/56 [00:21<00:32,  1.11it/s] 36%|███▌      | 20/56 [00:21<00:32,  1.11it/s] 36%|███▌      | 20/56 [00:21<00:32,  1.11it/s] 36%|███▌      | 20/56 [00:21<00:32,  1.10it/s] 36%|███▌      | 20/56 [00:21<00:32,  1.10it/s] 36%|███▌      | 20/56 [00:21<00:32,  1.10it/s] 38%|███▊      | 21/56 [00:23<00:38,  1.11s/it] 38%|███▊      | 21/56 [00:23<00:38,  1.11s/it] 38%|███▊      | 21/56 [00:23<00:38,  1.11s/it] 38%|███▊      | 21/56 [00:23<00:38,  1.11s/it] 38%|███▊      | 21/56 [00:23<00:38,  1.11s/it] 39%|███▉      | 22/56 [00:23<00:32,  1.04it/s] 38%|███▊      | 21/56 [00:23<00:39,  1.11s/it] 39%|███▉      | 22/56 [00:23<00:32,  1.04it/s] 39%|███▉      | 22/56 [00:23<00:32,  1.04it/s] 39%|███▉      | 22/56 [00:23<00:32,  1.04it/s] 39%|███▉      | 22/56 [00:23<00:32,  1.03it/s] 41%|████      | 23/56 [00:24<00:28,  1.17it/s] 39%|███▉      | 22/56 [00:23<00:32,  1.03it/s] 41%|████      | 23/56 [00:24<00:28,  1.16it/s] 41%|████      | 23/56 [00:24<00:28,  1.16it/s] 41%|████      | 23/56 [00:24<00:28,  1.16it/s] 41%|████      | 23/56 [00:24<00:28,  1.16it/s] 41%|████      | 23/56 [00:24<00:28,  1.16it/s] 43%|████▎     | 24/56 [00:25<00:28,  1.12it/s] 43%|████▎     | 24/56 [00:25<00:28,  1.12it/s] 43%|████▎     | 24/56 [00:25<00:28,  1.12it/s] 43%|████▎     | 24/56 [00:25<00:28,  1.12it/s] 45%|████▍     | 25/56 [00:25<00:24,  1.28it/s] 43%|████▎     | 24/56 [00:25<00:28,  1.11it/s] 45%|████▍     | 25/56 [00:25<00:24,  1.28it/s] 43%|████▎     | 24/56 [00:25<00:28,  1.11it/s] 45%|████▍     | 25/56 [00:25<00:24,  1.27it/s] 45%|████▍     | 25/56 [00:25<00:24,  1.27it/s] 45%|████▍     | 25/56 [00:25<00:24,  1.27it/s] 46%|████▋     | 26/56 [00:26<00:21,  1.36it/s] 45%|████▍     | 25/56 [00:25<00:24,  1.27it/s] 46%|████▋     | 26/56 [00:26<00:22,  1.36it/s] 46%|████▋     | 26/56 [00:26<00:22,  1.36it/s] 48%|████▊     | 27/56 [00:26<00:17,  1.69it/s] 48%|████▊     | 27/56 [00:26<00:17,  1.69it/s] 46%|████▋     | 26/56 [00:26<00:22,  1.36it/s] 48%|████▊     | 27/56 [00:26<00:17,  1.68it/s] 46%|████▋     | 26/56 [00:26<00:22,  1.36it/s] 48%|████▊     | 27/56 [00:26<00:17,  1.68it/s] 46%|████▋     | 26/56 [00:26<00:22,  1.35it/s] 50%|█████     | 28/56 [00:27<00:16,  1.74it/s] 48%|████▊     | 27/56 [00:26<00:17,  1.68it/s] 50%|█████     | 28/56 [00:27<00:16,  1.74it/s] 48%|████▊     | 27/56 [00:26<00:17,  1.68it/s] 50%|█████     | 28/56 [00:27<00:16,  1.74it/s] 50%|█████     | 28/56 [00:27<00:16,  1.74it/s] 50%|█████     | 28/56 [00:27<00:16,  1.73it/s] 50%|█████     | 28/56 [00:27<00:16,  1.73it/s] 52%|█████▏    | 29/56 [00:28<00:17,  1.50it/s] 52%|█████▏    | 29/56 [00:28<00:17,  1.50it/s] 52%|█████▏    | 29/56 [00:28<00:18,  1.50it/s] 52%|█████▏    | 29/56 [00:28<00:18,  1.50it/s] 54%|█████▎    | 30/56 [00:28<00:16,  1.60it/s] 52%|█████▏    | 29/56 [00:28<00:18,  1.49it/s] 54%|█████▎    | 30/56 [00:28<00:16,  1.60it/s] 52%|█████▏    | 29/56 [00:28<00:18,  1.49it/s] 54%|█████▎    | 30/56 [00:28<00:16,  1.60it/s] 54%|█████▎    | 30/56 [00:28<00:16,  1.59it/s] 54%|█████▎    | 30/56 [00:28<00:16,  1.59it/s] 54%|█████▎    | 30/56 [00:28<00:16,  1.59it/s] 55%|█████▌    | 31/56 [00:29<00:19,  1.28it/s] 55%|█████▌    | 31/56 [00:29<00:19,  1.28it/s] 55%|█████▌    | 31/56 [00:29<00:19,  1.28it/s] 55%|█████▌    | 31/56 [00:29<00:19,  1.28it/s] 55%|█████▌    | 31/56 [00:29<00:19,  1.27it/s] 55%|█████▌    | 31/56 [00:29<00:19,  1.27it/s] 57%|█████▋    | 32/56 [00:30<00:18,  1.32it/s] 57%|█████▋    | 32/56 [00:30<00:18,  1.32it/s] 57%|█████▋    | 32/56 [00:30<00:18,  1.32it/s] 57%|█████▋    | 32/56 [00:30<00:18,  1.31it/s] 57%|█████▋    | 32/56 [00:30<00:18,  1.31it/s] 57%|█████▋    | 32/56 [00:30<00:18,  1.31it/s] 59%|█████▉    | 33/56 [00:31<00:18,  1.22it/s] 59%|█████▉    | 33/56 [00:31<00:18,  1.22it/s] 59%|█████▉    | 33/56 [00:31<00:18,  1.21it/s] 59%|█████▉    | 33/56 [00:31<00:18,  1.21it/s] 61%|██████    | 34/56 [00:32<00:16,  1.31it/s] 59%|█████▉    | 33/56 [00:31<00:19,  1.21it/s] 61%|██████    | 34/56 [00:32<00:16,  1.31it/s] 59%|█████▉    | 33/56 [00:31<00:19,  1.21it/s] 61%|██████    | 34/56 [00:32<00:16,  1.31it/s] 61%|██████    | 34/56 [00:32<00:16,  1.31it/s] 61%|██████    | 34/56 [00:32<00:16,  1.31it/s] 61%|██████    | 34/56 [00:32<00:16,  1.31it/s] 62%|██████▎   | 35/56 [00:33<00:19,  1.08it/s] 62%|██████▎   | 35/56 [00:33<00:19,  1.07it/s] 62%|██████▎   | 35/56 [00:33<00:19,  1.07it/s] 62%|██████▎   | 35/56 [00:33<00:19,  1.07it/s] 64%|██████▍   | 36/56 [00:33<00:16,  1.20it/s] 62%|██████▎   | 35/56 [00:33<00:19,  1.07it/s] 64%|██████▍   | 36/56 [00:33<00:16,  1.20it/s] 62%|██████▎   | 35/56 [00:33<00:19,  1.07it/s] 64%|██████▍   | 36/56 [00:34<00:16,  1.19it/s] 64%|██████▍   | 36/56 [00:34<00:16,  1.19it/s] 64%|██████▍   | 36/56 [00:34<00:16,  1.19it/s] 64%|██████▍   | 36/56 [00:34<00:16,  1.19it/s] 66%|██████▌   | 37/56 [00:34<00:16,  1.14it/s] 66%|██████▌   | 37/56 [00:34<00:16,  1.14it/s] 68%|██████▊   | 38/56 [00:35<00:11,  1.50it/s] 66%|██████▌   | 37/56 [00:35<00:16,  1.14it/s] 68%|██████▊   | 38/56 [00:35<00:11,  1.50it/s] 68%|██████▊   | 38/56 [00:35<00:12,  1.50it/s] 66%|██████▌   | 37/56 [00:35<00:16,  1.14it/s] 68%|██████▊   | 38/56 [00:35<00:12,  1.50it/s] 66%|██████▌   | 37/56 [00:35<00:16,  1.13it/s] 66%|██████▌   | 37/56 [00:35<00:16,  1.13it/s] 68%|██████▊   | 38/56 [00:35<00:12,  1.49it/s] 68%|██████▊   | 38/56 [00:35<00:12,  1.49it/s] 70%|██████▉   | 39/56 [00:36<00:13,  1.28it/s] 70%|██████▉   | 39/56 [00:36<00:13,  1.27it/s] 70%|██████▉   | 39/56 [00:36<00:13,  1.27it/s] 71%|███████▏  | 40/56 [00:36<00:10,  1.53it/s] 70%|██████▉   | 39/56 [00:36<00:13,  1.27it/s] 71%|███████▏  | 40/56 [00:36<00:10,  1.53it/s] 71%|███████▏  | 40/56 [00:36<00:10,  1.53it/s] 70%|██████▉   | 39/56 [00:36<00:13,  1.27it/s] 71%|███████▏  | 40/56 [00:36<00:10,  1.52it/s] 70%|██████▉   | 39/56 [00:36<00:13,  1.27it/s] 71%|███████▏  | 40/56 [00:36<00:10,  1.52it/s] 71%|███████▏  | 40/56 [00:36<00:10,  1.52it/s] 73%|███████▎  | 41/56 [00:37<00:10,  1.38it/s] 73%|███████▎  | 41/56 [00:37<00:10,  1.38it/s] 73%|███████▎  | 41/56 [00:37<00:10,  1.38it/s] 73%|███████▎  | 41/56 [00:37<00:10,  1.38it/s] 75%|███████▌  | 42/56 [00:38<00:09,  1.45it/s] 73%|███████▎  | 41/56 [00:37<00:10,  1.38it/s] 75%|███████▌  | 42/56 [00:38<00:09,  1.45it/s] 73%|███████▎  | 41/56 [00:37<00:10,  1.37it/s] 75%|███████▌  | 42/56 [00:38<00:09,  1.44it/s] 75%|███████▌  | 42/56 [00:38<00:09,  1.44it/s] 75%|███████▌  | 42/56 [00:38<00:09,  1.44it/s] 75%|███████▌  | 42/56 [00:38<00:09,  1.44it/s] 77%|███████▋  | 43/56 [00:38<00:09,  1.34it/s] 77%|███████▋  | 43/56 [00:38<00:09,  1.34it/s] 77%|███████▋  | 43/56 [00:38<00:09,  1.33it/s] 79%|███████▊  | 44/56 [00:39<00:07,  1.59it/s] 77%|███████▋  | 43/56 [00:39<00:09,  1.33it/s] 79%|███████▊  | 44/56 [00:39<00:07,  1.59it/s] 79%|███████▊  | 44/56 [00:39<00:07,  1.59it/s] 77%|███████▋  | 43/56 [00:39<00:09,  1.33it/s] 79%|███████▊  | 44/56 [00:39<00:07,  1.58it/s] 77%|███████▋  | 43/56 [00:39<00:09,  1.33it/s] 79%|███████▊  | 44/56 [00:39<00:07,  1.58it/s] 79%|███████▊  | 44/56 [00:39<00:07,  1.58it/s] 80%|████████  | 45/56 [00:40<00:09,  1.12it/s] 80%|████████  | 45/56 [00:40<00:09,  1.12it/s] 80%|████████  | 45/56 [00:40<00:09,  1.12it/s] 80%|████████  | 45/56 [00:40<00:09,  1.12it/s] 82%|████████▏ | 46/56 [00:41<00:07,  1.32it/s] 82%|████████▏ | 46/56 [00:41<00:07,  1.32it/s] 82%|████████▏ | 46/56 [00:41<00:07,  1.32it/s] 80%|████████  | 45/56 [00:40<00:09,  1.12it/s] 80%|████████  | 45/56 [00:41<00:09,  1.12it/s] 84%|████████▍ | 47/56 [00:41<00:05,  1.56it/s] 82%|████████▏ | 46/56 [00:41<00:07,  1.32it/s] 84%|████████▍ | 47/56 [00:41<00:05,  1.57it/s] 84%|████████▍ | 47/56 [00:41<00:05,  1.57it/s] 82%|████████▏ | 46/56 [00:41<00:07,  1.32it/s] 84%|████████▍ | 47/56 [00:41<00:05,  1.57it/s] 82%|████████▏ | 46/56 [00:41<00:07,  1.31it/s] 86%|████████▌ | 48/56 [00:42<00:04,  1.65it/s] 86%|████████▌ | 48/56 [00:42<00:04,  1.66it/s] 84%|████████▍ | 47/56 [00:41<00:05,  1.57it/s] 86%|████████▌ | 48/56 [00:42<00:04,  1.65it/s] 84%|████████▍ | 47/56 [00:41<00:05,  1.56it/s] 86%|████████▌ | 48/56 [00:42<00:04,  1.65it/s] 86%|████████▌ | 48/56 [00:42<00:04,  1.65it/s] 86%|████████▌ | 48/56 [00:42<00:04,  1.65it/s] 88%|████████▊ | 49/56 [00:43<00:05,  1.22it/s] 88%|████████▊ | 49/56 [00:43<00:05,  1.22it/s] 88%|████████▊ | 49/56 [00:43<00:05,  1.22it/s] 88%|████████▊ | 49/56 [00:43<00:05,  1.22it/s] 88%|████████▊ | 49/56 [00:43<00:05,  1.21it/s] 88%|████████▊ | 49/56 [00:43<00:05,  1.21it/s] 89%|████████▉ | 50/56 [00:46<00:09,  1.50s/it] 89%|████████▉ | 50/56 [00:46<00:09,  1.50s/it] 89%|████████▉ | 50/56 [00:46<00:09,  1.50s/it] 89%|████████▉ | 50/56 [00:46<00:09,  1.51s/it] 89%|████████▉ | 50/56 [00:46<00:09,  1.51s/it] 91%|█████████ | 51/56 [00:47<00:06,  1.26s/it] 91%|█████████ | 51/56 [00:47<00:06,  1.26s/it] 89%|████████▉ | 50/56 [00:46<00:09,  1.51s/it] 91%|█████████ | 51/56 [00:47<00:06,  1.26s/it] 91%|█████████ | 51/56 [00:47<00:06,  1.27s/it] 93%|█████████▎| 52/56 [00:47<00:04,  1.02s/it] 93%|█████████▎| 52/56 [00:47<00:04,  1.02s/it] 93%|█████████▎| 52/56 [00:47<00:04,  1.02s/it] 91%|█████████ | 51/56 [00:47<00:06,  1.27s/it] 91%|█████████ | 51/56 [00:47<00:06,  1.27s/it] 93%|█████████▎| 52/56 [00:47<00:04,  1.02s/it] 95%|█████████▍| 53/56 [00:48<00:02,  1.12it/s] 93%|█████████▎| 52/56 [00:47<00:04,  1.02s/it] 95%|█████████▍| 53/56 [00:48<00:02,  1.12it/s] 93%|█████████▎| 52/56 [00:47<00:04,  1.02s/it] 95%|█████████▍| 53/56 [00:48<00:02,  1.11it/s] 95%|█████████▍| 53/56 [00:48<00:02,  1.11it/s] 96%|█████████▋| 54/56 [00:48<00:01,  1.32it/s] 96%|█████████▋| 54/56 [00:48<00:01,  1.32it/s] 96%|█████████▋| 54/56 [00:48<00:01,  1.31it/s] 95%|█████████▍| 53/56 [00:48<00:02,  1.11it/s] 95%|█████████▍| 53/56 [00:48<00:02,  1.11it/s] 96%|█████████▋| 54/56 [00:48<00:01,  1.31it/s] 98%|█████████▊| 55/56 [00:49<00:00,  1.39it/s] 98%|█████████▊| 55/56 [00:49<00:00,  1.39it/s] 96%|█████████▋| 54/56 [00:48<00:01,  1.31it/s] 96%|█████████▋| 54/56 [00:48<00:01,  1.31it/s] 98%|█████████▊| 55/56 [00:49<00:00,  1.39it/s] 98%|█████████▊| 55/56 [00:49<00:00,  1.39it/s] 98%|█████████▊| 55/56 [00:49<00:00,  1.39it/s] 98%|█████████▊| 55/56 [00:49<00:00,  1.39it/s]100%|██████████| 56/56 [00:50<00:00,  1.05it/s]100%|██████████| 56/56 [00:50<00:00,  1.10it/s]
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+100%|██████████| 56/56 [00:50<00:00,  1.05it/s]100%|██████████| 56/56 [00:50<00:00,  1.10it/s]
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+100%|██████████| 56/56 [00:50<00:00,  1.05it/s]100%|██████████| 56/56 [00:50<00:00,  1.10it/s]
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+100%|██████████| 56/56 [00:50<00:00,  1.05it/s]100%|██████████| 56/56 [00:50<00:00,  1.10it/s]
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+100%|██████████| 56/56 [00:51<00:00,  1.04it/s]100%|██████████| 56/56 [00:51<00:00,  1.10it/s]
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+100%|██████████| 56/56 [00:51<00:00,  1.04it/s]100%|██████████| 56/56 [00:51<00:00,  1.10it/s]
+
+
+Extraction for ildc complete!
+
+All extraction complete!

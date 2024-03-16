@@ -1,0 +1,55 @@
+Before running the scripts as it is please check for the correct file paths, for saving and loading the data and models, the config_file for distributed training, and the python training script.
+
+
+1) For updates on realtime gpu utilization: (https://stackoverflow.com/questions/67707828/how-to-get-every-seconds-gpu-usage-in-python)
+    $ nvidia-smi -l 1 --query-gpu=memory.used --format=csv
+
+
+
+2) For training GPT-J-6B on ecthr_a's extracted finetuned data (using .\MESc\Stage_1_2_LLM_finetuning\datasets\extract_embeds_for_finetuning.py) 
+
+accelerate launch --config_file .\MESc\Stage_1_2_LLM_finetuning\config_files_for_distributed_training\default_deepspeed_config.yaml .\MESc\Stage_1_2_LLM_finetuning\distributed_training\dist_deepspeed_LLM_torch_lexglue_.py \
+    --to_train True \
+    --freeze_all False \
+    --batch_size 6 \
+    --learning_rate 2e-6 \
+    --num_warmup_steps 1000 \
+    --to_test True \
+    --strat 0 \
+    --data_path "models/finetuned_models/ecthr_a/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_512_input-length/" \
+    --dataset_subset "ecthr_a" \
+    --hggfc_model_name 'EleutherAI/gpt-j-6B'
+
+or on scotus with GPT-J-6B
+
+accelerate launch --config_file .\MESc\Stage_1_2_LLM_finetuning\config_files_for_distributed_training\default_deepspeed_config.yaml .\MESc\Stage_1_2_LLM_finetuning\distributed_training\dist_deepspeed_LLM_torch_lexglue_.py \
+    --to_train True \
+    --freeze_all False \
+    --batch_size 6 \
+    --learning_rate 2e-6 \
+    --num_warmup_steps 1000 \
+    --to_test True \
+    --strat 0 \
+    --data_path "models/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_512_input-length_zero_pad/" \
+    --dataset_subset "scotus" \
+    --hggfc_model_name 'EleutherAI/gpt-j-6B'
+
+
+
+3) For testing GPT-J-6B on scotus's extracted finetuned data (using .\MESc\Stage_1_2_LLM_finetuning\datasets\extract_embeds_for_finetuning.py)
+Not using deepspeed or distributed for testing, as the testing set isn't too big and can easily do fast forward pass for predictions.
+
+
+accelerate launch --config_file .\MESc\Stage_1_2_LLM_finetuning\config_files_for_distributed_training\default_accelerate_config_without_deep_speed.yaml .\MESc\Stage_1_2_LLM_finetuning\distributed_training\dist_deepspeed_LLM_torch_lexglue_.py \
+    --to_test True \
+    --test_input_len 2048 \
+    --testing_model_path "models/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin" \
+    --testing_model_epoch 3 \
+    --trained_with_deepspeed_accelerate True \
+    --strat 0 \
+    --data_path "models/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_zero_pad/" \
+    --minimum_number_of_chunks 5 \
+    --dataset_subset "scotus" \
+    --hggfc_model_name 'EleutherAI/gpt-j-6B'
+
+For using other parameters please check their meanings in the dist_deepspeed_LLM_torch_lexglue_.py file and its uses.

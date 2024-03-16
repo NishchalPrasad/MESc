@@ -1,0 +1,47 @@
+Loading tensorflow-gpu/py3/2.11.0
+  Loading requirement: cuda/11.2 nccl/2.9.6-1-cuda cudnn/8.1.1.33-cuda gcc/8.5.0
+    openmpi/4.1.1-cuda sox/14.4.2
++ python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py --dataset_subset scotus --layers_from_end 4 --ft_model_used_for_extraction LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final --pretrained_model EleutherAI/gpt-j-6B --finetuned_on_input_len 2048 --to_test True --to_train True --train_run_number 1 --verbose 2 --epochs 5 --num_layers 2 --dff 4096 --with_clustering True --pad_len 50 --parent_dir LEGAL-PE/Level-3_of_Framework/savedModels/2048_input_len/ --train_dimR True --save_dimR True --train_clusterer True --save_clusterer True --data_path LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_2048input_ft_model/512_input_len_100_overlap/J6b/
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1063: NumbaDeprecationWarning: [1mThe 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.[0m
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1071: NumbaDeprecationWarning: [1mThe 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.[0m
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/distances.py:1086: NumbaDeprecationWarning: [1mThe 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.[0m
+  @numba.jit()
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/umap_.py:660: NumbaDeprecationWarning: [1mThe 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.[0m
+  @numba.jit()
+2023-05-23 07:21:15.676392: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-23 07:21:16.177055: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 07:21:20.933827: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsup/spack_soft/sox/14.4.2/gcc-8.3.1-5wm6sfkfdu6aohr3vsvridk2xhm52loi/lib:/gpfslocalsup/spack_soft/openmpi/4.1.1/gcc-8.5.0-cezmf7dob4x36g7x5dr7jufg7yt4vpam/lib:/gpfslocalsup/spack_soft/cudnn/8.1.1.33-11.2/gcc-8.3.1-dgsfwc7e23vzc36jopc5nxyunptm2ieh/lib64:/gpfslocalsup/spack_soft/nccl/2.9.6-1/gcc-8.3.1-srwvuxi6a5sn7abu5sc3iusdirkw2cfn/lib:/gpfslocalsys/cuda/11.2/nvvm/lib64:/gpfslocalsys/cuda/11.2/extras/CUPTI/lib64:/gpfslocalsys/cuda/11.2/lib64:/gpfslocalsys/cuda/11.2/samples/common/lib/linux/x86_64:/gpfslocalsys/cuda/11.2/targets/x86_64-linux/lib:/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 07:21:20.957089: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsup/spack_soft/sox/14.4.2/gcc-8.3.1-5wm6sfkfdu6aohr3vsvridk2xhm52loi/lib:/gpfslocalsup/spack_soft/openmpi/4.1.1/gcc-8.5.0-cezmf7dob4x36g7x5dr7jufg7yt4vpam/lib:/gpfslocalsup/spack_soft/cudnn/8.1.1.33-11.2/gcc-8.3.1-dgsfwc7e23vzc36jopc5nxyunptm2ieh/lib64:/gpfslocalsup/spack_soft/nccl/2.9.6-1/gcc-8.3.1-srwvuxi6a5sn7abu5sc3iusdirkw2cfn/lib:/gpfslocalsys/cuda/11.2/nvvm/lib64:/gpfslocalsys/cuda/11.2/extras/CUPTI/lib64:/gpfslocalsys/cuda/11.2/lib64:/gpfslocalsys/cuda/11.2/samples/common/lib/linux/x86_64:/gpfslocalsys/cuda/11.2/targets/x86_64-linux/lib:/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 07:21:20.957113: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Num GPUs Available:  1
+Namespace(dataset_subset='scotus', combine_layers=True, add_layers=False, layers_from_end=4, save_model_trained_here=False, self_ft_extracted=True, ft_model_used_for_extraction='LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final', pretrained_model='EleutherAI/gpt-j-6B', finetuned_on_input_len=2048, to_test=True, to_train=True, train_run_number=1, verbose=2, epochs=5, batch_size=1, load_to_retrain=False, model_load_path='', to_freeze=False, layers_to_freeze=[1], max_positional_encoding=40, num_layers=2, bilstm_before_encoder=False, dropout_before_first_fnn=True, dropout_before_inner_fnn=True, ffn_dropout_value=0.15, dropout_after_first_encoder=True, dropout_after_second_encoder=True, encoder_dropout_value=0.25, dff=4096, d_model=768, num_heads=8, include_rnn=False, from_encoder=False, with_clustering=True, clustering_strategy='hard', dimReduction='pumap', dim_reduction_metric='cosine', pad_len=50, strategy=1, only_clustered=False, train_dimR=True, save_dimR=True, train_clusterer=True, save_clusterer=True, parent_dir='LEGAL-PE/Level-3_of_Framework/savedModels/2048_input_len/', data_path='LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_2048input_ft_model/512_input_len_100_overlap/J6b/', edit_for_ildc=False)
+2023-05-23 07:21:50.199943: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-23 07:21:50.891395: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78797 MB memory:  -> device: 0, name: NVIDIA A100-SXM4-80GB, pci bus id: 0000:48:00.0, compute capability: 8.0
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/umap/parametric_umap.py:148: UserWarning: tensorflow_probability not installed or incompatible to current                 tensorflow installation. Setting global_correlation_loss_weight to zero.
+  warn(
+
+ logging document chunks 
+
+  0%|          | 0/5000 [00:00<?, ?it/s]100%|██████████| 5000/5000 [00:00<00:00, 3514583.54it/s]
+
+ logging document chunks 
+
+  0%|          | 0/1400 [00:00<?, ?it/s]100%|██████████| 1400/1400 [00:00<00:00, 3180945.61it/s]
+ParametricUMAP(optimizer=<keras.optimizers.optimizer_v2.adam.Adam object at 0x14eab0865db0>)
+Tue May 23 07:21:55 2023 Construct fuzzy simplicial set
+Tue May 23 07:21:57 2023 Finding Nearest Neighbors
+Tue May 23 07:21:57 2023 Building RP forest with 24 trees
+Tue May 23 07:23:21 2023 NN descent for 17 iterations
+	 1  /  17
+	 2  /  17
+	 3  /  17
+	 4  /  17
+	 5  /  17
+	Stopping threshold met -- exiting after 5 iterations
+Tue May 23 07:24:09 2023 Finished Nearest Neighbor Search
+Tue May 23 07:24:13 2023 Construct embedding
+slurmstepd: error: *** JOB 1796744 ON jean-zay-iam01 CANCELLED AT 2023-05-23T07:24:53 ***

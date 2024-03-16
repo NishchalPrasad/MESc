@@ -1,0 +1,80 @@
+accelerate launch --config_file LEGAL-PE/SIGIR_experiments/distributedTraining/Config_files_for_distributed/default_accelerate_config_without_deep_speed-Copy1.yaml LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py \
+        --maxlen 512 \
+        --length 510 \
+        --overlap 100 \
+        --loading_model_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_a/EleutherAI_gpt-neo-2.7B/Strategy_0/sub_strategy_0/512inputlength/torch-model_epoch-1.pth" \
+        --cuda_number 0 \
+        --strat 0 \
+        --dataset_subset "ecthr_a" \
+        --hggfc_model_name 'EleutherAI/gpt-neo-2.7B' \
+        --get_train_data True \
+        --get_validation_data True \
+        --get_test_data True \
+        --trained_without_accelerate True \
+        --path_train_dat "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_a/Extracted_data/Neo2.7b/"
+        
+
+
+accelerate launch --config_file LEGAL-PE/SIGIR_experiments/distributedTraining/Config_files_for_distributed/default_accelerate_config_without_deep_speed-Copy1.yaml LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py \
+        --maxlen 512 \
+        --length 510 \
+        --overlap 100 \
+        --loading_model_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-neo-2.7B/Strategy_0/sub_strategy_0/512inputlength/torch-model_epoch-1.pth" \
+        --cuda_number 0 \
+        --strat 0 \
+        --dataset_subset "ecthr_b" \
+        --hggfc_model_name 'EleutherAI/gpt-neo-2.7B' \
+        --get_train_data True \
+        --get_validation_data True \
+        --get_test_data True \
+        --trained_without_accelerate True \
+        --path_train_dat "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/Extracted_data/Neo2.7b/"
+        
+        
+        
+accelerate launch --config_file LEGAL-PE/SIGIR_experiments/distributedTraining/Config_files_for_distributed/default_accelerate_config_without_deep_speed-Copy2.yaml LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py \
+        --maxlen 2048 \
+        --length 2046 \
+        --overlap 100 \
+        --loading_model_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__del/pytorch_model.bin" \
+        --cuda_number 0 \
+        --strat 0 \
+        --dataset_subset "ecthr_b" \
+        --hggfc_model_name 'EleutherAI/gpt-j-6B' \
+        --get_train_data True \
+        --get_validation_data True \
+        --get_test_data True \
+        --trained_with_deepspeed_accelerate True \
+        --path_train_dat "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/Extracted_data/from_2048input_ft_model/2048_input_len_100_overlap/J6b/";accelerate launch --config_file LEGAL-PE/SIGIR_experiments/distributedTraining/Config_files_for_distributed/default_accelerate_config_without_deep_speed-Copy2.yaml LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py \
+        --maxlen 2048 \
+        --length 2046 \
+        --overlap 100 \
+        --loading_model_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin" \
+        --cuda_number 0 \
+        --strat 0 \
+        --dataset_subset "scotus" \
+        --hggfc_model_name 'EleutherAI/gpt-j-6B' \
+        --get_train_data True \
+        --get_validation_data True \
+        --get_test_data True \
+        --trained_with_deepspeed_accelerate True \
+        --path_train_dat "LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_2048input_ft_model/2048_input_len_100_overlap/J6b/"
+        
+        python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py \
+            --dataset_subset "ecthr_b" \
+            --layers_from_end 2 \
+            --ft_model_used_for_extraction "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__del" \
+            --pretrained_model 'EleutherAI/gpt-j-6B' \
+            --finetuned_on_input_len 2048 \
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --num_layers 2 \
+            --ffn_dropout_value 0.15 \
+            --encoder_dropout_value 0.01 \
+            --dff 4096 \
+            --pad_len 150 \
+            --parent_dir "LEGAL-PE/Level-3_of_Framework/savedModels/2048_input_len/" \
+            --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/Extracted_data/from_2048input_ft_model/2048_input_len_100_overlap/J6b/"

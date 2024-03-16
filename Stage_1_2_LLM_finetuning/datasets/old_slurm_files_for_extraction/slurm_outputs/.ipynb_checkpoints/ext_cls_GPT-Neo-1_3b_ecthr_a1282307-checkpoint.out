@@ -1,0 +1,392 @@
++ module load python
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\''' 'LD_LIBRARY_PATH='\'''\''' /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++++ LD_LIBRARY_PATH=
++++ /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash load python
++ eval '_LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1;' export '_LMFILES__modshare;
+LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1;' export 'LOADEDMODULES_modshare;
+PYTHONUNBUFFERED=1;' export 'PYTHONUNBUFFERED;
+MODULES_LMCONFLICT_modshare=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu:1;' export 'MODULES_LMCONFLICT_modshare;
+_LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4;' export '_LMFILES_;
+LOADEDMODULES=cpuarch/amd:python/3.10.4;' export 'LOADEDMODULES;
+MODULES_LMCONFLICT=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu;' export 'MODULES_LMCONFLICT;
+.' '/gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh;
+conda' activate 'python-3.10.4;
+test' '0;'
+++ _LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1
+++ export _LMFILES__modshare
+++ LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1
+++ export LOADEDMODULES_modshare
+++ PYTHONUNBUFFERED=1
+++ export PYTHONUNBUFFERED
+++ MODULES_LMCONFLICT_modshare='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu:1'
+++ export MODULES_LMCONFLICT_modshare
+++ _LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4
+++ export _LMFILES_
+++ LOADEDMODULES=cpuarch/amd:python/3.10.4
+++ export LOADEDMODULES
+++ MODULES_LMCONFLICT='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu'
+++ export MODULES_LMCONFLICT
+++ . /gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
+++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate python-3.10.4
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate python-3.10.4
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate python-3.10.4
++++ /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda shell.posix activate python-3.10.4
+++ ask_conda='PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
+++ eval 'PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
++++ PS1='(python-3.10.4) '
++++ export PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=python-3.10.4
++++ CONDA_DEFAULT_ENV=python-3.10.4
++++ export 'CONDA_PROMPT_MODIFIER=(python-3.10.4) '
++++ CONDA_PROMPT_MODIFIER='(python-3.10.4) '
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh
+++++ [[ -n '' ]]
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal ']'
+++++ export GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ export GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ [[ ! -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins ]]
+++++ unset GDAL_DRIVER_PATH
+++++ export CPL_ZIP_ENCODING=UTF-8
+++++ CPL_ZIP_ENCODING=UTF-8
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/epsg_csv ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/Library/share/epsg_csv ']'
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh
+++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ export GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
+++++ GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh
+++++ '[' -n '' ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj ']'
+++++ export PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ '[' -f /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj/copyright_and_licenses.csv ']'
+++++ export PROJ_NETWORK=ON
+++++ PROJ_NETWORK=ON
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ export PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ accelerate launch --config_file LEGAL-PE/SIGIR_experiments/distributedTraining/Config_files_for_distributed/default_accelerate_config_without_deep_speed.yaml LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py --maxlen 512 --length 510 --overlap 100 ' '
+2023-05-05 11:49:26.442486: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-05 11:49:33.896096: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:49:33.896231: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:49:33.896246: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-05 11:50:20.713910: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.713916: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.713932: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.713957: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.713965: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.713971: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.715078: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.715090: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.715103: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-05 11:50:20.715114: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-05 11:50:20.715124: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.715147: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-05 11:50:20.715155: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.715175: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-05 11:50:20.715178: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.715188: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-05 11:50:20.715200: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-05 11:50:20.715210: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+usage: extract_CLS_embeds_after_finetuning_.py [-h] [--maxlen MAXLEN]
+                                               [--length LENGTH]
+                                               [--overlap OVERLAP]
+                                               [--combine_layers COMBINE_LAYERS]
+                                               [--layers_from_end LAYERS_FROM_END]
+                                               [--loading_model_path LOADING_MODEL_PATH]
+                                               [--cuda_number CUDA_NUMBER]
+                                               [--strat STRAT]
+                                               [--dataset_subset DATASET_SUBSET]
+                                               [--save_dir SAVE_DIR]
+                                               [--hggfc_model_name HGGFC_MODEL_NAME]
+                                               [--get_train_data GET_TRAIN_DATA]
+                                               [--get_validation_data GET_VALIDATION_DATA]
+                                               [--get_test_data GET_TEST_DATA]
+                                               [--trained_with_deepspeed_accelerate TRAINED_WITH_DEEPSPEED_ACCELERATE]
+                                               [--trained_with_accelerate TRAINED_WITH_ACCELERATE]
+                                               [--trained_without_accelerate TRAINED_WITHOUT_ACCELERATE]
+                                               [--extracting_from_ft EXTRACTING_FROM_FT]
+                                               [--get_explanation_data GET_EXPLANATION_DATA]
+                                               [--path_train_dat PATH_TRAIN_DAT]
+                                               [--which_split WHICH_SPLIT]
+usage: extract_CLS_embeds_after_finetuning_.py [-h] [--maxlen MAXLEN]
+                                               [--length LENGTH]
+                                               [--overlap OVERLAP]
+                                               [--combine_layers COMBINE_LAYERS]
+                                               [--layers_from_end LAYERS_FROM_END]
+                                               [--loading_model_path LOADING_MODEL_PATH]
+                                               [--cuda_number CUDA_NUMBER]
+                                               [--strat STRAT]
+                                               [--dataset_subset DATASET_SUBSET]
+                                               [--save_dir SAVE_DIR]
+                                               [--hggfc_model_name HGGFC_MODEL_NAME]
+                                               [--get_train_data GET_TRAIN_DATA]
+                                               [--get_validation_data GET_VALIDATION_DATA]
+                                               [--get_test_data GET_TEST_DATA]
+                                               [--trained_with_deepspeed_accelerate TRAINED_WITH_DEEPSPEED_ACCELERATE]
+                                               [--trained_with_accelerate TRAINED_WITH_ACCELERATE]
+                                               [--trained_without_accelerate TRAINED_WITHOUT_ACCELERATE]
+                                               [--extracting_from_ft EXTRACTING_FROM_FT]
+                                               [--get_explanation_data GET_EXPLANATION_DATA]
+                                               [--path_train_dat PATH_TRAIN_DAT]
+                                               [--which_split WHICH_SPLIT]
+usage: extract_CLS_embeds_after_finetuning_.py [-h] [--maxlen MAXLEN]
+                                               [--length LENGTH]
+                                               [--overlap OVERLAP]
+                                               [--combine_layers COMBINE_LAYERS]
+                                               [--layers_from_end LAYERS_FROM_END]
+                                               [--loading_model_path LOADING_MODEL_PATH]
+                                               [--cuda_number CUDA_NUMBER]
+                                               [--strat STRAT]
+                                               [--dataset_subset DATASET_SUBSET]
+                                               [--save_dir SAVE_DIR]
+                                               [--hggfc_model_name HGGFC_MODEL_NAME]
+                                               [--get_train_data GET_TRAIN_DATA]
+                                               [--get_validation_data GET_VALIDATION_DATA]
+                                               [--get_test_data GET_TEST_DATA]
+                                               [--trained_with_deepspeed_accelerate TRAINED_WITH_DEEPSPEED_ACCELERATE]
+                                               [--trained_with_accelerate TRAINED_WITH_ACCELERATE]
+                                               [--trained_without_accelerate TRAINED_WITHOUT_ACCELERATE]
+                                               [--extracting_from_ft EXTRACTING_FROM_FT]
+                                               [--get_explanation_data GET_EXPLANATION_DATA]
+                                               [--path_train_dat PATH_TRAIN_DAT]
+                                               [--which_split WHICH_SPLIT]
+usage: extract_CLS_embeds_after_finetuning_.py [-h] [--maxlen MAXLEN]
+                                               [--length LENGTH]
+                                               [--overlap OVERLAP]
+                                               [--combine_layers COMBINE_LAYERS]
+                                               [--layers_from_end LAYERS_FROM_END]
+                                               [--loading_model_path LOADING_MODEL_PATH]
+                                               [--cuda_number CUDA_NUMBER]
+                                               [--strat STRAT]
+                                               [--dataset_subset DATASET_SUBSET]
+                                               [--save_dir SAVE_DIR]
+                                               [--hggfc_model_name HGGFC_MODEL_NAME]
+                                               [--get_train_data GET_TRAIN_DATA]
+                                               [--get_validation_data GET_VALIDATION_DATA]
+                                               [--get_test_data GET_TEST_DATA]
+                                               [--trained_with_deepspeed_accelerate TRAINED_WITH_DEEPSPEED_ACCELERATE]
+                                               [--trained_with_accelerate TRAINED_WITH_ACCELERATE]
+                                               [--trained_without_accelerate TRAINED_WITHOUT_ACCELERATE]
+                                               [--extracting_from_ft EXTRACTING_FROM_FT]
+                                               [--get_explanation_data GET_EXPLANATION_DATA]
+                                               [--path_train_dat PATH_TRAIN_DAT]
+                                               [--which_split WHICH_SPLIT]
+usage: extract_CLS_embeds_after_finetuning_.py [-h] [--maxlen MAXLEN]
+                                               [--length LENGTH]
+                                               [--overlap OVERLAP]
+                                               [--combine_layers COMBINE_LAYERS]
+                                               [--layers_from_end LAYERS_FROM_END]
+                                               [--loading_model_path LOADING_MODEL_PATH]
+                                               [--cuda_number CUDA_NUMBER]
+                                               [--strat STRAT]
+                                               [--dataset_subset DATASET_SUBSET]
+                                               [--save_dir SAVE_DIR]
+                                               [--hggfc_model_name HGGFC_MODEL_NAME]
+                                               [--get_train_data GET_TRAIN_DATA]
+                                               [--get_validation_data GET_VALIDATION_DATA]
+                                               [--get_test_data GET_TEST_DATA]
+                                               [--trained_with_deepspeed_accelerate TRAINED_WITH_DEEPSPEED_ACCELERATE]
+                                               [--trained_with_accelerate TRAINED_WITH_ACCELERATE]
+                                               [--trained_without_accelerate TRAINED_WITHOUT_ACCELERATE]
+                                               [--extracting_from_ft EXTRACTING_FROM_FT]
+                                               [--get_explanation_data GET_EXPLANATION_DATA]
+                                               [--path_train_dat PATH_TRAIN_DAT]
+                                               [--which_split WHICH_SPLIT]
+usage: extract_CLS_embeds_after_finetuning_.py [-h] [--maxlen MAXLEN]
+                                               [--length LENGTH]
+                                               [--overlap OVERLAP]
+                                               [--combine_layers COMBINE_LAYERS]
+                                               [--layers_from_end LAYERS_FROM_END]
+                                               [--loading_model_path LOADING_MODEL_PATH]
+                                               [--cuda_number CUDA_NUMBER]
+                                               [--strat STRAT]
+                                               [--dataset_subset DATASET_SUBSET]
+                                               [--save_dir SAVE_DIR]
+                                               [--hggfc_model_name HGGFC_MODEL_NAME]
+                                               [--get_train_data GET_TRAIN_DATA]
+                                               [--get_validation_data GET_VALIDATION_DATA]
+                                               [--get_test_data GET_TEST_DATA]
+                                               [--trained_with_deepspeed_accelerate TRAINED_WITH_DEEPSPEED_ACCELERATE]
+                                               [--trained_with_accelerate TRAINED_WITH_ACCELERATE]
+                                               [--trained_without_accelerate TRAINED_WITHOUT_ACCELERATE]
+                                               [--extracting_from_ft EXTRACTING_FROM_FT]
+                                               [--get_explanation_data GET_EXPLANATION_DATA]
+                                               [--path_train_dat PATH_TRAIN_DAT]
+                                               [--which_split WHICH_SPLIT]
+extract_CLS_embeds_after_finetuning_.py: error: unrecognized arguments:  
+extract_CLS_embeds_after_finetuning_.py: error: unrecognized arguments:  
+extract_CLS_embeds_after_finetuning_.py: error: unrecognized arguments:  
+extract_CLS_embeds_after_finetuning_.py: error: unrecognized arguments:  
+extract_CLS_embeds_after_finetuning_.py: error: unrecognized arguments:  
+extract_CLS_embeds_after_finetuning_.py: error: unrecognized arguments:  
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 2) local_rank: 0 (pid: 2437977) of binary: /gpfslocalsup/pub/anaconda-py3/2022.05/envs/tensorflow-gpu-2.11.0+py3.10.8/bin/python
+Traceback (most recent call last):
+  File "/gpfswork/rech/btm/uei84ht/.local/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 45, in main
+    args.func(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/launch.py", line 914, in launch_command
+    multi_gpu_launcher(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/launch.py", line 603, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-05-05_11:50:31
+  host      : jean-zay-iam35-ib0
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2437978)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2023-05-05_11:50:31
+  host      : jean-zay-iam35-ib0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2437979)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2023-05-05_11:50:31
+  host      : jean-zay-iam35-ib0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2437980)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2023-05-05_11:50:31
+  host      : jean-zay-iam35-ib0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2437981)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2023-05-05_11:50:31
+  host      : jean-zay-iam35-ib0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2437982)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-05-05_11:50:31
+  host      : jean-zay-iam35-ib0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2437977)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
++ --loading_model_path LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_a/EleutherAI_gpt-neo-1.3B/Strategy_0/sub_strategy_0/512inputlength/torch-model_epoch-3.pth --cuda_number 0 --strat 0 --dataset_subset ecthr_a --hggfc_model_name EleutherAI/gpt-neo-1.3B --get_train_data True --get_validation_data True --get_test_data True --trained_without_accelerate True --path_train_dat LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_a/Extracted_data/Neo1.3b
+/var/spool/slurmd/job1282307/slurm_script: line 57: --loading_model_path: command not found

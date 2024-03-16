@@ -1,0 +1,414 @@
+since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.
+since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.
+since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.
+
+Parsing spli 2 of 3 for ildc's train set.
+
+since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.
+since the max run time in jean-zay is 20 hours and parsing through ILDC (with A100 80GB GPU) takes more than 20 hours, we split the dataset and parse in three steps. The step number can be found in the output and also in the file name. Please use that number in the argument input (--which_split) for parsing the remaining data. The first pass of this script for ILDC will inherently parse through the development and test dataset (you can switch thet off), so you need not pass those arguments for the remaining splits.
+
+Parsing spli 2 of 3 for ildc's train set.
+
+
+
+
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+
+
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+Extraction started!
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+
+
+
+Parsing spli 2 of 3 for ildc's train set.
+
+Extraction started!
+
+
+
+Extraction started!
+
+
+Extraction started!
+
+Extraction for ildc started!Extraction started!
+
+Extraction started!
+
+Extraction for ildc started!
+
+
+
+Extraction for ildc started!
+
+
+Extraction for ildc started!
+Extraction for ildc started!
+
+Extraction for ildc started!
+
+
+                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+                                                    text  ...          name
+12463   W I T H A. No. 8453 of 1997 B. SINHA, J These...  ...  2003_674.txt
+12464   G. BALAKRISHNAN, J. These appeals are preferr...  ...  2003_675.txt
+12465   2003 Supp 3  SCR 898 The following Order of t...  ...  2003_676.txt
+12466   2003 Supp 4  SCR 208 The Judgment of the Cour...  ...  2003_685.txt
+12467   B. SINHA, J This appeal is directed against a...  ...  2003_688.txt
+...                                                  ...  ...           ...
+24920   Lalit Mohan Sharma, J. The petitioner, who is...  ...  1991_478.txt
+24921  CIVIL ORIGINAL JURISDICTION Write Petition No....  ...  1991_480.txt
+24922  CIVIL APPELLATE JURISDICTION Civil Appeal Nos....  ...  1991_482.txt
+24923   M. Ahmadi, J. The appellant has been companyv...  ...  1991_483.txt
+24924   Having heard both companynsel, we are of the ...  ...  1991_484.txt
+
+[12462 rows x 4 columns]
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+
+
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+
+
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+
+
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+Tokenizer Loaded
+
+
+Tokenizer Loaded{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+
+Tokenizer Loaded
+Tokenizer Loaded
+
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+DistributedDataParallel(
+  (module): GPTNeoForSequenceClassification(
+    (transformer): GPTNeoModel(
+      (wte): Embedding(50257, 2560)
+      (wpe): Embedding(2048, 2560)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-31): 32 x GPTNeoBlock(
+          (ln_1): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTNeoAttention(
+            (attention): GPTNeoSelfAttention(
+              (attn_dropout): Dropout(p=0.0, inplace=False)
+              (resid_dropout): Dropout(p=0.0, inplace=False)
+              (k_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (v_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (q_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (out_proj): Linear(in_features=2560, out_features=2560, bias=True)
+            )
+          )
+          (ln_2): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (mlp): GPTNeoMLP(
+            (c_fc): Linear(in_features=2560, out_features=10240, bias=True)
+            (c_proj): Linear(in_features=10240, out_features=2560, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=2560, out_features=2, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTNeoForSequenceClassification(
+    (transformer): GPTNeoModel(
+      (wte): Embedding(50257, 2560)
+      (wpe): Embedding(2048, 2560)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-31): 32 x GPTNeoBlock(
+          (ln_1): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTNeoAttention(
+            (attention): GPTNeoSelfAttention(
+              (attn_dropout): Dropout(p=0.0, inplace=False)
+              (resid_dropout): Dropout(p=0.0, inplace=False)
+              (k_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (v_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (q_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (out_proj): Linear(in_features=2560, out_features=2560, bias=True)
+            )
+          )
+          (ln_2): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (mlp): GPTNeoMLP(
+            (c_fc): Linear(in_features=2560, out_features=10240, bias=True)
+            (c_proj): Linear(in_features=10240, out_features=2560, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=2560, out_features=2, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTNeoForSequenceClassification(
+    (transformer): GPTNeoModel(
+      (wte): Embedding(50257, 2560)
+      (wpe): Embedding(2048, 2560)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-31): 32 x GPTNeoBlock(
+          (ln_1): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTNeoAttention(
+            (attention): GPTNeoSelfAttention(
+              (attn_dropout): Dropout(p=0.0, inplace=False)
+              (resid_dropout): Dropout(p=0.0, inplace=False)
+              (k_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (v_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (q_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (out_proj): Linear(in_features=2560, out_features=2560, bias=True)
+            )
+          )
+          (ln_2): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (mlp): GPTNeoMLP(
+            (c_fc): Linear(in_features=2560, out_features=10240, bias=True)
+            (c_proj): Linear(in_features=10240, out_features=2560, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=2560, out_features=2, bias=False)
+  )
+)
+ EleutherAI/gpt-neo-2.7B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-neo-2.7B/Strategy_1/sub_strategy_0/epoch_0/torch_model_with_32fp_wrapper.pthDistributedDataParallel(
+  (module): GPTNeoForSequenceClassification(
+    (transformer): GPTNeoModel(
+      (wte): Embedding(50257, 2560)
+      (wpe): Embedding(2048, 2560)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-31): 32 x GPTNeoBlock(
+          (ln_1): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTNeoAttention(
+            (attention): GPTNeoSelfAttention(
+              (attn_dropout): Dropout(p=0.0, inplace=False)
+              (resid_dropout): Dropout(p=0.0, inplace=False)
+              (k_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (v_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (q_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (out_proj): Linear(in_features=2560, out_features=2560, bias=True)
+            )
+          )
+          (ln_2): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (mlp): GPTNeoMLP(
+            (c_fc): Linear(in_features=2560, out_features=10240, bias=True)
+            (c_proj): Linear(in_features=10240, out_features=2560, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=2560, out_features=2, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTNeoForSequenceClassification(
+    (transformer): GPTNeoModel(
+      (wte): Embedding(50257, 2560)
+      (wpe): Embedding(2048, 2560)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-31): 32 x GPTNeoBlock(
+          (ln_1): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTNeoAttention(
+            (attention): GPTNeoSelfAttention(
+              (attn_dropout): Dropout(p=0.0, inplace=False)
+              (resid_dropout): Dropout(p=0.0, inplace=False)
+              (k_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (v_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (q_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (out_proj): Linear(in_features=2560, out_features=2560, bias=True)
+            )
+          )
+          (ln_2): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (mlp): GPTNeoMLP(
+            (c_fc): Linear(in_features=2560, out_features=10240, bias=True)
+            (c_proj): Linear(in_features=10240, out_features=2560, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=2560, out_features=2, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTNeoForSequenceClassification(
+    (transformer): GPTNeoModel(
+      (wte): Embedding(50257, 2560)
+      (wpe): Embedding(2048, 2560)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-31): 32 x GPTNeoBlock(
+          (ln_1): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTNeoAttention(
+            (attention): GPTNeoSelfAttention(
+              (attn_dropout): Dropout(p=0.0, inplace=False)
+              (resid_dropout): Dropout(p=0.0, inplace=False)
+              (k_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (v_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (q_proj): Linear(in_features=2560, out_features=2560, bias=False)
+              (out_proj): Linear(in_features=2560, out_features=2560, bias=True)
+            )
+          )
+          (ln_2): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+          (mlp): GPTNeoMLP(
+            (c_fc): Linear(in_features=2560, out_features=10240, bias=True)
+            (c_proj): Linear(in_features=10240, out_features=2560, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=2560, out_features=2, bias=False)
+  )
+)
+ EleutherAI/gpt-neo-2.7B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-neo-2.7B/Strategy_1/sub_strategy_0/epoch_0/torch_model_with_32fp_wrapper.pth
+ EleutherAI/gpt-neo-2.7B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-neo-2.7B/Strategy_1/sub_strategy_0/epoch_0/torch_model_with_32fp_wrapper.pth
+
+
+
+
+
+ EleutherAI/gpt-neo-2.7B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-neo-2.7B/Strategy_1/sub_strategy_0/epoch_0/torch_model_with_32fp_wrapper.pth
+ EleutherAI/gpt-neo-2.7B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-neo-2.7B/Strategy_1/sub_strategy_0/epoch_0/torch_model_with_32fp_wrapper.pth
+ EleutherAI/gpt-neo-2.7B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ildc/EleutherAI_gpt-neo-2.7B/Strategy_1/sub_strategy_0/epoch_0/torch_model_with_32fp_wrapper.pth
+
+
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+
+
+Extraction for ildc complete!
+
+All extraction complete!
+
+
+Extraction for ildc complete!
+
+All extraction complete!

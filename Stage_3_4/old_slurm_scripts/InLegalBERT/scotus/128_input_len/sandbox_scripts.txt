@@ -1,0 +1,124 @@
+CUDA_VISIBLE_DEVICES=0 python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --add_layers True \
+            --layers_from_end 4 \
+            --ft_model_used_for_extraction "LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-neo-2.7B/Strategy_0/sub_strategy_0/Training_data_EleutherAI_gpt-neo-2.7B/chunks_with_100_overlap_and_512_input-length/tuned_model/ZeRO3_epoch_2__final" \
+            --pretrained_model 'EleutherAI/gpt-neo-2.7B' \
+            --finetuned_on_input_len 512 \
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --num_layers 2 \
+            --dff 4096 \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --pad_len 300 \
+            --parent_dir "LEGAL-PE/Level-3_of_Framework/savedModels/128_input_len/" \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_512input_ft_model/128_input_len_25_overlap/Neo2.7b/";
+            
+            python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 4 \
+            --ft_model_used_for_extraction "torch-model_epoch-3_lr_2e-06" \
+            --pretrained_model 'LegalBERT' \
+            --finetuned_on_input_len 512 \
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --num_layers 2 \
+            --dff 4096 \
+            --pad_len 300 \
+            --parent_dir "LEGAL-PE/Level-3_of_Framework/savedModels/128_input_len/" \
+            --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_512input_ft_model/128_input_len_25_overlap/LegalBERT/"
+
+
+
+#Last two layers concatenated with clustering
+CUDA_VISIBLE_DEVICES=1 python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 2 \
+            --ft_model_used_for_extraction "torch-model_epoch-3_lr_2e-06" \
+            --pretrained_model 'LegalBERT' \
+            --finetuned_on_input_len 512 \
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --num_layers 2 \
+            --dff 4096 \
+            --with_clustering True \
+            --pad_len 300 \
+            --parent_dir "LEGAL-PE/Level-3_of_Framework/savedModels/128_input_len/" \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_512input_ft_model/128_input_len_25_overlap/LegalBERT/";CUDA_VISIBLE_DEVICES=1 python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 2 \
+            --ft_model_used_for_extraction "torch-model_epoch-3_lr_2e-06" \
+            --pretrained_model 'LegalBERT' \
+            --finetuned_on_input_len 512 \
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --num_layers 2 \
+            --dff 4096 \
+            --pad_len 300 \
+            --parent_dir "LEGAL-PE/Level-3_of_Framework/savedModels/128_input_len/" \
+            --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_512input_ft_model/128_input_len_25_overlap/LegalBERT/"
+
+
+#Last one layers concatenated with clustering
+python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 1 \
+            --ft_model_used_for_extraction "torch-model_epoch-3_lr_2e-06" \
+            --pretrained_model 'LegalBERT' \
+            --finetuned_on_input_len 512 \
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --num_layers 2 \
+            --dff 4096 \
+            --with_clustering True \
+            --pad_len 300 \
+            --parent_dir "LEGAL-PE/Level-3_of_Framework/savedModels/128_input_len/" \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_512input_ft_model/128_input_len_25_overlap/LegalBERT/";python LEGAL-PE/Level-3_of_Framework/Level_three/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 1 \
+            --ft_model_used_for_extraction "torch-model_epoch-3_lr_2e-06" \
+            --pretrained_model 'LegalBERT' \
+            --finetuned_on_input_len 512 \
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --num_layers 2 \
+            --dff 4096 \
+            --pad_len 300 \
+            --parent_dir "LEGAL-PE/Level-3_of_Framework/savedModels/128_input_len/" \
+            --data_path "LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_512input_ft_model/128_input_len_25_overlap/LegalBERT/"
+
+
+
+
+

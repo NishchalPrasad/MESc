@@ -1,0 +1,372 @@
+Extraction started!
+
+Extraction started!
+Extraction started!
+Extraction started!
+
+Extraction for scotus started!Extraction started!
+
+Extraction started!
+
+
+
+
+
+Extraction for scotus started!
+
+Extraction for scotus started!
+Extraction for scotus started!
+Extraction for scotus started!
+
+Extraction for scotus started!
+
+
+
+
+Dataset's slice view:
+
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+
+
+
+
+                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]
+                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]
+
+                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]
+                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]
+
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=13, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=13, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=13, bias=False)
+  )
+)
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2_final/pytorch_model.bin
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2_final/pytorch_model.bin
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=13, bias=False)
+  )
+)
+
+
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2_final/pytorch_model.bin
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=13, bias=False)
+  )
+)
+
+
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2_final/pytorch_model.bin
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2_final/pytorch_model.bin
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=13, bias=False)
+  )
+)
+
+
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2_final/pytorch_model.bin
+
+
+Extraction for scotus complete!
+
+All extraction complete!
+
+
+Extraction for scotus complete!
+
+All extraction complete!
+
+
+Extraction for scotus complete!
+
+All extraction complete!
+
+
+Extraction for scotus complete!
+
+All extraction complete!
+
+
+Extraction for scotus complete!
+
+All extraction complete!
+
+
+Extraction for scotus complete!
+
+All extraction complete!

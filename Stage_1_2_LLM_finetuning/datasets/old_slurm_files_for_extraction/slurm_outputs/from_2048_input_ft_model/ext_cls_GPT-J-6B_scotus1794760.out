@@ -1,0 +1,613 @@
++ module load python
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\''' 'LD_LIBRARY_PATH='\'''\''' /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++++ LD_LIBRARY_PATH=
++++ /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash load python
++ eval '_LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1;' export '_LMFILES__modshare;
+LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1;' export 'LOADEDMODULES_modshare;
+PYTHONUNBUFFERED=1;' export 'PYTHONUNBUFFERED;
+MODULES_LMCONFLICT_modshare=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu:1;' export 'MODULES_LMCONFLICT_modshare;
+_LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4;' export '_LMFILES_;
+LOADEDMODULES=cpuarch/amd:python/3.10.4;' export 'LOADEDMODULES;
+MODULES_LMCONFLICT=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu;' export 'MODULES_LMCONFLICT;
+.' '/gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh;
+conda' activate 'python-3.10.4;
+test' '0;'
+++ _LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1
+++ export _LMFILES__modshare
+++ LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1
+++ export LOADEDMODULES_modshare
+++ PYTHONUNBUFFERED=1
+++ export PYTHONUNBUFFERED
+++ MODULES_LMCONFLICT_modshare='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu:1'
+++ export MODULES_LMCONFLICT_modshare
+++ _LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4
+++ export _LMFILES_
+++ LOADEDMODULES=cpuarch/amd:python/3.10.4
+++ export LOADEDMODULES
+++ MODULES_LMCONFLICT='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu'
+++ export MODULES_LMCONFLICT
+++ . /gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
+++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate python-3.10.4
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate python-3.10.4
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate python-3.10.4
++++ /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda shell.posix activate python-3.10.4
+++ ask_conda='PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
+++ eval 'PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
++++ PS1='(python-3.10.4) '
++++ export PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=python-3.10.4
++++ CONDA_DEFAULT_ENV=python-3.10.4
++++ export 'CONDA_PROMPT_MODIFIER=(python-3.10.4) '
++++ CONDA_PROMPT_MODIFIER='(python-3.10.4) '
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh
+++++ [[ -n '' ]]
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal ']'
+++++ export GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ export GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ [[ ! -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins ]]
+++++ unset GDAL_DRIVER_PATH
+++++ export CPL_ZIP_ENCODING=UTF-8
+++++ CPL_ZIP_ENCODING=UTF-8
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/epsg_csv ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/Library/share/epsg_csv ']'
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh
+++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ export GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
+++++ GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh
+++++ '[' -n '' ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj ']'
+++++ export PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ '[' -f /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj/copyright_and_licenses.csv ']'
+++++ export PROJ_NETWORK=ON
+++++ PROJ_NETWORK=ON
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ export PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ accelerate launch --config_file LEGAL-PE/SIGIR_experiments/distributedTraining/Config_files_for_distributed/default_accelerate_config_without_deep_speed.yaml LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py --maxlen 2048 --length 2046 --overlap 100 --loading_model_path LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin --cuda_number 0 --strat 0 --dataset_subset scotus --hggfc_model_name EleutherAI/gpt-j-6B --get_train_data True --get_validation_data True --get_test_data True --trained_with_deepspeed_accelerate True --path_train_dat LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/Extracted_data/from_2048input_ft_model/2048_input_len_100_overlap/J6b/
+2023-05-23 01:56:15.557083: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-23 01:56:16.877483: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 01:56:20.973558: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:56:20.973710: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:56:20.973726: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 01:57:04.134422: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 01:57:04.136331: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 01:57:04.136502: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 01:57:04.136518: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 01:57:04.137032: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 01:57:04.137306: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 01:57:08.724238: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724360: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724420: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724440: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 01:57:08.724438: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724470: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724474: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724499: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724546: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 01:57:08.724606: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724627: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 01:57:08.724707: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724715: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.724728: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 01:57:08.724738: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 01:57:08.724877: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.725000: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 01:57:08.725014: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Extraction started!
+Extraction started!
+
+
+Extraction started!
+
+Extraction for scotus started!
+Extraction for scotus started!Extraction started!
+Extraction started!
+Extraction started!
+
+
+
+
+
+
+
+Extraction for scotus started!
+Extraction for scotus started!
+Extraction for scotus started!
+Extraction for scotus started!
+
+
+
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+
+Dataset's slice view:
+
+
+
+
+
+                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]
+
+                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]
+
+                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]
+                                                   text  label
+0     329 U.S. 29\n67 S.Ct. 1\n91 L.Ed. 22\nCHAMPLIN...      7
+1     329 U.S. 1\n67 S.Ct. 6\n91 L.Ed. 3\nHALLIBURTO...      7
+2     329 U.S. 14\n67 S.Ct. 13\n91 L.Ed. 12\nCLEVELA...      0
+3     329 U.S. 40\n67 S.Ct. 167\n91 L.Ed. 29\nUNITED...      1
+4     329 U.S. 90\n67 S.Ct. 133\n91 L.Ed. 103\nAMERI...      7
+...                                                 ...    ...
+4995  459 U.S. 176\n103 S.Ct. 539\n74 L.Ed.2d 348\nS...     10
+4996  459 U.S. 212\n103 S.Ct. 588\n74 L.Ed.2d 402\nC...      6
+4997  459 U.S. 297\n103 S.Ct. 634\n74 L.Ed.2d 465\nD...      7
+4998  459 U.S. 248\n103 S.Ct. 608\n74 L.Ed.2d 430\nT...      0
+4999  459 U.S. 344\n103 S.Ct. 665\n74 L.Ed.2d 523\nL...      6
+
+[5000 rows x 2 columns]
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 0/5000 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+  0%|          | 1/5000 [00:09<13:37:48,  9.82s/it]  0%|          | 1/5000 [00:09<13:37:49,  9.82s/it]  0%|          | 1/5000 [00:09<13:37:49,  9.82s/it]  0%|          | 1/5000 [00:09<13:37:46,  9.82s/it]  0%|          | 1/5000 [00:09<13:37:46,  9.82s/it]  0%|          | 1/5000 [00:09<13:37:43,  9.81s/it]  2%|▏         | 109/5000 [00:09<05:13, 15.59it/s]   2%|▏         | 111/5000 [00:09<05:07, 15.88it/s]   2%|▏         | 107/5000 [00:09<05:19, 15.30it/s]   2%|▏         | 107/5000 [00:09<05:19, 15.30it/s]   2%|▏         | 106/5000 [00:09<05:22, 15.16it/s]   2%|▏         | 111/5000 [00:09<05:07, 15.88it/s]   4%|▍         | 218/5000 [00:10<02:08, 37.29it/s]  4%|▍         | 216/5000 [00:10<02:09, 36.88it/s]  4%|▍         | 222/5000 [00:10<02:06, 37.85it/s]  4%|▍         | 223/5000 [00:10<02:05, 38.05it/s]  4%|▍         | 220/5000 [00:10<02:07, 37.57it/s]  4%|▍         | 215/5000 [00:10<02:10, 36.74it/s]  7%|▋         | 327/5000 [00:10<01:10, 66.64it/s]  7%|▋         | 326/5000 [00:10<01:10, 66.52it/s]  6%|▋         | 323/5000 [00:10<01:11, 65.83it/s]  7%|▋         | 336/5000 [00:10<01:08, 68.49it/s]  7%|▋         | 331/5000 [00:10<01:09, 67.46it/s]  7%|▋         | 333/5000 [00:10<01:08, 67.73it/s]  9%|▊         | 431/5000 [00:10<00:43, 104.19it/s]  9%|▊         | 428/5000 [00:10<00:44, 103.52it/s]  9%|▊         | 435/5000 [00:10<00:43, 105.44it/s]  9%|▉         | 445/5000 [00:10<00:42, 107.60it/s]  9%|▉         | 441/5000 [00:10<00:42, 106.98it/s]  9%|▉         | 441/5000 [00:10<00:42, 106.47it/s] 11%|█         | 546/5000 [00:10<00:28, 157.49it/s] 11%|█         | 537/5000 [00:10<00:28, 154.63it/s] 11%|█         | 552/5000 [00:10<00:27, 159.01it/s] 11%|█         | 541/5000 [00:10<00:28, 155.78it/s] 11%|█         | 557/5000 [00:10<00:27, 160.06it/s] 11%|█         | 552/5000 [00:10<00:28, 158.52it/s] 13%|█▎        | 663/5000 [00:10<00:19, 224.60it/s] 13%|█▎        | 646/5000 [00:10<00:19, 219.08it/s] 13%|█▎        | 669/5000 [00:10<00:19, 226.22it/s] 13%|█▎        | 657/5000 [00:10<00:19, 223.05it/s] 13%|█▎        | 651/5000 [00:10<00:19, 220.76it/s] 13%|█▎        | 664/5000 [00:10<00:19, 224.75it/s] 15%|█▌        | 773/5000 [00:10<00:13, 303.04it/s] 15%|█▌        | 756/5000 [00:10<00:14, 295.02it/s] 15%|█▌        | 753/5000 [00:10<00:14, 295.17it/s] 15%|█▌        | 773/5000 [00:10<00:13, 302.21it/s] 16%|█▌        | 780/5000 [00:10<00:13, 305.26it/s] 15%|█▌        | 766/5000 [00:10<00:14, 300.60it/s] 18%|█▊        | 884/5000 [00:10<00:10, 394.36it/s] 17%|█▋        | 865/5000 [00:10<00:10, 385.24it/s] 17%|█▋        | 862/5000 [00:10<00:10, 385.18it/s] 18%|█▊        | 877/5000 [00:10<00:10, 392.11it/s] 18%|█▊        | 885/5000 [00:10<00:10, 394.68it/s] 18%|█▊        | 893/5000 [00:10<00:10, 398.46it/s] 20%|█▉        | 994/5000 [00:10<00:08, 492.35it/s] 20%|█▉        | 975/5000 [00:10<00:08, 484.46it/s] 19%|█▉        | 970/5000 [00:10<00:08, 481.64it/s] 20%|█▉        | 994/5000 [00:10<00:08, 491.54it/s] 20%|██        | 1003/5000 [00:10<00:08, 496.21it/s] 20%|█▉        | 986/5000 [00:10<00:08, 489.15it/s] 22%|██▏       | 1082/5000 [00:10<00:06, 581.67it/s] 22%|██▏       | 1106/5000 [00:10<00:06, 596.18it/s] 22%|██▏       | 1114/5000 [00:10<00:06, 597.85it/s] 22%|██▏       | 1077/5000 [00:10<00:06, 578.85it/s] 22%|██▏       | 1097/5000 [00:10<00:06, 591.83it/s] 22%|██▏       | 1106/5000 [00:10<00:06, 595.17it/s] 24%|██▍       | 1225/5000 [00:10<00:05, 696.00it/s] 24%|██▍       | 1190/5000 [00:10<00:05, 676.31it/s] 24%|██▎       | 1185/5000 [00:10<00:05, 674.80it/s] 24%|██▍       | 1216/5000 [00:10<00:05, 691.01it/s] 24%|██▍       | 1206/5000 [00:10<00:05, 686.47it/s] 24%|██▍       | 1216/5000 [00:10<00:05, 691.27it/s] 26%|██▌       | 1298/5000 [00:11<00:04, 762.37it/s] 27%|██▋       | 1338/5000 [00:11<00:04, 788.09it/s] 27%|██▋       | 1326/5000 [00:11<00:04, 777.97it/s] 26%|██▌       | 1292/5000 [00:11<00:04, 757.17it/s] 27%|██▋       | 1327/5000 [00:11<00:04, 779.28it/s] 26%|██▋       | 1316/5000 [00:11<00:04, 773.85it/s] 29%|██▉       | 1449/5000 [00:11<00:04, 863.35it/s] 29%|██▊       | 1437/5000 [00:11<00:04, 855.67it/s] 28%|██▊       | 1399/5000 [00:11<00:04, 829.42it/s] 28%|██▊       | 1425/5000 [00:11<00:04, 845.59it/s] 29%|██▊       | 1437/5000 [00:11<00:04, 851.68it/s] 28%|██▊       | 1406/5000 [00:11<00:04, 831.35it/s] 31%|███       | 1560/5000 [00:11<00:03, 922.56it/s] 31%|███       | 1549/5000 [00:11<00:03, 920.96it/s] 30%|███       | 1507/5000 [00:11<00:03, 891.37it/s] 31%|███       | 1534/5000 [00:11<00:03, 906.60it/s] 31%|███       | 1548/5000 [00:11<00:03, 914.51it/s] 30%|███       | 1513/5000 [00:11<00:03, 888.90it/s] 33%|███▎      | 1672/5000 [00:11<00:03, 974.24it/s] 33%|███▎      | 1662/5000 [00:11<00:03, 974.01it/s] 33%|███▎      | 1643/5000 [00:11<00:03, 954.42it/s] 32%|███▏      | 1617/5000 [00:11<00:03, 944.35it/s] 32%|███▏      | 1623/5000 [00:11<00:03, 943.82it/s] 33%|███▎      | 1660/5000 [00:11<00:03, 966.73it/s] 36%|███▌      | 1783/5000 [00:11<00:03, 1010.30it/s] 35%|███▌      | 1773/5000 [00:11<00:03, 1010.03it/s] 34%|███▍      | 1725/5000 [00:11<00:03, 979.91it/s] 35%|███▌      | 1752/5000 [00:11<00:03, 987.76it/s] 35%|███▌      | 1771/5000 [00:11<00:03, 1005.42it/s] 35%|███▍      | 1731/5000 [00:11<00:03, 975.88it/s] 38%|███▊      | 1894/5000 [00:11<00:02, 1036.78it/s] 37%|███▋      | 1833/5000 [00:11<00:03, 1007.64it/s] 38%|███▊      | 1885/5000 [00:11<00:03, 1038.30it/s] 37%|███▋      | 1861/5000 [00:11<00:03, 1014.53it/s] 38%|███▊      | 1882/5000 [00:11<00:03, 1032.63it/s] 37%|███▋      | 1840/5000 [00:11<00:03, 1005.11it/s] 40%|████      | 2005/5000 [00:11<00:02, 1056.35it/s] 40%|███▉      | 1997/5000 [00:11<00:02, 1060.86it/s] 39%|███▉      | 1941/5000 [00:11<00:02, 1026.75it/s] 40%|███▉      | 1993/5000 [00:11<00:02, 1052.45it/s] 39%|███▉      | 1970/5000 [00:11<00:02, 1032.77it/s] 39%|███▉      | 1948/5000 [00:11<00:02, 1025.69it/s] 42%|████▏     | 2116/5000 [00:11<00:02, 1071.06it/s] 42%|████▏     | 2110/5000 [00:11<00:02, 1078.68it/s] 42%|████▏     | 2079/5000 [00:11<00:02, 1045.34it/s] 42%|████▏     | 2104/5000 [00:11<00:02, 1060.99it/s] 41%|████      | 2049/5000 [00:11<00:02, 1028.79it/s] 41%|████      | 2056/5000 [00:11<00:02, 1032.58it/s] 45%|████▍     | 2227/5000 [00:11<00:02, 1082.25it/s] 44%|████▍     | 2222/5000 [00:11<00:02, 1088.35it/s] 44%|████▍     | 2189/5000 [00:11<00:02, 1060.40it/s] 44%|████▍     | 2214/5000 [00:11<00:02, 1069.05it/s] 43%|████▎     | 2157/5000 [00:11<00:02, 1040.98it/s] 43%|████▎     | 2164/5000 [00:11<00:02, 1044.90it/s] 47%|████▋     | 2339/5000 [00:11<00:02, 1091.88it/s] 47%|████▋     | 2334/5000 [00:11<00:02, 1097.63it/s] 46%|████▌     | 2299/5000 [00:11<00:02, 1071.89it/s] 45%|████▌     | 2264/5000 [00:11<00:02, 1048.81it/s] 47%|████▋     | 2326/5000 [00:11<00:02, 1081.94it/s] 45%|████▌     | 2273/5000 [00:11<00:02, 1057.29it/s] 49%|████▉     | 2450/5000 [00:12<00:02, 1092.51it/s] 49%|████▉     | 2446/5000 [00:12<00:02, 1097.54it/s] 48%|████▊     | 2408/5000 [00:12<00:02, 1071.39it/s] 49%|████▊     | 2436/5000 [00:12<00:02, 1082.25it/s] 47%|████▋     | 2371/5000 [00:12<00:02, 1046.67it/s] 48%|████▊     | 2381/5000 [00:12<00:02, 1051.33it/s] 51%|█████     | 2561/5000 [00:12<00:02, 1094.79it/s] 51%|█████     | 2558/5000 [00:12<00:02, 1101.09it/s] 50%|█████     | 2517/5000 [00:12<00:02, 1074.49it/s] 50%|████▉     | 2477/5000 [00:12<00:02, 1047.53it/s] 51%|█████     | 2546/5000 [00:12<00:02, 1081.38it/s] 50%|████▉     | 2488/5000 [00:12<00:02, 1052.86it/s] 53%|█████▎    | 2672/5000 [00:12<00:02, 1095.04it/s] 53%|█████▎    | 2670/5000 [00:12<00:02, 1104.83it/s] 53%|█████▎    | 2626/5000 [00:12<00:02, 1073.37it/s] 53%|█████▎    | 2655/5000 [00:12<00:02, 1082.08it/s] 52%|█████▏    | 2583/5000 [00:12<00:02, 1045.78it/s] 52%|█████▏    | 2595/5000 [00:12<00:02, 1055.32it/s] 56%|█████▌    | 2784/5000 [00:12<00:02, 1102.32it/s] 56%|█████▌    | 2782/5000 [00:12<00:02, 1108.07it/s] 55%|█████▍    | 2735/5000 [00:12<00:02, 1076.37it/s] 55%|█████▌    | 2765/5000 [00:12<00:02, 1087.12it/s] 54%|█████▍    | 2691/5000 [00:12<00:02, 1054.12it/s] 54%|█████▍    | 2704/5000 [00:12<00:02, 1063.50it/s] 58%|█████▊    | 2897/5000 [00:12<00:01, 1107.88it/s] 58%|█████▊    | 2895/5000 [00:12<00:01, 1112.04it/s] 57%|█████▋    | 2844/5000 [00:12<00:01, 1078.19it/s] 58%|█████▊    | 2876/5000 [00:12<00:01, 1093.08it/s] 56%|█████▌    | 2798/5000 [00:12<00:02, 1058.08it/s] 56%|█████▌    | 2812/5000 [00:12<00:02, 1066.08it/s] 60%|██████    | 3009/5000 [00:12<00:01, 1109.32it/s] 60%|██████    | 3007/5000 [00:12<00:01, 1112.11it/s] 59%|█████▉    | 2953/5000 [00:12<00:01, 1081.27it/s] 60%|█████▉    | 2987/5000 [00:12<00:01, 1096.85it/s] 58%|█████▊    | 2905/5000 [00:12<00:01, 1056.98it/s] 58%|█████▊    | 2920/5000 [00:12<00:01, 1069.99it/s] 62%|██████▏   | 3122/5000 [00:12<00:01, 1113.56it/s] 62%|██████▏   | 3119/5000 [00:12<00:01, 1112.31it/s] 61%|██████    | 3062/5000 [00:12<00:01, 1076.69it/s] 62%|██████▏   | 3099/5000 [00:12<00:01, 1101.02it/s] 60%|██████    | 3011/5000 [00:12<00:01, 1057.16it/s] 61%|██████    | 3029/5000 [00:12<00:01, 1074.76it/s] 65%|██████▍   | 3234/5000 [00:12<00:01, 1110.76it/s] 65%|██████▍   | 3231/5000 [00:12<00:01, 1113.93it/s] 63%|██████▎   | 3170/5000 [00:12<00:01, 1076.87it/s] 64%|██████▍   | 3210/5000 [00:12<00:01, 1098.05it/s] 62%|██████▏   | 3117/5000 [00:12<00:01, 1057.59it/s] 63%|██████▎   | 3137/5000 [00:12<00:01, 1070.11it/s] 67%|██████▋   | 3346/5000 [00:12<00:01, 1110.79it/s] 67%|██████▋   | 3343/5000 [00:12<00:01, 1112.09it/s] 66%|██████▌   | 3278/5000 [00:12<00:01, 1074.84it/s] 66%|██████▋   | 3320/5000 [00:12<00:01, 1097.30it/s] 64%|██████▍   | 3223/5000 [00:12<00:01, 1054.73it/s] 65%|██████▍   | 3245/5000 [00:12<00:01, 1072.86it/s] 69%|██████▉   | 3458/5000 [00:12<00:01, 1111.06it/s] 69%|██████▉   | 3455/5000 [00:12<00:01, 1108.12it/s] 68%|██████▊   | 3386/5000 [00:12<00:01, 1070.10it/s] 69%|██████▊   | 3430/5000 [00:12<00:01, 1086.03it/s] 67%|██████▋   | 3329/5000 [00:12<00:01, 1048.25it/s] 67%|██████▋   | 3353/5000 [00:12<00:01, 1068.72it/s] 71%|███████▏  | 3570/5000 [00:13<00:01, 1108.86it/s] 71%|███████▏  | 3566/5000 [00:13<00:01, 1107.22it/s] 70%|██████▉   | 3494/5000 [00:13<00:01, 1069.80it/s] 71%|███████   | 3539/5000 [00:13<00:01, 1085.21it/s] 69%|██████▊   | 3436/5000 [00:13<00:01, 1052.72it/s] 69%|██████▉   | 3461/5000 [00:13<00:01, 1071.98it/s] 74%|███████▎  | 3682/5000 [00:13<00:01, 1110.95it/s] 74%|███████▎  | 3677/5000 [00:13<00:01, 1107.46it/s] 72%|███████▏  | 3603/5000 [00:13<00:01, 1074.16it/s] 73%|███████▎  | 3649/5000 [00:13<00:01, 1088.09it/s] 71%|███████   | 3543/5000 [00:13<00:01, 1056.39it/s] 71%|███████▏  | 3569/5000 [00:13<00:01, 1073.99it/s] 76%|███████▌  | 3788/5000 [00:13<00:01, 1107.11it/s] 76%|███████▌  | 3794/5000 [00:13<00:01, 1107.60it/s] 74%|███████▍  | 3711/5000 [00:13<00:01, 1074.86it/s] 75%|███████▌  | 3759/5000 [00:13<00:01, 1091.42it/s] 74%|███████▎  | 3677/5000 [00:13<00:01, 1075.55it/s] 73%|███████▎  | 3650/5000 [00:13<00:01, 1057.34it/s] 78%|███████▊  | 3899/5000 [00:13<00:00, 1106.55it/s] 78%|███████▊  | 3906/5000 [00:13<00:00, 1110.83it/s] 76%|███████▋  | 3820/5000 [00:13<00:01, 1076.64it/s] 77%|███████▋  | 3870/5000 [00:13<00:01, 1095.38it/s] 76%|███████▌  | 3785/5000 [00:13<00:01, 1075.68it/s] 75%|███████▌  | 3757/5000 [00:13<00:01, 1058.82it/s] 80%|████████  | 4010/5000 [00:13<00:00, 1103.53it/s] 80%|████████  | 4018/5000 [00:13<00:00, 1106.00it/s] 79%|███████▊  | 3928/5000 [00:13<00:00, 1072.67it/s] 80%|███████▉  | 3980/5000 [00:13<00:00, 1094.26it/s] 78%|███████▊  | 3893/5000 [00:13<00:01, 1070.18it/s] 77%|███████▋  | 3863/5000 [00:13<00:01, 1055.76it/s] 82%|████████▏ | 4121/5000 [00:13<00:00, 1103.71it/s] 83%|████████▎ | 4129/5000 [00:13<00:00, 1105.50it/s] 81%|████████  | 4037/5000 [00:13<00:00, 1076.24it/s] 82%|████████▏ | 4090/5000 [00:13<00:00, 1092.10it/s] 79%|███████▉  | 3970/5000 [00:13<00:00, 1059.51it/s] 80%|████████  | 4002/5000 [00:13<00:00, 1073.78it/s] 85%|████████▍ | 4232/5000 [00:13<00:00, 1103.92it/s] 85%|████████▍ | 4240/5000 [00:13<00:00, 1102.86it/s] 83%|████████▎ | 4145/5000 [00:13<00:00, 1073.61it/s] 82%|████████▏ | 4110/5000 [00:13<00:00, 1075.37it/s] 84%|████████▍ | 4200/5000 [00:13<00:00, 1090.79it/s] 82%|████████▏ | 4076/5000 [00:13<00:00, 1057.29it/s] 87%|████████▋ | 4344/5000 [00:13<00:00, 1105.87it/s] 87%|████████▋ | 4352/5000 [00:13<00:00, 1106.22it/s] 85%|████████▌ | 4255/5000 [00:13<00:00, 1079.25it/s] 86%|████████▌ | 4311/5000 [00:13<00:00, 1095.90it/s] 84%|████████▍ | 4220/5000 [00:13<00:00, 1081.80it/s] 84%|████████▎ | 4185/5000 [00:13<00:00, 1065.19it/s] 89%|████████▉ | 4456/5000 [00:13<00:00, 1107.67it/s] 89%|████████▉ | 4463/5000 [00:13<00:00, 1105.78it/s] 87%|████████▋ | 4365/5000 [00:13<00:00, 1083.04it/s] 88%|████████▊ | 4421/5000 [00:13<00:00, 1094.93it/s] 86%|████████▌ | 4293/5000 [00:13<00:00, 1067.84it/s] 87%|████████▋ | 4329/5000 [00:13<00:00, 1078.75it/s] 91%|█████████▏| 4568/5000 [00:13<00:00, 1110.49it/s] 92%|█████████▏| 4576/5000 [00:13<00:00, 1109.90it/s] 90%|████████▉ | 4475/5000 [00:13<00:00, 1086.78it/s] 91%|█████████ | 4531/5000 [00:13<00:00, 1095.49it/s] 88%|████████▊ | 4402/5000 [00:13<00:00, 1071.21it/s] 89%|████████▉ | 4439/5000 [00:13<00:00, 1083.94it/s] 94%|█████████▎| 4680/5000 [00:14<00:00, 1108.60it/s] 94%|█████████▎| 4687/5000 [00:14<00:00, 1107.66it/s] 92%|█████████▏| 4584/5000 [00:14<00:00, 1085.91it/s] 93%|█████████▎| 4641/5000 [00:14<00:00, 1094.61it/s] 90%|█████████ | 4510/5000 [00:14<00:00, 1071.09it/s] 91%|█████████ | 4548/5000 [00:14<00:00, 1076.80it/s] 96%|█████████▌| 4792/5000 [00:14<00:00, 1110.92it/s] 96%|█████████▌| 4798/5000 [00:14<00:00, 1103.05it/s] 95%|█████████▌| 4751/5000 [00:14<00:00, 1094.57it/s] 94%|█████████▍| 4693/5000 [00:14<00:00, 1078.61it/s] 92%|█████████▏| 4618/5000 [00:14<00:00, 1065.47it/s] 93%|█████████▎| 4656/5000 [00:14<00:00, 1074.57it/s] 98%|█████████▊| 4904/5000 [00:14<00:00, 1109.32it/s] 98%|█████████▊| 4910/5000 [00:14<00:00, 1105.65it/s] 97%|█████████▋| 4861/5000 [00:14<00:00, 1094.21it/s] 96%|█████████▌| 4801/5000 [00:14<00:00, 1075.48it/s] 94%|█████████▍| 4725/5000 [00:14<00:00, 1063.00it/s] 95%|█████████▌| 4764/5000 [00:14<00:00, 1073.38it/s]100%|██████████| 5000/5000 [00:14<00:00, 348.99it/s] 
+  0%|          | 0/1400 [00:00<?, ?it/s]100%|██████████| 5000/5000 [00:14<00:00, 348.96it/s] 
+/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+ 99%|█████████▉| 4971/5000 [00:14<00:00, 1094.65it/s] 98%|█████████▊| 4909/5000 [00:14<00:00, 1076.70it/s] 97%|█████████▋| 4833/5000 [00:14<00:00, 1067.23it/s] 97%|█████████▋| 4872/5000 [00:14<00:00, 1073.35it/s]100%|██████████| 5000/5000 [00:14<00:00, 347.79it/s] 
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+  8%|▊         | 110/1400 [00:00<00:01, 1095.44it/s]  8%|▊         | 111/1400 [00:00<00:01, 1104.37it/s]100%|██████████| 5000/5000 [00:14<00:00, 346.30it/s] 
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+ 99%|█████████▉| 4940/5000 [00:14<00:00, 1062.75it/s]100%|█████████▉| 4980/5000 [00:14<00:00, 1067.84it/s]100%|██████████| 5000/5000 [00:14<00:00, 345.40it/s] 
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+  8%|▊         | 110/1400 [00:00<00:01, 1089.92it/s]100%|██████████| 5000/5000 [00:14<00:00, 344.57it/s] 
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+ 16%|█▌        | 222/1400 [00:00<00:01, 1103.80it/s] 16%|█▌        | 223/1400 [00:00<00:01, 1111.33it/s]  8%|▊         | 110/1400 [00:00<00:01, 1091.58it/s]  8%|▊         | 107/1400 [00:00<00:01, 1062.01it/s] 16%|█▌        | 220/1400 [00:00<00:01, 1094.51it/s]  8%|▊         | 105/1400 [00:00<00:01, 1047.71it/s] 24%|██▍       | 333/1400 [00:00<00:00, 1101.00it/s] 24%|██▍       | 335/1400 [00:00<00:00, 1107.92it/s] 16%|█▌        | 220/1400 [00:00<00:01, 1080.73it/s] 15%|█▌        | 214/1400 [00:00<00:01, 1058.61it/s] 24%|██▎       | 330/1400 [00:00<00:00, 1091.48it/s] 15%|█▌        | 210/1400 [00:00<00:01, 1045.39it/s] 32%|███▏      | 444/1400 [00:00<00:00, 1098.50it/s] 32%|███▏      | 447/1400 [00:00<00:00, 1110.21it/s] 24%|██▎       | 329/1400 [00:00<00:00, 1078.00it/s] 23%|██▎       | 321/1400 [00:00<00:01, 1063.36it/s] 31%|███▏      | 440/1400 [00:00<00:00, 1094.74it/s] 23%|██▎       | 317/1400 [00:00<00:01, 1051.75it/s] 40%|███▉      | 555/1400 [00:00<00:00, 1100.72it/s] 40%|███▉      | 559/1400 [00:00<00:00, 1109.01it/s] 31%|███       | 437/1400 [00:00<00:00, 1073.86it/s] 31%|███       | 428/1400 [00:00<00:00, 1065.71it/s] 39%|███▉      | 550/1400 [00:00<00:00, 1091.22it/s] 30%|███       | 423/1400 [00:00<00:00, 1051.55it/s] 48%|████▊     | 667/1400 [00:00<00:00, 1104.95it/s] 48%|████▊     | 670/1400 [00:00<00:00, 1104.23it/s] 39%|███▉      | 545/1400 [00:00<00:00, 1075.30it/s] 38%|███▊      | 535/1400 [00:00<00:00, 1065.87it/s] 47%|████▋     | 660/1400 [00:00<00:00, 1091.05it/s] 38%|███▊      | 532/1400 [00:00<00:00, 1064.84it/s] 56%|█████▌    | 779/1400 [00:00<00:00, 1108.10it/s] 56%|█████▌    | 781/1400 [00:00<00:00, 1105.48it/s] 47%|████▋     | 654/1400 [00:00<00:00, 1076.93it/s] 46%|████▌     | 644/1400 [00:00<00:00, 1071.16it/s] 55%|█████▌    | 770/1400 [00:00<00:00, 1090.75it/s] 46%|████▌     | 639/1400 [00:00<00:00, 1060.26it/s] 64%|██████▎   | 890/1400 [00:00<00:00, 1105.22it/s] 64%|██████▎   | 892/1400 [00:00<00:00, 1105.88it/s] 54%|█████▍    | 762/1400 [00:00<00:00, 1073.48it/s] 54%|█████▍    | 753/1400 [00:00<00:00, 1076.43it/s] 63%|██████▎   | 881/1400 [00:00<00:00, 1095.42it/s] 53%|█████▎    | 747/1400 [00:00<00:00, 1066.64it/s] 72%|███████▏  | 1001/1400 [00:00<00:00, 1103.06it/s] 72%|███████▏  | 1004/1400 [00:00<00:00, 1108.25it/s] 62%|██████▏   | 870/1400 [00:00<00:00, 1075.32it/s] 62%|██████▏   | 861/1400 [00:00<00:00, 1075.67it/s] 71%|███████   | 991/1400 [00:00<00:00, 1093.48it/s] 61%|██████    | 854/1400 [00:00<00:00, 1064.54it/s] 79%|███████▉  | 1112/1400 [00:01<00:00, 1102.30it/s] 80%|███████▉  | 1116/1400 [00:01<00:00, 1110.56it/s] 70%|██████▉   | 978/1400 [00:00<00:00, 1070.87it/s] 69%|██████▉   | 969/1400 [00:00<00:00, 1074.26it/s] 79%|███████▊  | 1102/1400 [00:01<00:00, 1096.97it/s] 69%|██████▊   | 962/1400 [00:00<00:00, 1069.21it/s] 87%|████████▋ | 1224/1400 [00:01<00:00, 1105.39it/s] 88%|████████▊ | 1228/1400 [00:01<00:00, 1111.56it/s] 78%|███████▊  | 1088/1400 [00:01<00:00, 1079.64it/s] 77%|███████▋  | 1078/1400 [00:01<00:00, 1077.09it/s] 87%|████████▋ | 1213/1400 [00:01<00:00, 1100.67it/s] 76%|███████▋  | 1069/1400 [00:01<00:00, 1062.87it/s] 96%|█████████▌| 1340/1400 [00:01<00:00, 1110.51it/s] 95%|█████████▌| 1335/1400 [00:01<00:00, 1102.67it/s] 85%|████████▌ | 1196/1400 [00:01<00:00, 1075.63it/s] 85%|████████▍ | 1186/1400 [00:01<00:00, 1073.36it/s] 95%|█████████▍| 1324/1400 [00:01<00:00, 1095.65it/s]100%|██████████| 1400/1400 [00:01<00:00, 1108.93it/s]
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+100%|██████████| 1400/1400 [00:01<00:00, 1101.81it/s]
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+ 84%|████████▍ | 1176/1400 [00:01<00:00, 1064.09it/s] 93%|█████████▎| 1305/1400 [00:01<00:00, 1077.80it/s]100%|██████████| 1400/1400 [00:01<00:00, 1095.38it/s]
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+ 93%|█████████▎| 1296/1400 [00:01<00:00, 1080.92it/s]  8%|▊         | 113/1400 [00:00<00:01, 1123.44it/s]  8%|▊         | 110/1400 [00:00<00:01, 1098.69it/s] 92%|█████████▏| 1285/1400 [00:01<00:00, 1071.37it/s]100%|██████████| 1400/1400 [00:01<00:00, 1077.06it/s]
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+  8%|▊         | 111/1400 [00:00<00:01, 1101.82it/s]100%|██████████| 1400/1400 [00:01<00:00, 1073.88it/s]
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+ 16%|█▌        | 226/1400 [00:00<00:01, 1117.01it/s] 16%|█▌        | 221/1400 [00:00<00:01, 1100.06it/s]100%|█████████▉| 1394/1400 [00:01<00:00, 1074.47it/s]100%|██████████| 1400/1400 [00:01<00:00, 1064.74it/s]
+  0%|          | 0/1400 [00:00<?, ?it/s]/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py:348: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['labels'][i] = labels_binarized[i]
+  8%|▊         | 108/1400 [00:00<00:01, 1077.62it/s] 16%|█▌        | 222/1400 [00:00<00:01, 1106.03it/s]  8%|▊         | 110/1400 [00:00<00:01, 1094.93it/s] 24%|██▍       | 338/1400 [00:00<00:00, 1117.96it/s] 24%|██▎       | 332/1400 [00:00<00:00, 1099.34it/s]  8%|▊         | 106/1400 [00:00<00:01, 1057.14it/s] 15%|█▌        | 216/1400 [00:00<00:01, 1070.88it/s] 24%|██▍       | 333/1400 [00:00<00:00, 1096.63it/s] 16%|█▌        | 220/1400 [00:00<00:01, 1080.68it/s] 32%|███▏      | 450/1400 [00:00<00:00, 1118.08it/s] 32%|███▏      | 442/1400 [00:00<00:00, 1091.87it/s] 15%|█▌        | 212/1400 [00:00<00:01, 1054.27it/s] 23%|██▎       | 324/1400 [00:00<00:01, 1065.18it/s] 32%|███▏      | 443/1400 [00:00<00:00, 1093.08it/s] 24%|██▎       | 329/1400 [00:00<00:00, 1083.13it/s] 40%|████      | 562/1400 [00:00<00:00, 1112.70it/s] 39%|███▉      | 552/1400 [00:00<00:00, 1092.52it/s] 23%|██▎       | 319/1400 [00:00<00:01, 1057.35it/s] 31%|███       | 432/1400 [00:00<00:00, 1070.17it/s] 40%|███▉      | 554/1400 [00:00<00:00, 1096.01it/s] 31%|███▏      | 438/1400 [00:00<00:00, 1082.10it/s] 48%|████▊     | 675/1400 [00:00<00:00, 1116.12it/s] 47%|████▋     | 662/1400 [00:00<00:00, 1087.53it/s] 30%|███       | 426/1400 [00:00<00:00, 1058.85it/s] 39%|███▊      | 542/1400 [00:00<00:00, 1078.31it/s] 47%|████▋     | 664/1400 [00:00<00:00, 1093.06it/s] 39%|███▉      | 547/1400 [00:00<00:00, 1078.22it/s] 56%|█████▌    | 787/1400 [00:00<00:00, 1112.02it/s] 55%|█████▌    | 771/1400 [00:00<00:00, 1082.39it/s] 38%|███▊      | 532/1400 [00:00<00:00, 1057.09it/s] 46%|████▋     | 650/1400 [00:00<00:00, 1072.86it/s] 55%|█████▌    | 774/1400 [00:00<00:00, 1094.49it/s] 47%|████▋     | 655/1400 [00:00<00:00, 1070.29it/s] 64%|██████▍   | 900/1400 [00:00<00:00, 1115.78it/s] 63%|██████▎   | 882/1400 [00:00<00:00, 1088.14it/s] 46%|████▌     | 639/1400 [00:00<00:00, 1061.44it/s] 54%|█████▍    | 758/1400 [00:00<00:00, 1070.25it/s] 63%|██████▎   | 884/1400 [00:00<00:00, 1095.43it/s] 55%|█████▍    | 765/1400 [00:00<00:00, 1076.93it/s] 72%|███████▏  | 1013/1400 [00:00<00:00, 1117.12it/s] 71%|███████   | 994/1400 [00:00<00:00, 1096.08it/s] 53%|█████▎    | 748/1400 [00:00<00:00, 1067.32it/s] 62%|██████▏   | 867/1400 [00:00<00:00, 1075.47it/s] 71%|███████   | 996/1400 [00:00<00:00, 1100.64it/s] 62%|██████▎   | 875/1400 [00:00<00:00, 1082.87it/s] 80%|████████  | 1126/1400 [00:01<00:00, 1118.14it/s] 79%|███████▉  | 1105/1400 [00:01<00:00, 1098.31it/s] 61%|██████    | 857/1400 [00:00<00:00, 1071.41it/s] 70%|██████▉   | 975/1400 [00:00<00:00, 1076.15it/s] 79%|███████▉  | 1107/1400 [00:01<00:00, 1095.82it/s] 70%|███████   | 984/1400 [00:00<00:00, 1078.96it/s] 88%|████████▊ | 1238/1400 [00:01<00:00, 1112.75it/s] 87%|████████▋ | 1215/1400 [00:01<00:00, 1093.56it/s] 69%|██████▉   | 965/1400 [00:00<00:00, 1068.55it/s] 77%|███████▋  | 1083/1400 [00:01<00:00, 1074.35it/s] 87%|████████▋ | 1217/1400 [00:01<00:00, 1097.02it/s] 78%|███████▊  | 1092/1400 [00:01<00:00, 1078.39it/s] 96%|█████████▋| 1350/1400 [00:01<00:00, 1114.19it/s] 95%|█████████▍| 1325/1400 [00:01<00:00, 1095.34it/s] 77%|███████▋  | 1073/1400 [00:01<00:00, 1069.61it/s]100%|██████████| 1400/1400 [00:01<00:00, 1116.19it/s]
+ 85%|████████▌ | 1192/1400 [00:01<00:00, 1077.20it/s]
+Loading EleutherAI/gpt-j-6B model and tokenizer
+ 95%|█████████▌| 1330/1400 [00:01<00:00, 1105.23it/s]100%|██████████| 1400/1400 [00:01<00:00, 1096.40it/s]
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+ 86%|████████▌ | 1207/1400 [00:01<00:00, 1097.79it/s]100%|██████████| 1400/1400 [00:01<00:00, 1102.80it/s]
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+ 85%|████████▌ | 1196/1400 [00:01<00:00, 1115.72it/s] 94%|█████████▍| 1317/1400 [00:01<00:00, 1127.51it/s]{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}
+
+
+
+Tokenizer Loaded
+Tokenizer Loaded
+Tokenizer Loaded
+
+
+ 96%|█████████▌| 1345/1400 [00:01<00:00, 1182.81it/s]100%|██████████| 1400/1400 [00:01<00:00, 1103.05it/s]
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+100%|██████████| 1400/1400 [00:01<00:00, 1121.82it/s]
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+ 96%|█████████▋| 1351/1400 [00:01<00:00, 1245.76it/s]100%|██████████| 1400/1400 [00:01<00:00, 1137.44it/s]
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 645, in main
+    model.load_state_dict(torch.load(args.loading_model_path))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin'
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 645, in main
+    model.load_state_dict(torch.load(args.loading_model_path))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin'
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 645, in main
+    model.load_state_dict(torch.load(args.loading_model_path))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin'
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 645, in main
+    model.load_state_dict(torch.load(args.loading_model_path))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin'
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 645, in main
+    model.load_state_dict(torch.load(args.loading_model_path))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin'
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 645, in main
+    model.load_state_dict(torch.load(args.loading_model_path))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'LEGAL-P_E/SIGIR_experiments/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 4160939) of binary: /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin/python3.10
+Traceback (most recent call last):
+  File "/gpfswork/rech/btm/uei84ht/.local/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 45, in main
+    args.func(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/launch.py", line 909, in launch_command
+    multi_gpu_launcher(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/launch.py", line 604, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-05-23_01:58:31
+  host      : jean-zay-iam40-ib0
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 4160940)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2023-05-23_01:58:31
+  host      : jean-zay-iam40-ib0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 4160941)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2023-05-23_01:58:31
+  host      : jean-zay-iam40-ib0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 4160942)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2023-05-23_01:58:31
+  host      : jean-zay-iam40-ib0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 4160943)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2023-05-23_01:58:31
+  host      : jean-zay-iam40-ib0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 4160944)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-05-23_01:58:31
+  host      : jean-zay-iam40-ib0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 4160939)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

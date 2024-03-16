@@ -1,0 +1,772 @@
++ module load python
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\''' 'LD_LIBRARY_PATH='\'''\''' /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++++ LD_LIBRARY_PATH=
++++ /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash load python
++ eval '_LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1;' export '_LMFILES__modshare;
+LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1;' export 'LOADEDMODULES_modshare;
+PYTHONUNBUFFERED=1;' export 'PYTHONUNBUFFERED;
+MODULES_LMCONFLICT_modshare=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu:1;' export 'MODULES_LMCONFLICT_modshare;
+_LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4;' export '_LMFILES_;
+LOADEDMODULES=cpuarch/amd:python/3.10.4;' export 'LOADEDMODULES;
+MODULES_LMCONFLICT=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu;' export 'MODULES_LMCONFLICT;
+.' '/gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh;
+conda' activate 'python-3.10.4;
+test' '0;'
+++ _LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1
+++ export _LMFILES__modshare
+++ LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1
+++ export LOADEDMODULES_modshare
+++ PYTHONUNBUFFERED=1
+++ export PYTHONUNBUFFERED
+++ MODULES_LMCONFLICT_modshare='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu:1'
+++ export MODULES_LMCONFLICT_modshare
+++ _LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4
+++ export _LMFILES_
+++ LOADEDMODULES=cpuarch/amd:python/3.10.4
+++ export LOADEDMODULES
+++ MODULES_LMCONFLICT='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu'
+++ export MODULES_LMCONFLICT
+++ . /gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
+++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate python-3.10.4
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate python-3.10.4
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate python-3.10.4
++++ /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda shell.posix activate python-3.10.4
+++ ask_conda='PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
+++ eval 'PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
++++ PS1='(python-3.10.4) '
++++ export PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=python-3.10.4
++++ CONDA_DEFAULT_ENV=python-3.10.4
++++ export 'CONDA_PROMPT_MODIFIER=(python-3.10.4) '
++++ CONDA_PROMPT_MODIFIER='(python-3.10.4) '
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh
+++++ [[ -n '' ]]
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal ']'
+++++ export GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ export GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ [[ ! -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins ]]
+++++ unset GDAL_DRIVER_PATH
+++++ export CPL_ZIP_ENCODING=UTF-8
+++++ CPL_ZIP_ENCODING=UTF-8
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/epsg_csv ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/Library/share/epsg_csv ']'
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh
+++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ export GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
+++++ GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh
+++++ '[' -n '' ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj ']'
+++++ export PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ '[' -f /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj/copyright_and_licenses.csv ']'
+++++ export PROJ_NETWORK=ON
+++++ PROJ_NETWORK=ON
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ export PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ accelerate launch LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py --to_train True --batch_size 3 --learning_rate 2e-6 --num_warmup_steps 1000 --to_test True --strat 0 --data_path LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/ --dataset_subset ildc --hggfc_model_name EleutherAI/gpt-j-6B
+2023-05-23 04:06:04.623827: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-23 04:06:05.737331: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 04:06:09.149498: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:09.149643: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:09.149658: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+2023-05-23 04:06:35.845048: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 04:06:35.845133: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 04:06:35.845189: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 04:06:35.849602: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 04:06:35.850212: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 04:06:35.851803: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-23 04:06:39.760590: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.760603: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.760608: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.760617: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.760622: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.760626: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.760754: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.761208: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 04:06:39.761259: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.761288: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 04:06:39.761329: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.761340: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.761351: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 04:06:39.761360: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 04:06:39.761376: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.761383: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-23 04:06:39.761397: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-23 04:06:39.761585: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+----------------------------------------
+----------------------------------------
+Report----------------------------------------
+
+Report
+
+
+ReportReport
+--------------------ReportReport
+
+--------------------
+
+
+----------------------------------------
+----------------------------------------Namespace(to_train=True, batch_size=3, learning_rate=2e-06, epochs=3, num_warmup_steps=1000, to_test=True, test_input_len=512, testing_model_path=None, testing_model_epoch=None, load_and_retrain=False, retraining_model_path=None, strat=0, dataset_subset='ildc', data_path='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/', hggfc_model_name='EleutherAI/gpt-j-6B', SAVE_DIR='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/tuned_model_lr2e-06_warmup1000/', trained_with_deepspeed_accelerate=None, trained_with_accelerate=None, trained_without_accelerate=None, convert_to_torch_model=False)
+
+
+
+Namespace(to_train=True, batch_size=3, learning_rate=2e-06, epochs=3, num_warmup_steps=1000, to_test=True, test_input_len=512, testing_model_path=None, testing_model_epoch=None, load_and_retrain=False, retraining_model_path=None, strat=0, dataset_subset='ildc', data_path='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/', hggfc_model_name='EleutherAI/gpt-j-6B', SAVE_DIR='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/tuned_model_lr2e-06_warmup1000/', trained_with_deepspeed_accelerate=None, trained_with_accelerate=None, trained_without_accelerate=None, convert_to_torch_model=False)
+Namespace(to_train=True, batch_size=3, learning_rate=2e-06, epochs=3, num_warmup_steps=1000, to_test=True, test_input_len=512, testing_model_path=None, testing_model_epoch=None, load_and_retrain=False, retraining_model_path=None, strat=0, dataset_subset='ildc', data_path='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/', hggfc_model_name='EleutherAI/gpt-j-6B', SAVE_DIR='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/tuned_model_lr2e-06_warmup1000/', trained_with_deepspeed_accelerate=None, trained_with_accelerate=None, trained_without_accelerate=None, convert_to_torch_model=False)Namespace(to_train=True, batch_size=3, learning_rate=2e-06, epochs=3, num_warmup_steps=1000, to_test=True, test_input_len=512, testing_model_path=None, testing_model_epoch=None, load_and_retrain=False, retraining_model_path=None, strat=0, dataset_subset='ildc', data_path='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/', hggfc_model_name='EleutherAI/gpt-j-6B', SAVE_DIR='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/tuned_model_lr2e-06_warmup1000/', trained_with_deepspeed_accelerate=None, trained_with_accelerate=None, trained_without_accelerate=None, convert_to_torch_model=False)Namespace(to_train=True, batch_size=3, learning_rate=2e-06, epochs=3, num_warmup_steps=1000, to_test=True, test_input_len=512, testing_model_path=None, testing_model_epoch=None, load_and_retrain=False, retraining_model_path=None, strat=0, dataset_subset='ildc', data_path='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/', hggfc_model_name='EleutherAI/gpt-j-6B', SAVE_DIR='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/tuned_model_lr2e-06_warmup1000/', trained_with_deepspeed_accelerate=None, trained_with_accelerate=None, trained_without_accelerate=None, convert_to_torch_model=False)
+Namespace(to_train=True, batch_size=3, learning_rate=2e-06, epochs=3, num_warmup_steps=1000, to_test=True, test_input_len=512, testing_model_path=None, testing_model_epoch=None, load_and_retrain=False, retraining_model_path=None, strat=0, dataset_subset='ildc', data_path='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/', hggfc_model_name='EleutherAI/gpt-j-6B', SAVE_DIR='LEGAL-P_E/SIGIR_experiments/finetuned_models/with_correct_pad/ildc/EleutherAI_gpt-j-6B/Strategy_0/Training_data/chunks_with_100_overlap_and_2048_input-length_correct_pad/tuned_model_lr2e-06_warmup1000/', trained_with_deepspeed_accelerate=None, trained_with_accelerate=None, trained_without_accelerate=None, convert_to_torch_model=False)----------------------------------------
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+[2023-05-23 04:06:52,265] [INFO] [comm.py:586:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+train_labels:torch.Size([99031])
+train_labels:torch.Size([99031])
+train_labels:torch.Size([99031])
+train_labels:torch.Size([99031])
+train_labels:torch.Size([99031])
+train_labels:torch.Size([99031])
+[2023-05-23 04:07:35,910] [INFO] [partition_parameters.py:454:__exit__] finished initializing model with 5.84B parameters
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTJForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-j-6B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+[2023-05-23 04:07:38,751] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.9.1, git-hash=unknown, git-branch=unknown
+Using pad_token, but it is not set yet.
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+Using pad_token, but it is not set yet.
+/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+[2023-05-23 04:07:39,670] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2023-05-23 04:07:39,671] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the client Optimizer
+[2023-05-23 04:07:39,671] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2023-05-23 04:07:39,679] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2023-05-23 04:07:39,679] [INFO] [utils.py:51:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'transformers.optimization.AdamW'>
+[2023-05-23 04:07:39,679] [WARNING] [engine.py:1098:_do_optimizer_sanity_check] **** You are using ZeRO with an untested optimizer, proceed with caution *****
+[2023-05-23 04:07:39,679] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 3 optimizer
+[2023-05-23 04:07:39,914] [INFO] [utils.py:785:see_memory_usage] Stage 3 initialize beginning
+[2023-05-23 04:07:39,915] [INFO] [utils.py:786:see_memory_usage] MA 1.92 GB         Max_MA 2.69 GB         CA 4.3 GB         Max_CA 4 GB 
+[2023-05-23 04:07:39,915] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.04 GB, percent = 11.1%
+[2023-05-23 04:07:39,916] [INFO] [stage3.py:113:__init__] Reduce bucket size 500,000,000
+[2023-05-23 04:07:39,917] [INFO] [stage3.py:114:__init__] Prefetch bucket size 50,000,000
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Loading extension module utils...Loading extension module utils...Loading extension module utils...Loading extension module utils...Loading extension module utils...Loading extension module utils...
+
+
+
+
+
+Time to load utils op: 0.7267856597900391 secondsTime to load utils op: 0.728196382522583 secondsTime to load utils op: 0.7273290157318115 secondsTime to load utils op: 0.725874662399292 seconds
+
+
+Time to load utils op: 0.7258291244506836 secondsTime to load utils op: 0.7275698184967041 seconds
+
+
+[2023-05-23 04:07:50,859] [INFO] [utils.py:785:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2023-05-23 04:07:50,860] [INFO] [utils.py:786:see_memory_usage] MA 1.92 GB         Max_MA 1.92 GB         CA 4.3 GB         Max_CA 4 GB 
+[2023-05-23 04:07:50,860] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.08 GB, percent = 11.1%
+Parameter Offload: Total persistent parameters: 819200 in 115 params
+[2023-05-23 04:07:51,066] [INFO] [utils.py:785:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2023-05-23 04:07:51,067] [INFO] [utils.py:786:see_memory_usage] MA 1.92 GB         Max_MA 1.92 GB         CA 4.3 GB         Max_CA 4 GB 
+[2023-05-23 04:07:51,067] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.09 GB, percent = 11.1%
+[2023-05-23 04:07:51,260] [INFO] [utils.py:785:see_memory_usage] Before creating fp16 partitions
+[2023-05-23 04:07:51,261] [INFO] [utils.py:786:see_memory_usage] MA 1.92 GB         Max_MA 1.92 GB         CA 4.3 GB         Max_CA 4 GB 
+[2023-05-23 04:07:51,261] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.09 GB, percent = 11.1%
+[2023-05-23 04:07:55,621] [INFO] [utils.py:785:see_memory_usage] After creating fp16 partitions: 1
+[2023-05-23 04:07:55,626] [INFO] [utils.py:786:see_memory_usage] MA 1.92 GB         Max_MA 1.92 GB         CA 3.59 GB         Max_CA 4 GB 
+[2023-05-23 04:07:55,626] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.09 GB, percent = 11.1%
+[2023-05-23 04:07:55,818] [INFO] [utils.py:785:see_memory_usage] Before creating fp32 partitions
+[2023-05-23 04:07:55,819] [INFO] [utils.py:786:see_memory_usage] MA 1.92 GB         Max_MA 1.92 GB         CA 3.59 GB         Max_CA 4 GB 
+[2023-05-23 04:07:55,819] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.09 GB, percent = 11.1%
+[2023-05-23 04:07:56,015] [INFO] [utils.py:785:see_memory_usage] After creating fp32 partitions
+[2023-05-23 04:07:56,016] [INFO] [utils.py:786:see_memory_usage] MA 5.55 GB         Max_MA 7.37 GB         CA 9.03 GB         Max_CA 9 GB 
+[2023-05-23 04:07:56,016] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.09 GB, percent = 11.1%
+[2023-05-23 04:07:56,206] [INFO] [utils.py:785:see_memory_usage] Before initializing optimizer states
+[2023-05-23 04:07:56,206] [INFO] [utils.py:786:see_memory_usage] MA 5.55 GB         Max_MA 5.55 GB         CA 9.03 GB         Max_CA 9 GB 
+[2023-05-23 04:07:56,206] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.09 GB, percent = 11.1%
+[2023-05-23 04:07:56,407] [INFO] [utils.py:785:see_memory_usage] After initializing optimizer states
+[2023-05-23 04:07:56,407] [INFO] [utils.py:786:see_memory_usage] MA 12.81 GB         Max_MA 20.07 GB         CA 23.54 GB         Max_CA 24 GB 
+[2023-05-23 04:07:56,408] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.09 GB, percent = 11.1%
+[2023-05-23 04:07:56,408] [INFO] [stage3.py:366:_setup_for_real_optimizer] optimizer state initialized
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0026357173919677734 secondsNo modifications detected for re-loaded extension module utils, skipping build step...
+
+Time to load utils op: 0.002688169479370117 secondsNo modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...No modifications detected for re-loaded extension module utils, skipping build step...
+
+Loading extension module utils...
+Loading extension module utils...
+
+Time to load utils op: 0.0027992725372314453 secondsTime to load utils op: 0.002738475799560547 seconds
+Time to load utils op: 0.0027456283569335938 seconds
+
+  0%|          | 0/3 [00:00<?, ?it/s]======== Epoch 1 / 3 ========
+Training...
+  0%|          | 0/3 [00:00<?, ?it/s]======== Epoch 1 / 3 ========
+Training...
+  0%|          | 0/3 [00:00<?, ?it/s]======== Epoch 1 / 3 ========
+Training...
+  0%|          | 0/3 [00:00<?, ?it/s]======== Epoch 1 / 3 ========
+Training...
+  0%|          | 0/3 [00:00<?, ?it/s]======== Epoch 1 / 3 ========
+Training...
+
+
+  0%|          | 0/5502 [00:00<?, ?it/s][A  0%|          | 0/5502 [00:00<?, ?it/s][A
+
+  0%|          | 0/5502 [00:00<?, ?it/s]
+  0%|          | 0/5502 [00:00<?, ?it/s][A[A  0%|          | 0/5502 [00:00<?, ?it/s][A[2023-05-23 04:07:56,721] [INFO] [utils.py:785:see_memory_usage] After initializing ZeRO optimizer
+[2023-05-23 04:07:56,722] [INFO] [utils.py:786:see_memory_usage] MA 15.56 GB         Max_MA 16.33 GB         CA 23.54 GB         Max_CA 24 GB 
+[2023-05-23 04:07:56,722] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 56.1 GB, percent = 11.1%
+[2023-05-23 04:07:56,722] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
+[2023-05-23 04:07:56,723] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2023-05-23 04:07:56,723] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2023-05-23 04:07:56,723] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2023-05-23 04:07:56,723] [INFO] [config.py:953:print] DeepSpeedEngine configuration:
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   amp_enabled .................. False
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   amp_params ................... False
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   bfloat16_enabled ............. True
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   checkpoint_parallel_write_pipeline  False
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   checkpoint_tag_validation_enabled  True
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   checkpoint_tag_validation_fail  False
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x14b16c4a4ee0>
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   communication_data_type ...... None
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   curriculum_enabled_legacy .... False
+[2023-05-23 04:07:56,724] [INFO] [config.py:957:print]   curriculum_params_legacy ..... False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   data_efficiency_enabled ...... False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   dataloader_drop_last ......... False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   disable_allgather ............ False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   dump_state ................... False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   dynamic_loss_scale_args ...... None
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   eigenvalue_enabled ........... False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   eigenvalue_gas_boundary_resolution  1
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   eigenvalue_layer_num ......... 0
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   eigenvalue_max_iter .......... 100
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   eigenvalue_stability ......... 1e-06
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   eigenvalue_tol ............... 0.01
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   eigenvalue_verbose ........... False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   elasticity_enabled ........... False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   fp16_auto_cast ............... None
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   fp16_enabled ................. False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   fp16_master_weights_and_gradients  False
+[2023-05-23 04:07:56,725] [INFO] [config.py:957:print]   global_rank .................. 0
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   grad_accum_dtype ............. None
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   gradient_accumulation_steps .. 1
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   gradient_clipping ............ 1.0
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   gradient_predivide_factor .... 1.0
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   initial_dynamic_scale ........ 1
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   load_universal_checkpoint .... False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   loss_scale ................... 1.0
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   memory_breakdown ............. False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   optimizer_legacy_fusion ...... False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   optimizer_name ............... None
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   optimizer_params ............. None
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   pld_enabled .................. False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   pld_params ................... False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   prescale_gradients ........... False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   scheduler_name ............... None
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   scheduler_params ............. None
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   sparse_attention ............. None
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   sparse_gradients_enabled ..... False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   steps_per_print .............. inf
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   train_batch_size ............. 18
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   train_micro_batch_size_per_gpu  3
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   use_node_local_storage ....... False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   wall_clock_breakdown ......... False
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   world_size ................... 6
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   zero_allow_untested_optimizer  True
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline=False, pipeline_read=False, pipeline_write=False, fast_init=False) sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=True stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False memory_efficient_linear=True
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   zero_enabled ................. True
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   zero_force_ds_cpu_optimizer .. True
+[2023-05-23 04:07:56,726] [INFO] [config.py:957:print]   zero_optimization_stage ...... 3
+[2023-05-23 04:07:56,727] [INFO] [config.py:943:print_user_config]   json = {
+    "train_batch_size": 18, 
+    "train_micro_batch_size_per_gpu": 3, 
+    "gradient_accumulation_steps": 1, 
+    "zero_optimization": {
+        "stage": 3, 
+        "offload_optimizer": {
+            "device": "none"
+        }, 
+        "offload_param": {
+            "device": "none"
+        }, 
+        "stage3_gather_16bit_weights_on_model_save": true
+    }, 
+    "gradient_clipping": 1.0, 
+    "steps_per_print": inf, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "fp16": {
+        "enabled": false
+    }, 
+    "zero_allow_untested_optimizer": true
+}
+Using /gpfs7kw/linkhome/rech/geniri01/uei84ht/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0005204677581787109 seconds
+  0%|          | 0/3 [00:00<?, ?it/s]======== Epoch 1 / 3 ========
+Training...
+
+  0%|          | 0/5502 [00:00<?, ?it/s][A  0%|          | 0/5502 [00:02<?, ?it/s]
+  0%|          | 0/3 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 687, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 566, in main
+    outputs = model(b_input_ids, 
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+  0%|          | 0/5502 [00:02<?, ?it/s]
+  0%|          | 0/3 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 687, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 566, in main
+    outputs = model(b_input_ids, 
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    return forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+  0%|          | 0/5502 [00:02<?, ?it/s]
+  0%|          | 0/3 [00:02<?, ?it/s]
+  0%|          | 0/5502 [00:02<?, ?it/s]Traceback (most recent call last):
+
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 687, in <module>
+  0%|          | 0/3 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 687, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 566, in main
+  0%|          | 0/5502 [00:01<?, ?it/s]
+    outputs = model(b_input_ids, 
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+  0%|          | 0/3 [00:01<?, ?it/s]    
+main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 566, in main
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 687, in <module>
+    outputs = model(b_input_ids, 
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 566, in main
+    return forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    outputs = model(b_input_ids, 
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+            ret_val = func(*args, **kwargs)        ret_val = func(*args, **kwargs)ret_val = func(*args, **kwargs)
+ret_val = func(*args, **kwargs)ret_val = func(*args, **kwargs)
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1675, in forward
+
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1675, in forward
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1675, in forward
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1675, in forward
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1675, in forward
+  0%|          | 0/5502 [00:02<?, ?it/s]
+  0%|          | 0/3 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 687, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py", line 566, in main
+    outputs = model(b_input_ids, 
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1675, in forward
+        loss = self.module(*inputs, **kwargs)loss = self.module(*inputs, **kwargs)
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+          File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+loss = self.module(*inputs, **kwargs)
+loss = self.module(*inputs, **kwargs)  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    
+    loss = self.module(*inputs, **kwargs)      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+loss = self.module(*inputs, **kwargs)
+result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 971, in forward
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 971, in forward
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 971, in forward
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 971, in forward
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 971, in forward
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 971, in forward
+    transformer_outputs = self.transformer(
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+        transformer_outputs = self.transformer(    transformer_outputs = self.transformer(
+    transformer_outputs = self.transformer(    
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+transformer_outputs = self.transformer(
+transformer_outputs = self.transformer(  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 671, in forward
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 671, in forward
+        result = forward_call(*args, **kwargs)result = forward_call(*args, **kwargs)
+
+      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 671, in forward
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 671, in forward
+result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 671, in forward
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 671, in forward
+    outputs = block(    
+outputs = block(  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+
+      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    outputs = block(outputs = block(    
+    
+outputs = block(  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+outputs = block(  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 301, in forward
+    result = forward_call(*args, **kwargs)        
+attn_outputs = self.attn(result = forward_call(*args, **kwargs)  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 301, in forward
+
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 301, in forward
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 301, in forward
+    attn_outputs = self.attn(
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    attn_outputs = self.attn(
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+        result = forward_call(*args, **kwargs)result = forward_call(*args, **kwargs)
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 301, in forward
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 301, in forward
+    result = forward_call(*args, **kwargs)
+      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 250, in forward
+attn_outputs = self.attn(
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+            attn_outputs = self.attn(attn_outputs = self.attn(result = forward_call(*args, **kwargs)    
+
+    
+result = forward_call(*args, **kwargs)  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+attn_output, attn_weights = self._attn(query, key, value, attention_mask, head_mask)  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 250, in forward
+
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 250, in forward
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 170, in _attn
+    result = forward_call(*args, **kwargs)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 250, in forward
+    attn_output, attn_weights = self._attn(query, key, value, attention_mask, head_mask)    
+    attn_weights = torch.where(causal_mask, attn_weights, mask_value)      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 170, in _attn
+attn_output, attn_weights = self._attn(query, key, value, attention_mask, head_mask)
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 164, in _attn
+    torch.cudaattn_output, attn_weights = self._attn(query, key, value, attention_mask, head_mask)result = forward_call(*args, **kwargs)    .
+
+result = forward_call(*args, **kwargs)OutOfMemoryError  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 170, in _attn
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 250, in forward
+
+:       File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 250, in forward
+CUDA out of memory. Tried to allocate 768.00 MiB (GPU 0; 79.15 GiB total capacity; 76.32 GiB already allocated; 312.31 MiB free; 76.94 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONFattn_weights = torch.where(causal_mask, attn_weights, mask_value)    
+
+attn_weights = torch.matmul(query, key.transpose(-1, -2))torch.cuda
+.torch.cudaOutOfMemoryError.: OutOfMemoryErrorCUDA out of memory. Tried to allocate 768.00 MiB (GPU 1; 79.15 GiB total capacity; 76.32 GiB already allocated; 6.31 MiB free; 77.09 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF: 
+CUDA out of memory. Tried to allocate 768.00 MiB (GPU 3; 79.15 GiB total capacity; 75.57 GiB already allocated; 742.31 MiB free; 76.38 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF    
+        attn_weights = torch.where(causal_mask, attn_weights, mask_value)attn_output, attn_weights = self._attn(query, key, value, attention_mask, head_mask)attn_output, attn_weights = self._attn(query, key, value, attention_mask, head_mask)
+
+
+torch.cuda  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 164, in _attn
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/transformers/models/gptj/modeling_gptj.py", line 170, in _attn
+.OutOfMemoryError: CUDA out of memory. Tried to allocate 768.00 MiB (GPU 4; 79.15 GiB total capacity; 76.32 GiB already allocated; 72.31 MiB free; 77.03 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+    attn_weights = torch.matmul(query, key.transpose(-1, -2))
+    torch.cudaattn_weights = torch.where(causal_mask, attn_weights, mask_value).
+OutOfMemoryErrortorch.cuda: .CUDA out of memory. Tried to allocate 768.00 MiB (GPU 2; 79.15 GiB total capacity; 75.57 GiB already allocated; 712.94 MiB free; 76.28 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONFOutOfMemoryError
+: CUDA out of memory. Tried to allocate 768.00 MiB (GPU 5; 79.15 GiB total capacity; 76.32 GiB already allocated; 88.31 MiB free; 77.16 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 1172519) of binary: /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin/python3.10
+Traceback (most recent call last):
+  File "/gpfswork/rech/btm/uei84ht/.local/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 45, in main
+    args.func(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/launch.py", line 903, in launch_command
+    deepspeed_launcher(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/launch.py", line 648, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+LEGAL-PE/SIGIR_experiments/distributedTraining/dist_deepspeed_LLM_torch_lexglue_.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-05-23_04:08:04
+  host      : jean-zay-iam15-ib0
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 1172520)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2023-05-23_04:08:04
+  host      : jean-zay-iam15-ib0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 1172521)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2023-05-23_04:08:04
+  host      : jean-zay-iam15-ib0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 1172522)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2023-05-23_04:08:04
+  host      : jean-zay-iam15-ib0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 1172523)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2023-05-23_04:08:04
+  host      : jean-zay-iam15-ib0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 1172524)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-05-23_04:08:04
+  host      : jean-zay-iam15-ib0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1172519)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

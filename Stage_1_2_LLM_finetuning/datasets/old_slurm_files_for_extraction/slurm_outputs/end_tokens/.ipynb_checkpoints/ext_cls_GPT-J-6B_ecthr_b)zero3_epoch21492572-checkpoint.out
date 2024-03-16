@@ -1,0 +1,342 @@
+Extraction started!
+
+Extraction started!
+
+Extraction for ecthr_b started!Extraction started!
+
+Extraction started!
+
+Extraction started!
+
+Extraction started!
+
+Extraction for ecthr_b started!
+
+
+Extraction for ecthr_b started!
+
+
+Extraction for ecthr_b started!
+Extraction for ecthr_b started!
+
+Extraction for ecthr_b started!
+
+
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+
+Dataset's slice view:
+
+
+
+
+
+                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...  [8, 3, 9]
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...  [6, 8, 5]
+4     [9.  The applicant is an Italian citizen, born...     [8, 3]
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...     [3, 4]
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...  [8, 3, 9]
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...  [6, 8, 5]
+4     [9.  The applicant is an Italian citizen, born...     [8, 3]
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...     [3, 4]
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]
+
+                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...  [8, 3, 9]
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...  [6, 8, 5]
+4     [9.  The applicant is an Italian citizen, born...     [8, 3]
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...     [3, 4]
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]
+                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...  [8, 3, 9]
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...  [6, 8, 5]
+4     [9.  The applicant is an Italian citizen, born...     [8, 3]
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...     [3, 4]
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]
+                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...  [8, 3, 9]
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...  [6, 8, 5]
+4     [9.  The applicant is an Italian citizen, born...     [8, 3]
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...     [3, 4]
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...  [8, 3, 9]
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...  [6, 8, 5]
+4     [9.  The applicant is an Italian citizen, born...     [8, 3]
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...     [3, 4]
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]
+
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+
+Loading EleutherAI/gpt-j-6B model and tokenizer
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=10, bias=False)
+  )
+)
+
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=10, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=10, bias=False)
+  )
+)
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=10, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=10, bias=False)
+  )
+)
+DistributedDataParallel(
+  (module): GPTJForSequenceClassification(
+    (transformer): GPTJModel(
+      (wte): Embedding(50400, 4096)
+      (drop): Dropout(p=0.0, inplace=False)
+      (h): ModuleList(
+        (0-27): 28 x GPTJBlock(
+          (ln_1): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (attn): GPTJAttention(
+            (attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_dropout): Dropout(p=0.0, inplace=False)
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          )
+          (mlp): GPTJMLP(
+            (fc_in): Linear(in_features=4096, out_features=16384, bias=True)
+            (fc_out): Linear(in_features=16384, out_features=4096, bias=True)
+            (act): NewGELUActivation()
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (ln_f): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+    )
+    (score): Linear(in_features=4096, out_features=10, bias=False)
+  )
+)
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin
+
+
+
+
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin
+ EleutherAI/gpt-j-6B Model Loaded from directory LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_b/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2__final/pytorch_model.bin
+

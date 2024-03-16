@@ -1,0 +1,792 @@
+args = argparse.ArgumentParser()
+    args.add_argument(
+        "--dataset_subset", 
+        type=str, 
+        default=None, 
+        help="Dataset to train on")
+    
+    args.add_argument(
+        "--combine_layers", 
+        type=bool, 
+        default=True, 
+        help="Is the extracted data combined to train?")
+    
+    args.add_argument(
+        "--add_layers",
+        type=bool,
+        default=False,
+        help="Is the extracted data from last four layers added together?")
+    
+    args.add_argument(
+        "--layers_from_end",
+        type=int,
+        default=4,
+        help="How many layers from the end are combined or added?")
+    
+    args.add_argument(
+        "--save_model_trained_here",
+        type=bool,
+        default=True,
+        help="Save the model trained here?")
+    
+    args.add_argument(
+        "--self_ft_extracted",
+        type=bool,
+        default=True,
+        help="Is the extracted data extracted from model finetuned by you?")
+    
+    args.add_argument(
+        "--ft_model_used_for_extraction",
+        type=str,
+        default="ft_model",
+        help="If so then path of the finetuned model which was used for the extraction")
+    
+    args.add_argument(
+        "--pretrained_model",
+        type=str,
+        default="Pretrained_model",
+        help="which pretrained model was finetuned (path from huggingface)?")
+    args.add_argument(
+        "--finetuned_on_input_len",
+        type = int,
+        default=512,
+        help="length of inputs on which the LLM is finetuned.")
+
+    #------------------for training------------------
+    args.add_argument(
+        "--to_test",
+        type=bool,
+        default=False,
+        help="If this is true only then it tests on the test set")
+    
+    args.add_argument(
+        "--to_train",
+        type=bool,
+        default=True,
+        help="If this is true only then it trains")
+    
+    args.add_argument(
+        "--verbose",
+        type=int,
+        default=2,
+        help="1 to show training, 2 for silent training, 3 for no display")
+    
+    args.add_argument(
+        "--epochs",
+        type=int,
+        default=4,
+        help="epochs to train the model")
+    
+    args.add_argument(
+        "--batch_size",
+        type=int,
+        default=1,
+        help="batch_size")
+    
+    args.add_argument(
+        "--load_to_retrain",
+        type=bool,
+        default=False,
+        help="load model for retraining")
+    
+    args.add_argument(
+        "--model_load_path",
+        type=str,
+        default="",
+        help="load model for retraining or testing (when to_test is true and to_train is false)")
+    
+    args.add_argument(
+        "--to_freeze",
+        type=bool,
+        default=False,
+        help="to freeze the encoder model")
+    
+    args.add_argument(
+        "--layers_to_freeze",
+        type=list,
+        default=[1],
+        help="Layers to freeze in the model")
+    
+    #------------only for encoder model
+    args.add_argument(
+        "--max_positional_encoding",
+        type=int,
+        default=40,
+        help="max_positional_encoding")
+    
+    args.add_argument(
+        "--num_layers",
+        type=int,
+        default=3,
+        help="num_layers")
+    
+    args.add_argument(
+        "--bilstm_before_encoder",
+        type=bool,
+        default=False,
+        help="bilstm_before_encoder")
+    
+    args.add_argument(
+        "--dropout_before_first_fnn",
+        type=bool,
+        default=True,
+        help="dropout_before_first_fnn")
+    
+    args.add_argument(
+        "--dropout_before_inner_fnn",
+        type=bool,
+        default=True,
+        help="dropout_before_inner_fnn")
+    
+    args.add_argument(
+        "--ffn_dropout_value",
+        type=float,
+        default=0.15,
+        help="ffn_dropout_value")
+    
+    args.add_argument(
+        "--dropout_after_first_encoder",
+        type=bool,
+        default=True,
+        help="dropout_after_first_encoder")
+    
+    args.add_argument(
+        "--dropout_after_second_encoder",
+        type=bool,
+        default=True,
+        help="dropout_after_second_encoder")
+    
+    args.add_argument(
+        "--encoder_dropout_value",
+        type=float,
+        default=0.25,
+        help="encoder_dropout_value")
+    
+    args.add_argument(
+        "--dff",
+        type=int,
+        default=2048,
+        help="dff for transformer encoder block. Make this same as the hidden dimension of the transformer model (GPT-Neo, GPT-J etc.) used to extract the CLS embeddings")
+    
+    args.add_argument(
+        "--d_model",
+        type=int,
+        default=768,
+        help="""d_model for transformer encoder block. It is the embedding dimension for the input. 
+        So for GPT-Neo and GPT-J it is 4096 i.e the the last feature dimension of the output layer of the model.""")
+    
+    args.add_argument(
+        "--num_heads",
+        type=int,
+        default=8,
+        help="num_heads for transformer encoder block")
+    
+    
+    args.add_argument(
+        "--include_rnn",
+        type=bool,
+        default=False,
+        help="include RNNs for processing output after encoder models")
+    
+    args.add_argument(
+        "--from_encoder",
+        type=bool,
+        default=False,
+        help="connect directly to encoder or to inputs")
+    
+    
+    #---------------------------------
+    #-----------for clustering and dimensionality reduction techniques-------------------
+    args.add_argument(
+        "--with_clustering",
+        type=bool,
+        default=True,
+        help="for all strategy of prediction with clustering")
+    
+    args.add_argument(
+        "--clustering_strategy",
+        type=str,
+        default='hard',
+        help="hard or soft clustering") 
+    
+    args.add_argument(
+        "--dimReduction",
+        type=str,
+        default='pumap',
+        help="pumap or kmeans") 
+    
+    args.add_argument(
+        "--dim_reduction_metric",
+        type=str,
+        default='cosine',
+        help="cosine or euclidean") 
+    
+    args.add_argument(
+        "--pad_len",
+        type=int,
+        default=32,
+        help="""The max length for the cluster labels for using with Dense layers processing. 
+        Since input feature dimension for a dense layer is of fixed while model creation. 
+        This decides the input feature dimension for the dense layer for clustered labels processing. 
+        32 for ildc, 64 for scotus and eurlex, 128 for etchr_a, etchr_b""")
+    
+    args.add_argument(
+        "--strategy",
+        type=int,
+        default=1,
+        help="""
+        strategy = 1.
+                    Chunked CLS
+                    embeddings  ------------------------> Encoder Model -> output
+                        |                                   |
+                Dimensionality Reduction --> Clustering ____|
+                   (PrametricUMAP)
+                
+        strategy = 2.
+                    Chunked CLS
+                    embeddings           ---------------> Encoder Model -> output
+                        |                |                  |
+                Dimensionality Reduction --> Clustering ____|
+                   (PrametricUMAP)
+                   """
+                   )
+    
+    args.add_argument(
+        "--only_clustered",
+        type=bool,
+        default=False,
+        help="only for strategy 3")
+    
+    args.add_argument(
+        "--train_dimR",
+        type=bool,
+        default=False,
+        help="to train dimensionality reduction model")
+    
+    args.add_argument(
+        "--save_dimR",
+        type=bool,
+        default=False,
+        help="to save dimensionality reduction model")
+    
+    args.add_argument(
+        "--train_clusterer",
+        type=bool,
+        default=False,
+        help="to train clustering model")
+    
+    args.add_argument(
+        "--save_clusterer",
+        type=bool,
+        default=False,
+        help="to save clustering model")
+
+    args.add_argument(
+        "--parent_dir",
+        type=str,
+        default="LEGAL-PE/Level-3_of_Framework/savedModels/",
+        help="parent directory of the model (used to save the model)") 
+
+
+
+
+DEFAULT - ALL
+
+python Stage_3_4/training_models-DimRed+Clustering.py \
+    --dataset_subset \
+    --combine_layers \
+    --add_layers \
+    --layers_from_end \
+    --save_model_trained_here \
+    --self_ft_extracted \
+    --ft_model_used_for_extraction \
+    --pretrained_model \
+    --finetuned_on_input_len \
+    --to_test \
+    --to_train \
+    --verbose \
+    --epochs \
+    --batch_size \
+    --load_to_retrain \
+    --model_load_path \
+    --to_freeze \
+    --layers_to_freeze \
+    --max_positional_encoding \
+    --num_layers \
+    --bilstm_before_encoder \
+    --dropout_before_first_fnn \
+    --dropout_before_inner_fnn \
+    --ffn_dropout_value \
+    --dropout_after_first_encoder \
+    --dropout_after_second_encoder \
+    --encoder_dropout_value \
+    --dff \
+    --d_model \
+    --num_heads \
+    --include_rnn \
+    --from_encoder \
+    --with_clustering \
+    --clustering_strategy \
+    --dimReduction \
+    --dim_reduction_metric \
+    --pad_len \
+    --strategy \
+    --only_clustered \
+    --train_dimR \
+    --save_dimR \
+    --train_clusterer \
+    --save_clusterer \
+    --parent_dir
+
+############################################################################################################################################################################
+MODEL AND DATASET SPECIFIC:
+
+ILDC:
+    GPT-J:
+        python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ildc" \
+            --layers_from_end 1 \
+            --save_model_trained_here True\
+            --self_ft_extracted True\
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__"\
+            --pretrained_model 'EleutherAI/gpt-j-6B'\
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 3 \
+            --bilstm_before_encoder False\
+            --dropout_before_first_fnn True\
+            --dropout_before_inner_fnn True\
+            --ffn_dropout_value 0.15 \
+            --dropout_after_first_encoder True \
+            --dropout_after_second_encoder True \
+            --encoder_dropout_value 0.25 \
+            --dff 4096 \
+            --include_rnn False \
+            --from_encoder False \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --dim_reduction_metric 'cosine' \
+            --pad_len 150 \
+            --strategy 1 \
+            --only_clustered False \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "experiments/models/finetuned_models/ildc/Extracted_data/J6b/"
+        
+            
+        python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ildc" \
+            --layers_from_end 4 \
+            --save_model_trained_here True\
+            --self_ft_extracted True\
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__"\
+            --pretrained_model 'EleutherAI/gpt-j-6B'\
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 3 \
+            --bilstm_before_encoder False\
+            --dropout_before_first_fnn True\
+            --dropout_before_inner_fnn True\
+            --ffn_dropout_value 0.15 \
+            --dropout_after_first_encoder True \
+            --dropout_after_second_encoder True \
+            --encoder_dropout_value 0.25 \
+            --dff 4096 \
+            --include_rnn False \
+            --from_encoder False \
+            --pad_len 150 \
+            --strategy 1 \
+            --data_path "experiments/models/finetuned_models/ildc/Extracted_data/J6b/"
+            
+    
+    GPT-Neo1.3:
+    GPT-Neo2.7:
+        python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ildc" \
+            --layers_from_end 4 \
+            --save_model_trained_here True\
+            --self_ft_extracted True\
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__"\
+            --pretrained_model 'EleutherAI/gpt-neo-2.7B'\
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 3 \
+            --bilstm_before_encoder False\
+            --dropout_before_first_fnn True\
+            --dropout_before_inner_fnn True\
+            --ffn_dropout_value 0.15 \
+            --dropout_after_first_encoder True \
+            --dropout_after_second_encoder True \
+            --encoder_dropout_value 0.25 \
+            --dff 4096 \
+            --include_rnn False \
+            --from_encoder False \
+            --pad_len 150 \
+            --strategy 1 \
+            --data_path "experiments/models/finetuned_models/ildc/Extracted_data/Neo2.7b/"
+SCOTUS:
+    GPT-J:
+        python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 4 \
+            --save_model_trained_here True \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2_final" \
+            --pretrained_model 'EleutherAI/gpt-j-6B' \
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 3 \
+            --dff 4096 \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --dim_reduction_metric 'cosine' \
+            --pad_len 150 \
+            --strategy 1 \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "experiments/models/finetuned_models/scotus/Extracted_data/from_512input_ft_model/J6b/"
+            
+        python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 1 \
+            --save_model_trained_here True \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2_final"\
+            --pretrained_model 'EleutherAI/gpt-j-6B'\
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 3 \
+            --bilstm_before_encoder False\
+            --dropout_before_first_fnn True\
+            --dropout_before_inner_fnn True\
+            --ffn_dropout_value 0.15 \
+            --dropout_after_first_encoder True \
+            --dropout_after_second_encoder True \
+            --encoder_dropout_value 0.25 \
+            --dff 4096 \
+            --include_rnn False \
+            --from_encoder False \
+            --pad_len 150 \
+            --strategy 1 \
+            --data_path "experiments/models/finetuned_models/scotus/Extracted_data/from_512input_ft_model/J6b/"
+            
+    GPT-Neo1.3:
+        python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 4 \
+            --save_model_trained_here True \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/scotus/EleutherAI_gpt-neo-1.3B/Strategy_0/sub_strategy_0/torch-model_epoch-1.pth" \
+            --pretrained_model 'EleutherAI/gpt-neo-1.3B'\
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 3 \
+            --bilstm_before_encoder False\
+            --dropout_before_first_fnn True\
+            --dropout_before_inner_fnn True\
+            --ffn_dropout_value 0.15 \
+            --dropout_after_first_encoder True \
+            --dropout_after_second_encoder True \
+            --encoder_dropout_value 0.25 \
+            --dff 4096 \
+            --include_rnn False \
+            --from_encoder False \
+            --pad_len 150 \
+            --strategy 1 \
+            --data_path "experiments/models/finetuned_models/scotus/Extracted_data/Neo1.3b/"
+    GPT-Neo2.7:
+    
+ECTHR_A:
+    GPT-J:
+        python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ecthr_a" \
+            --layers_from_end 1 \
+            --save_model_trained_here True \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ecthr_a/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_1__final" \
+            --pretrained_model 'EleutherAI/gpt-j-6B' \
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 3 \
+            --dff 4096 \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --dim_reduction_metric 'cosine' \
+            --pad_len 150 \
+            --strategy 1 \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "experiments/models/finetuned_models/ecthr_a/Extracted_data/from_512input_ft_model/J6b/"
+        UPDATED:
+            python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ecthr_a" \
+            --layers_from_end 1 \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ecthr_a/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_1__final" \
+            --pretrained_model 'EleutherAI/gpt-j-6B' \
+            --to_test True \
+            --to_train True \
+            --train_run_number 2 \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 3 \
+            --dff 4096 \
+            --pad_len 150 \
+            --strategy 1 \
+            --data_path "experiments/models/finetuned_models/ecthr_a/Extracted_data/from_512input_ft_model/J6b/"
+            
+    GPT-Neo1.3:
+        CUDA_VISIBLE_DEVICES=1 python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ecthr_a" \
+            --layers_from_end 4 \
+            --save_model_trained_here True \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ecthr_a/EleutherAI_gpt-neo-1.3B/Strategy_0/sub_strategy_0/512inputlength/torch-model_epoch-3.pth" \
+            --pretrained_model 'EleutherAI/gpt-neo-1.3B' \
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 2 \
+            --dff 4096 \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --dim_reduction_metric 'cosine' \
+            --pad_len 150 \
+            --strategy 1 \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "experiments/models/finetuned_models/ecthr_a/Extracted_data/from_512input_ft_model/Neo1.3b/"
+    GPT-Neo2.7:
+        CUDA_VISIBLE_DEVICES=2 python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ecthr_a" \
+            --layers_from_end 4 \
+            --save_model_trained_here True \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ecthr_a/EleutherAI_gpt-neo-2.7B/Strategy_0/sub_strategy_0/512inputlength/torch-model_epoch-1.pth" \
+            --pretrained_model 'EleutherAI/gpt-neo-2.7B' \
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 2 \
+            --dff 4096 \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --dim_reduction_metric 'cosine' \
+            --pad_len 150 \
+            --strategy 1 \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "experiments/models/finetuned_models/ecthr_a/Extracted_data/from_512input_ft_model/Neo2.7b/"
+ECTHR_B:
+    GPT-J:
+        python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ecthr_b" \
+            --layers_from_end 1 \
+            --save_model_trained_here True \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ecthr_b/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2__final" \
+            --pretrained_model 'EleutherAI/gpt-j-6B' \
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 3 \
+            --dff 4096 \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --dim_reduction_metric 'cosine' \
+            --pad_len 150 \
+            --strategy 1 \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "experiments/models/finetuned_models/ecthr_b/Extracted_data/from_512input_ft_model/J6b/ZeRO3_epoch_2__final/"
+            
+    GPT-Neo1.3:
+        CUDA_VISIBLE_DEVICES=1 python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ecthr_b" \
+            --layers_from_end 1 \
+            --save_model_trained_here True \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ecthr_b/EleutherAI_gpt-neo-1.3B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final" \
+            --pretrained_model 'EleutherAI/gpt-neo-1.3B' \
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 2 \
+            --dff 4096 \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --dim_reduction_metric 'cosine' \
+            --pad_len 150 \
+            --strategy 1 \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "experiments/models/finetuned_models/ecthr_b/Extracted_data/from_512input_ft_model/Neo1.3b/"
+            
+    GPT-Neo2.7:
+        CUDA_VISIBLE_DEVICES=2 python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ecthr_b" \
+            --layers_from_end 1 \
+            --save_model_trained_here True \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ecthr_b/EleutherAI_gpt-neo-2.7B/Strategy_0/sub_strategy_0/512inputlength/torch-model_epoch-1.pth" \
+            --pretrained_model 'EleutherAI/gpt-neo-2.7B' \
+            --to_test False \
+            --to_train True \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 2 \
+            --dff 4096 \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --dim_reduction_metric 'cosine' \
+            --pad_len 150 \
+            --strategy 1 \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "experiments/models/finetuned_models/ecthr_b/Extracted_data/from_512input_ft_model/Neo2.7b/"
+    
+    
+    
+    
+Testing:
+
+    SCOTUS:
+        GPT-J
+            python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 1 \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_2_final"\
+            --pretrained_model 'EleutherAI/gpt-j-6B'\
+            --to_test True \
+            --verbose 1 \
+            --batch_size 1 \
+            --model_load_path "LEGAL-PE/Level-3_of_Framework/savedModels/scotus/EleutherAI_gpt-j-6B/_ft_ZeRO3_epoch_2_final/last_1_layers_concatenated/StackedEncoder-3layers/RNN_to_Encoder_with_RNNs/Without_Clustering/run_1/_simple_encoder_3__dropBeforeFirstFnn_True0.15__dropAfterFirstEnc_True0.25__dropAfterSecondEnc_True0.25__encToRnn_True_-001-2.2052-0.7793" \
+            --pad_len 150 \
+            --strategy 1 \
+            --data_path "experiments/models/finetuned_models/scotus/Extracted_data/J6b/"
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            CUDA_VISIBLE_DEVICES=0 python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "ildc" \
+            --layers_from_end 1 \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/ildc/EleutherAI_gpt-j-6B/Strategy_1/sub_strategy_0/ZeRO3_epoch_0__" \
+            --pretrained_model 'EleutherAI/gpt-j-6B'\
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 1 \
+            --dff 4096 \
+            --pad_len 150 \
+            --strategy 1 \
+            --data_path "experiments/models/finetuned_models/ildc/Extracted_data/from_512input_ft_model/J6b/remove_first_10000_true/" \
+            --edit_for_ildc True
+            
+            CUDA_VISIBLE_DEVICES=2 python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 4 \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/scotus/EleutherAI_gpt-j-6B/Strategy_0/sub_strategy_0/ZeRO3_epoch_2__final" \
+            --pretrained_model 'EleutherAI/gpt-j-6B' \
+            --finetuned_on_input_len 2048 \
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 2 \
+            --dff 4096 \
+            --with_clustering True \
+            --dimReduction 'pumap' \
+            --dim_reduction_metric 'cosine' \
+            --pad_len 150 \
+            --strategy 1 \
+            --train_dimR True \
+            --save_dimR True \
+            --train_clusterer True \
+            --save_clusterer True \
+            --data_path "experiments/models/finetuned_models/scotus/Extracted_data/from_2048input_ft_model/512_input_len_100_overlap/J6b/"
+            
+            
+            python Stage_3_4/training_models-DimRed+Clustering.py \
+            --dataset_subset "scotus" \
+            --layers_from_end 4 \
+            --self_ft_extracted True \
+            --ft_model_used_for_extraction "experiments/models/finetuned_models/scotus/EleutherAI_gpt-neo-2.7B/Strategy_0/sub_strategy_0/Training_data_EleutherAI_gpt-neo-2.7B/chunks_with_100_overlap_and_512_input-length/tuned_model/ZeRO3_epoch_2__final" \
+            --pretrained_model 'EleutherAI/gpt-neo-2.7B'\
+            --to_test True \
+            --to_train True \
+            --train_run_number 1 \
+            --verbose 1 \
+            --epochs 5 \
+            --batch_size 1 \
+            --num_layers 2 \
+            --dff 4096 \
+            --pad_len 150 \
+            --strategy 1 \
+            --data_path "experiments/models/finetuned_models/scotus/Extracted_data/from_512input_ft_model/Neo2.7b/"
+            

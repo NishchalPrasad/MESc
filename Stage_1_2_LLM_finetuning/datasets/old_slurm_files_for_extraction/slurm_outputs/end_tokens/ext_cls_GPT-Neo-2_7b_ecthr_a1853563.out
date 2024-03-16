@@ -1,0 +1,571 @@
++ module load python
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\''' 'LD_LIBRARY_PATH='\'''\''' /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++++ LD_LIBRARY_PATH=
++++ /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash load python
++ eval '_LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1;' export '_LMFILES__modshare;
+LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1;' export 'LOADEDMODULES_modshare;
+PYTHONUNBUFFERED=1;' export 'PYTHONUNBUFFERED;
+MODULES_LMCONFLICT_modshare=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu:1;' export 'MODULES_LMCONFLICT_modshare;
+_LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4;' export '_LMFILES_;
+LOADEDMODULES=cpuarch/amd:python/3.10.4;' export 'LOADEDMODULES;
+MODULES_LMCONFLICT=python/3.10.4\&anaconda-py3\&anaconda-py2\&python\&tensorflow-gpu\&pytorch-gpu;' export 'MODULES_LMCONFLICT;
+.' '/gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh;
+conda' activate 'python-3.10.4;
+test' '0;'
+++ _LMFILES__modshare=/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4:1:/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:1
+++ export _LMFILES__modshare
+++ LOADEDMODULES_modshare=python/3.10.4:1:cpuarch/amd:1
+++ export LOADEDMODULES_modshare
+++ PYTHONUNBUFFERED=1
+++ export PYTHONUNBUFFERED
+++ MODULES_LMCONFLICT_modshare='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu:1'
+++ export MODULES_LMCONFLICT_modshare
+++ _LMFILES_=/gpfslocalsup/pub/module-rh/modulefiles/cpuarch/amd:/gpfslocalsup/pub/modules-idris-env4/modulefiles/linux-rhel8-x86_64/python/3.10.4
+++ export _LMFILES_
+++ LOADEDMODULES=cpuarch/amd:python/3.10.4
+++ export LOADEDMODULES
+++ MODULES_LMCONFLICT='python/3.10.4&anaconda-py3&anaconda-py2&python&tensorflow-gpu&pytorch-gpu'
+++ export MODULES_LMCONFLICT
+++ . /gpfslocalsup/pub/anaconda-py3/2021.05/etc/profile.d/conda.sh
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
+++++ dirname /gpfslocalsup/pub/anaconda-py3/2021.05/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate python-3.10.4
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate python-3.10.4
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate python-3.10.4
++++ /gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda shell.posix activate python-3.10.4
+++ ask_conda='PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
+++ eval 'PS1='\''(python-3.10.4) '\''
+export PATH='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin'\''
+export CONDA_PREFIX='\''/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''python-3.10.4'\''
+export CONDA_PROMPT_MODIFIER='\''(python-3.10.4) '\''
+export CONDA_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python'\''
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh"
+. "/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh"'
++++ PS1='(python-3.10.4) '
++++ export PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++++ export CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ CONDA_PREFIX=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=python-3.10.4
++++ CONDA_DEFAULT_ENV=python-3.10.4
++++ export 'CONDA_PROMPT_MODIFIER=(python-3.10.4) '
++++ CONDA_PROMPT_MODIFIER='(python-3.10.4) '
++++ export CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ CONDA_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ CONDA_PYTHON_EXE=/gpfslocalsup/pub/anaconda-py3/2021.05/bin/python
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/gdal-activate.sh
+++++ [[ -n '' ]]
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal ']'
+++++ export GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ GDAL_DATA=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/gdal
+++++ export GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ GDAL_DRIVER_PATH=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins
+++++ [[ ! -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/lib/gdalplugins ]]
+++++ unset GDAL_DRIVER_PATH
+++++ export CPL_ZIP_ENCODING=UTF-8
+++++ CPL_ZIP_ENCODING=UTF-8
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/geotiff-activate.sh
+++++ [[ -n '' ]]
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/epsg_csv ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/Library/share/epsg_csv ']'
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/libglib_activate.sh
+++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ export GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
+++++ GSETTINGS_SCHEMA_DIR=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/glib-2.0/schemas
++++ . /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/etc/conda/activate.d/proj4-activate.sh
+++++ '[' -n '' ']'
+++++ '[' -d /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj ']'
+++++ export PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ PROJ_LIB=/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj
+++++ '[' -f /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/share/proj/copyright_and_licenses.csv ']'
+++++ export PROJ_NETWORK=ON
+++++ PROJ_NETWORK=ON
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ export PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ PATH=/gpfswork/rech/btm/uei84ht/.local/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin:/gpfslocalsup/pub/anaconda-py3/2021.05/condabin:/gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/usr/lpp/mmfs/bin:/sbin:/bin:/gpfslocalsys/slurm/current/bin:/gpfslocalsup/bin:/gpfslocalsys/bin:/gpfslocalsys/idrzap/current/bin
++ accelerate launch --config_file LEGAL-PE/SIGIR_experiments/distributedTraining/Config_files_for_distributed/default_accelerate_config_without_deep_speed.yaml LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py --maxlen 128 --length 126 --overlap 25 --loading_model_path LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_a/EleutherAI_gpt-neo-2.7B/Strategy_0/sub_strategy_0/512inputlength/torch-model_epoch-1.pth --cuda_number 0 --strat 0 --dataset_subset ecthr_a --hggfc_model_name EleutherAI/gpt-neo-2.7B --get_train_data True --get_validation_data True --get_test_data True --trained_without_accelerate True --path_train_dat LEGAL-P_E/SIGIR_experiments/finetuned_models/ecthr_a/Extracted_data/from_512input_ft_model/128_input_len_25_overlap/Neo2.7b/
+2023-05-25 17:22:17.869349: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-25 17:22:19.569279: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-25 17:22:30.588821: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:22:30.588963: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:22:30.588978: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-25 17:23:31.472468: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-25 17:23:31.475116: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-25 17:23:31.475187: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-25 17:23:31.475247: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-25 17:23:31.475293: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-25 17:23:31.476012: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-25 17:23:36.093634: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.093691: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.093778: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.093792: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.093791: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.093795: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.093863: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.093894: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.093898: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-25 17:23:36.093915: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-25 17:23:36.094018: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.094038: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-25 17:23:36.094048: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.094059: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.094068: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-25 17:23:36.094074: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
+2023-05-25 17:23:36.094079: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-05-25 17:23:36.094095: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Extraction started!
+Extraction started!
+Extraction started!
+
+Extraction started!
+Extraction started!
+
+Extraction started!
+
+
+Extraction for ecthr_a started!
+
+
+Extraction for ecthr_a started!
+
+Extraction for ecthr_a started!
+
+Extraction for ecthr_a started!
+Extraction for ecthr_a started!
+
+Extraction for ecthr_a started!
+
+
+
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+Dataset's slice view:
+
+
+
+
+
+
+                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...         []
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...        [6]
+4     [9.  The applicant is an Italian citizen, born...         []
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...         []
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...         []
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...        [6]
+4     [9.  The applicant is an Italian citizen, born...         []
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...         []
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]
+
+                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...         []
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...        [6]
+4     [9.  The applicant is an Italian citizen, born...         []
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...         []
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...         []
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...        [6]
+4     [9.  The applicant is an Italian citizen, born...         []
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...         []
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]
+
+                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...         []
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...        [6]
+4     [9.  The applicant is an Italian citizen, born...         []
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...         []
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]
+                                                   text     labels
+0     [11.  At the beginning of the events relevant ...        [4]
+1     [9.  The applicant is the monarch of Liechtens...         []
+2     [9.  In June 1949 plots of agricultural land o...        [3]
+3     [8.  In 1991 Mr Dušan Slobodník, a research wo...        [6]
+4     [9.  The applicant is an Italian citizen, born...         []
+...                                                 ...        ...
+8995  [5.  The applicant was born in 1960 and lives ...         []
+8996  [5.  The applicant was born in 1946 and is cur...         []
+8997  [5.  The applicants are Russian nationals who,...  [0, 1, 2]
+8998  [8.  In all cases the applicants brought civil...     [3, 9]
+8999  [4.  The applicant was born in 1971 and lives ...        [3]
+
+[9000 rows x 2 columns]
+  0%|          | 0/9000 [00:00<?, ?it/s]  0%|          | 0/9000 [00:00<?, ?it/s]  0%|          | 0/9000 [00:00<?, ?it/s]  0%|          | 0/9000 [00:00<?, ?it/s]  0%|          | 0/9000 [00:00<?, ?it/s]  0%|          | 0/9000 [00:00<?, ?it/s] 10%|█         | 941/9000 [00:00<00:00, 9409.09it/s] 11%|█         | 955/9000 [00:00<00:00, 9540.27it/s] 11%|█         | 946/9000 [00:00<00:00, 9454.78it/s] 10%|█         | 932/9000 [00:00<00:00, 9309.60it/s] 10%|█         | 927/9000 [00:00<00:00, 9265.94it/s] 10%|█         | 906/9000 [00:00<00:00, 9059.30it/s] 22%|██▏       | 1947/9000 [00:00<00:00, 9788.76it/s] 22%|██▏       | 1948/9000 [00:00<00:00, 9766.85it/s] 21%|██▏       | 1934/9000 [00:00<00:00, 9701.33it/s] 21%|██        | 1900/9000 [00:00<00:00, 9526.59it/s] 21%|██        | 1900/9000 [00:00<00:00, 9537.34it/s] 21%|██        | 1853/9000 [00:00<00:00, 9299.40it/s] 33%|███▎      | 2955/9000 [00:00<00:00, 9921.65it/s] 33%|███▎      | 2948/9000 [00:00<00:00, 9869.97it/s] 32%|███▏      | 2923/9000 [00:00<00:00, 9786.13it/s] 32%|███▏      | 2871/9000 [00:00<00:00, 9610.09it/s] 32%|███▏      | 2871/9000 [00:00<00:00, 9613.48it/s] 31%|███       | 2804/9000 [00:00<00:00, 9392.36it/s] 44%|████▍     | 3963/9000 [00:00<00:00, 9982.20it/s] 44%|████▍     | 3948/9000 [00:00<00:00, 9917.43it/s] 43%|████▎     | 3912/9000 [00:00<00:00, 9824.47it/s] 43%|████▎     | 3843/9000 [00:00<00:00, 9652.68it/s] 43%|████▎     | 3845/9000 [00:00<00:00, 9661.00it/s] 42%|████▏     | 3754/9000 [00:00<00:00, 9431.55it/s] 55%|█████▌    | 4974/9000 [00:00<00:00, 10026.89it/s] 55%|█████▍    | 4948/9000 [00:00<00:00, 9944.75it/s] 55%|█████▍    | 4905/9000 [00:00<00:00, 9859.32it/s] 54%|█████▎    | 4816/9000 [00:00<00:00, 9679.81it/s] 54%|█████▎    | 4817/9000 [00:00<00:00, 9681.01it/s] 52%|█████▏    | 4705/9000 [00:00<00:00, 9459.76it/s] 67%|██████▋   | 5988/9000 [00:00<00:00, 10063.88it/s] 66%|██████▌   | 5947/9000 [00:00<00:00, 9959.51it/s] 66%|██████▌   | 5898/9000 [00:00<00:00, 9879.97it/s] 64%|██████▍   | 5790/9000 [00:00<00:00, 9697.47it/s] 64%|██████▍   | 5788/9000 [00:00<00:00, 9687.89it/s] 63%|██████▎   | 5659/9000 [00:00<00:00, 9486.08it/s] 78%|███████▊  | 7002/9000 [00:00<00:00, 10086.45it/s] 77%|███████▋  | 6943/9000 [00:00<00:00, 9957.73it/s] 77%|███████▋  | 6887/9000 [00:00<00:00, 9881.53it/s] 75%|███████▌  | 6764/9000 [00:00<00:00, 9709.41it/s] 75%|███████▌  | 6758/9000 [00:00<00:00, 9691.67it/s] 74%|███████▎  | 6616/9000 [00:00<00:00, 9510.55it/s] 89%|████████▉ | 8012/9000 [00:00<00:00, 10089.73it/s] 88%|████████▊ | 7942/9000 [00:00<00:00, 9967.00it/s] 88%|████████▊ | 7882/9000 [00:00<00:00, 9902.29it/s] 86%|████████▌ | 7736/9000 [00:00<00:00, 9711.22it/s] 86%|████████▌ | 7728/9000 [00:00<00:00, 9673.22it/s] 84%|████████▍ | 7572/9000 [00:00<00:00, 9523.70it/s]100%|██████████| 9000/9000 [00:00<00:00, 10014.87it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s] 99%|█████████▉| 8939/9000 [00:00<00:00, 9967.57it/s] 99%|█████████▊| 8877/9000 [00:00<00:00, 9914.71it/s] 97%|█████████▋| 8710/9000 [00:00<00:00, 9719.58it/s] 97%|█████████▋| 8698/9000 [00:00<00:00, 9678.98it/s] 95%|█████████▍| 8527/9000 [00:00<00:00, 9531.38it/s]100%|██████████| 9000/9000 [00:00<00:00, 9925.00it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s]100%|██████████| 9000/9000 [00:00<00:00, 9856.39it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s]100%|██████████| 9000/9000 [00:00<00:00, 9674.17it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s]100%|██████████| 9000/9000 [00:00<00:00, 9651.52it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s]100%|██████████| 9000/9000 [00:00<00:00, 9472.45it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s]100%|██████████| 1000/1000 [00:00<00:00, 9999.70it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s] 99%|█████████▉| 993/1000 [00:00<00:00, 9921.00it/s]100%|██████████| 1000/1000 [00:00<00:00, 9906.50it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s] 99%|█████████▉| 993/1000 [00:00<00:00, 9923.12it/s]100%|██████████| 1000/1000 [00:00<00:00, 9909.08it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s] 96%|█████████▋| 964/1000 [00:00<00:00, 9636.65it/s] 96%|█████████▋| 964/1000 [00:00<00:00, 9634.17it/s]100%|██████████| 1000/1000 [00:00<00:00, 9624.44it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s]100%|██████████| 1000/1000 [00:00<00:00, 9621.35it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s] 95%|█████████▍| 949/1000 [00:00<00:00, 9488.27it/s]100%|██████████| 1000/1000 [00:00<00:00, 9474.82it/s]
+  0%|          | 0/1000 [00:00<?, ?it/s]100%|██████████| 1000/1000 [00:00<00:00, 10104.37it/s]
+ 99%|█████████▉| 990/1000 [00:00<00:00, 9899.82it/s]100%|██████████| 1000/1000 [00:00<00:00, 9885.09it/s]
+ 99%|█████████▉| 992/1000 [00:00<00:00, 9911.64it/s]100%|██████████| 1000/1000 [00:00<00:00, 9896.36it/s]
+ 97%|█████████▋| 966/1000 [00:00<00:00, 9656.49it/s] 96%|█████████▌| 959/1000 [00:00<00:00, 9588.61it/s]100%|██████████| 1000/1000 [00:00<00:00, 9641.28it/s]
+100%|██████████| 1000/1000 [00:00<00:00, 9565.68it/s]
+ 96%|█████████▌| 957/1000 [00:00<00:00, 9565.31it/s]100%|██████████| 1000/1000 [00:00<00:00, 9552.50it/s]
+
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+
+Loading EleutherAI/gpt-neo-2.7B model and tokenizer
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}
+
+
+Tokenizer Loaded
+Tokenizer Loaded
+
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+{'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>'}
+
+Tokenizer Loaded
+Some weights of GPTNeoForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-neo-2.7B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTNeoForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-neo-2.7B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTNeoForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-neo-2.7B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTNeoForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-neo-2.7B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTNeoForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-neo-2.7B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPTNeoForSequenceClassification were not initialized from the model checkpoint at /gpfsdswork/dataset/HuggingFace_Models/EleutherAI/gpt-neo-2.7B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 761, in <module>
+    main()    
+    main()  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 634, in main
+main()    
+
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 634, in main
+main()          File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 634, in main
+
+main()main()  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 634, in main
+
+
+      File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 634, in main
+  File "/gpfsdswork/projects/rech/btm/uei84ht/LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py", line 634, in main
+checkpoint = torch.load(args.loading_model_path)['model']    
+checkpoint = torch.load(args.loading_model_path)['model']  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 809, in load
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 809, in load
+    checkpoint = torch.load(args.loading_model_path)['model']
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 809, in load
+    checkpoint = torch.load(args.loading_model_path)['model']
+      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 809, in load
+checkpoint = torch.load(args.loading_model_path)['model']
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 809, in load
+    checkpoint = torch.load(args.loading_model_path)['model']
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 809, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)    
+        return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1172, in _load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)    
+return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+
+return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1172, in _load
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1172, in _load
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1172, in _load
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1172, in _load
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1172, in _load
+    result = unpickler.load()
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1142, in persistent_load
+    result = unpickler.load()
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1142, in persistent_load
+    result = unpickler.load()
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1142, in persistent_load
+    result = unpickler.load()
+      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1142, in persistent_load
+result = unpickler.load()
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1142, in persistent_load
+    result = unpickler.load()    
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1142, in persistent_load
+typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))    
+
+typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1116, in load_tensor
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1116, in load_tensor
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1116, in load_tensor
+        typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1116, in load_tensor
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1116, in load_tensor
+    wrap_storage=restore_location(storage, location),
+      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 217, in default_restore_location
+        typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))wrap_storage=restore_location(storage, location),wrap_storage=restore_location(storage, location),
+
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 1116, in load_tensor
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 217, in default_restore_location
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 217, in default_restore_location
+    wrap_storage=restore_location(storage, location),
+      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 217, in default_restore_location
+    wrap_storage=restore_location(storage, location),result = fn(storage, location)
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 217, in default_restore_location
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 187, in _cuda_deserialize
+        result = fn(storage, location)result = fn(storage, location)
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 187, in _cuda_deserialize
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 187, in _cuda_deserialize
+        result = fn(storage, location)wrap_storage=restore_location(storage, location),
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 187, in _cuda_deserialize
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 217, in default_restore_location
+    result = fn(storage, location)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 187, in _cuda_deserialize
+    return obj.cuda(device)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/_utils.py", line 81, in _cuda
+    return obj.cuda(device)
+      File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/_utils.py", line 81, in _cuda
+return obj.cuda(device)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/_utils.py", line 81, in _cuda
+        result = fn(storage, location)return obj.cuda(device)    
+
+return obj.cuda(device)  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/serialization.py", line 187, in _cuda_deserialize
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/_utils.py", line 81, in _cuda
+
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/_utils.py", line 81, in _cuda
+    return obj.cuda(device)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/_utils.py", line 81, in _cuda
+    untyped_storage = torch.UntypedStorage(    
+untyped_storage = torch.UntypedStorage(torch.cuda
+.torch.cuda    OutOfMemoryError        .    untyped_storage = torch.UntypedStorage(: untyped_storage = torch.UntypedStorage(untyped_storage = torch.UntypedStorage(OutOfMemoryErroruntyped_storage = torch.UntypedStorage(
+CUDA out of memory. Tried to allocate 100.00 MiB (GPU 0; 79.15 GiB total capacity; 12.18 GiB already allocated; 24.31 MiB free; 12.19 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+: 
+torch.cuda
+torch.cudatorch.cudaCUDA out of memory. Tried to allocate 100.00 MiB (GPU 0; 79.15 GiB total capacity; 12.18 GiB already allocated; 24.31 MiB free; 12.19 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONFtorch.cuda...
+.OutOfMemoryErrorOutOfMemoryErrorOutOfMemoryErrorOutOfMemoryError: : : : CUDA out of memory. Tried to allocate 100.00 MiB (GPU 0; 79.15 GiB total capacity; 12.18 GiB already allocated; 24.31 MiB free; 12.19 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONFCUDA out of memory. Tried to allocate 100.00 MiB (GPU 0; 79.15 GiB total capacity; 12.18 GiB already allocated; 24.31 MiB free; 12.19 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONFCUDA out of memory. Tried to allocate 100.00 MiB (GPU 0; 79.15 GiB total capacity; 12.18 GiB already allocated; 24.31 MiB free; 12.19 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONFCUDA out of memory. Tried to allocate 100.00 MiB (GPU 0; 79.15 GiB total capacity; 12.18 GiB already allocated; 24.31 MiB free; 12.19 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+
+
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 2001638) of binary: /gpfslocalsup/pub/anaconda-py3/2021.05/envs/python-3.10.4/bin/python3.10
+Traceback (most recent call last):
+  File "/gpfswork/rech/btm/uei84ht/.local/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 45, in main
+    args.func(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/launch.py", line 909, in launch_command
+    multi_gpu_launcher(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/accelerate/commands/launch.py", line 604, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/linkhome/rech/geniri01/uei84ht/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+LEGAL-PE/SIGIR_experiments/datasets/extract_CLS_embeds_after_finetuning_.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-05-25_17:25:19
+  host      : jean-zay-iam33-ib0
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 2001639)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2023-05-25_17:25:19
+  host      : jean-zay-iam33-ib0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 2001640)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2023-05-25_17:25:19
+  host      : jean-zay-iam33-ib0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 2001641)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2023-05-25_17:25:19
+  host      : jean-zay-iam33-ib0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 2001642)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2023-05-25_17:25:19
+  host      : jean-zay-iam33-ib0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 2001643)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-05-25_17:25:19
+  host      : jean-zay-iam33-ib0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2001638)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
